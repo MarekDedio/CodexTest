@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+	</head>
+	<body style="background-color: #EEEEEE !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear()"id="kontener" class="container-fluid"style="background-color:#EEEEEE">	
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<div id="texto3"style="margin-left: 31%;margin-right: 31%; background-color: white; margin-top: 20px; border-radius: 15px;text-align: center;">
+				<strong style="font-size: x-large;">CMENTARZ</strong>
+			</div>
+			<div id="texto"style="margin-left: 31%;margin-right: 31%; background-color: white; margin-top: 30px; border-radius: 15px;text-align: center;padding:40px;">
+				<span style="font-style: italic;font-weight: 500;">
+					<br>"Nie dziwcie się temu, bo nadchodzi czas,
+					gdy wszyscy, którzy są w grobach, usłyszą jego głos i wyjdą ..."
+					<Br><br>
+					Jana 5:28,29 NWT
+				</span>
+			</div>
+			<div id="texto2"style="margin-left: 31%;margin-right: 31%; background-color: white; margin-top: 20px; border-radius: 15px;text-align: center;">
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images\galeria05\01d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Anastazja Bomba</strong>
+										10.02.1914 - 8.04.1983
+									</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td class="FirstImagePadding"style="text-align: center;padding-top: 55px;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/02d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Józef Hamryszczak</strong>
+										16.04.1866 - 7.07.1938</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img style="width: 300px;"class="img-fluid thumbnail"src="Images/galeria05/03d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Katarzyna Hamryszczak</strong></span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img style="width: 300px;"class="img-fluid thumbnail"src="Images/galeria05/06d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Anna Kaczmar</strong></span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/09d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Bronisława Kettner &nbsp;</strong>6.08.1895 - 1962<br><strong>Paweł Kettner &nbsp;</strong>31.03.1888 - 1970</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/04d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Roman Hnatyszak</strong>&nbsp;8.12.1925 - 12.01.1943</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/07d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Albert Kettner</strong></span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/08d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Anna Kettner</strong>&nbsp;18.04.1923 - 30.04.1997<strong><br>Edward Kettner</strong>&nbsp;2.02.1922 - 31.03.2002</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/10d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Emilia Kotowska</strong><br>1924 - 1935</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/24d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Paraskewia Nienadowska z d. Mościszko</strong></span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/11d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Anna Krupa</strong><br>przeżyła 66 lat</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/12d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Anna Krupa</strong></span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/13d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Maria Krupa</strong><br>przeżyła 18 lat<br><strong>Bazyli Krupa</strong><br>przeżył 56 lat</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/14d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Mikołaj Krupa</strong><br>1894 - 1957</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/15d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Paulina Krupa</strong><br>2.05.1882 - 2.01.1951</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/16d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Józef Kulhawiec</strong><br>16.02.1908 - 20.07.1987</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/17d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Józef Kulhawiec</strong><br>12.01.1934 - 26.12.2001</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/18d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Helena Łoś</strong><br>1880 - 1944<strong><br>Michał Łoś</strong><br>1876 - 1942</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/19d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Michał Łoś</strong><br>05.1915 - 07.1945</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/20d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Bazyli Marcinów</strong><br>15.05.1900 - 13.03.1992</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/21d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Emilia Marcinów</strong><br>15.01.1900 - 5.04.1978</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/22d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Michalina Nienadowska</strong><br>5.04.1931 - 5.07.1987</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/23d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Michalina Nienadowska</strong><br>3.07.1903 - 12.10.1987<strong><br>Mikołaj Nienadowski</strong><br>21.04.1903 - 15.08.1987</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/05d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Katarzyna Jakubów</strong><br>13.08.1901 - 27.12.1991<strong><br>Michał Jakubów</strong><br>24.02.1909 - 18.03.1989</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/25d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Paweł Wronowski</strong><br>zm. 13.11.1960, przeżył 77 lat</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/26d.jpg">
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">
+									<span style="font-size: 10px;"><strong>Mikołaj Zachorbeński</strong><br>zm. 24.06.1935, przeżył 21 lat</span>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/27d.jpg">
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/28d.jpg">
+								</td>
+							</tr>		
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/29d.jpg">
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/30d.jpg">
+								</td>
+							</tr>		
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/31d.jpg">
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/32d.jpg">
+								</td>
+							</tr>		
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/33d.jpg">
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/34d.jpg">
+								</td>
+							</tr>		
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/35d.jpg">
+								</td>
+							</tr>	
+						</table>
+					</div>
+					<div class="col-sm" style="padding:20px;">
+						<table style="margin:auto">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/36d.jpg">
+								</td>
+							</tr>		
+						</table>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col" style="padding:20px;margin:auto;font-size: 10px;">
+						<table style="margin:auto;font-size: 10px;">
+							<tr>
+								<td style="text-align: center;">
+									<img class="img-fluid thumbnail"src="Images/galeria05/37d.jpg">
+								</td>
+							</tr>
+							<tr style="font: size 10px;">
+								<td style="font: size 10px;">
+									<span style="font: size 10px;"><br><p align="center">***</p><p style="font: size 10px;">Informacje zamieszczone na stronie zostały odczytane z zachowanych tabliczek nagrobkowych, część uzupełniono i zmieniono w oparciu o posiadane dokumenty. Z uwagi na zniszczone lub słabo widoczne napisy, niektóre podane dane mogą być niezgodne z faktami. Każdego, kto posiada bliższe informacje na temat wymienionych osób, zauważył jakiś błąd lub nieścisłości prosimy o kontakt. Będziemy wdzięczni również za informacje na temat zmarłych, o których nie posiadamy żadnych informacji, a o miejscu ich pochówku świadczą jedynie zachowane symbole religijne.</p></span>
+									<br><br>
+								</td>
+							</tr>	
+						</table>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<div style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+			© Copyrights Dedio & Dedio & Dedio 2003-2026 
+		</div>
+		<script>
+			setInterval(dost,25)
+			function dost()
+			{
+				t = document.getElementById("texto");
+				t2 = document.getElementById("texto2");
+				a = window.innerWidth;
+				if(a<1100)
+				{
+					t.style.marginRight = "0";
+					t.style.marginLeft = "0";
+					t2.style.marginRight = "0";
+					t2.style.marginLeft = "0";
+				}
+				if(a>1100)
+				{
+					t.style.marginRight = "31%";
+					t.style.marginLeft = "31%";
+					t2.style.marginRight = "31%";
+					t2.style.marginLeft = "31%";
+				}
+			}
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>		
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);
+		</script>	
+    </body>
+</html>

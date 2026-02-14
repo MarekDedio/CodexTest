@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: #EEEEEE !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>				
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="Antoni_Jankowski.html">Antoni Jankowski</a>
+				<a href="Maria_Kazala.html">Maria Kazała</a>
+				<a href="Bracia_Kopko.html">Bracia Kopko</a>
+				<a href="Jozef_Kropa.html">Józef Krupa</a>
+				<a href="Michal_Krupa.html">Michał Krupa</a>
+				<a href="Mikolaj_Krupa.html">Mikołaj Krupa</a>
+				<a href="Mikolaj_Kulhawiec.html">Mikołaj Kulhawiec</a>
+				<a href="Mikolaj_Nienadowski.html">Mikołaj Nienadowski</a>
+				<a href="Pawel_Nienadowski.html">Paweł Nienadowski</a>
+				<a href="Jozef_Nienadowski.html">Józef Nienadowski</a>
+			</div>
+			
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						
+						<ul class="list-group lista;">
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE;max-height: max-content;">
+								<div id="texto"style="background-color: white; margin-bottom: 20px; border-radius: 15px;text-align: center;">
+									<strong style="font-size: x-large;">ŚRODOWISKO</strong>
+								</div>
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									
+						<p align="justify"><strong>Geologia</strong></span></p>
+						<p align="justify">Dominującym utworem geologicznym są łupki i piaskowce inoceramowe oraz piaskowce i łupki krośnieńskie.</span></p>
+						<p align="justify"><strong>Wody</strong></span></p>
+						<p align="justify">Cieki (potoki) wchodzą w skład zlewni rzeki&nbsp;<em>San</em>. Potoki "<em>Kamienny</em>" i "<em>Grabnik</em>" w miejscowości Rybotycze wpływają do rzeki&nbsp;<em>Wiar</em></a></span>, kt&oacute;ra następnie wpada do rzeki&nbsp;<em>San</em>&nbsp;w miejscowości Przemyśl. Inne cieki (bez nazwy) uchodzą do potoku&nbsp;<em>Cisowa</em>, kt&oacute;ry wpada do rzeki&nbsp;<em>Olszanka</em>&nbsp;prowadzącej wody do rzeki&nbsp;<em>San</em>&nbsp;w miejscowości Olszany.&nbsp;</span></p>
+						<p align="justify">W potoku "<em>Kamiennym</em>" niegdyś można było spotkać raki, a obecnie i tylko w dolnym jego biegu żyją drobne ryby.&nbsp;Potok "<em>Grabnik</em>" wypływa z "cudownego źr&oacute;dełka", niedaleko grodziska w lesie Grabnik.</span></p>
+						<p align="justify"><Strong>Gleby</Strong></span></p>
+						<p align="justify">Występują gleby brunatne i płowe utworzone ze skał masywnych (gleby pyłowe i ilaste) oraz utworzone ze skał luźnych (lessy i utwory ilaste).</span></p>
+						<p align="justify"><strong>Przyroda</strong></span></p>
+						<p align="justify">Według podziału geobotanicznego Kopysno znajduje się w dziale -&nbsp;<em>Wschodniokarpackim</em>, krainie -&nbsp;<em>Karpaty Wschodnie</em>, okręgu -&nbsp;<em>Pog&oacute;rze Strzyżowsko-Dynowsko-Przemyskie</em>, podokręgu&nbsp;<em>Birczańskim</em>. Kopysno znajduje się w<span lang="en">&nbsp;</span>VIII krainie przyrodniczo-leśnej -&nbsp;<em>Karpackiej</em>, dzielnicy -&nbsp;<em>Pog&oacute;rze Środkowobeskidzkie</em>, mezoregionie -&nbsp;<em>Pog&oacute;rze Przemyskie</em>. Dominującym zespołem potencjalnej roślinności naturalnej na tym terenie są:&nbsp;<em>Tilio-Carpinetum</em>&nbsp;odm. małopolska f. podg&oacute;rska oraz&nbsp;<em>Dentario glandulosae-Fagetum</em>&nbsp;odm. wschodniokarpacka.</span></p>
+						<p align="justify"><span style="font-family: Arial;"><strong>Ochrona przyrody</strong></span></p>
+						<p align="justify"><span style="font-family: Arial;">Na terenie Kopysna znajdują się następujące formy ochrony przyrody:</span></p>
+						<p class="style13" align="justify"><strong>- parki krajobrazowe:</strong></p>
+						<p align="justify"><span class="style6">&nbsp;&nbsp;</span><span class="style12"><span class="style15">Park Krajobrazowy Pog&oacute;rza Przemyskiego (obejmuje całą miejscowość).</span></span></p>
+						<p class="style13" align="justify"><strong>- sieć NATURA 2000:</strong></p>
+						<p align="justify"><span class="style12"><span class="style15">&nbsp; PLB 180001 Pog&oacute;rze Przemyskie (obejmuje całą miejscowość),</span></span></p>
+						<p align="justify"><span class="style6">&nbsp;&nbsp;</span><span class="style12"><span class="style15">PLH 180012</span></em><span >&nbsp;Ostoja Przemyska</span><span class="style15">&nbsp;(obejmuje całą miejscowość).</span></span></p>
+						<p class="style2" align="justify"><strong>- rezerwaty przyrody:</strong></p>
+						<p align="justify"><span class="style10"><span class="style15">&nbsp; "Kopystańka" o powierzchni 188,67 ha (obejmuje część grunt&oacute;w Kopysna i część grunt&oacute;w Posady Rybotyckiej - zob.&nbsp;<a href="https://www.bdl.lasy.gov.pl/portal/mapy?t=0&amp;ll=22.623510,49.676151&amp;scale=36112&amp;map=0,1.0&amp;layers=0,1,2,3,4,5,8,9,10,11,12,14,15,16,17&amp;basemap=2&amp;extwms=">bdl.lasy.gov.pl</a>). Przedmiotem ochrony w rezerwacie objęto szczyt niezalesionej g&oacute;ry "Kopystańka" (541 m. n.p.m.) wraz z<span lang="en">&nbsp;</span>występującymi murawami kserotermicznymi i stanowiskiem naturalnym ostrożenia siedmiogrodzkiego, jak r&oacute;wnież zalesionym południowym zboczem g&oacute;ry ze zbiorowiskiem roślinnym podg&oacute;rskiej formy buczyny karpackiej (Oddz. 49, 50 i 51). Na zboczach g&oacute;ry dominuje kłosownica pierzasta a osobliwością jest występowanie ostrożenia siedmiogrodzkiego, tymotka Bohemera, przetacznika ząbkowanego zw. austriackim, przetacznika wiosennego. Na terenie rezerwatu stwierdzono występowanie: orlika krzykliwego, puszczyka uralskiego, dzięcioła zielonosiwego.</span></span></p>
+						<p class="style11" align="center"><a title="Tablica informacyjna rezerwatu" href="Images/rezerwat_tablica_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/rezerwat_tablica_d.jpg" alt="Tablica informacyjna rezerwatu" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+						<p align="center;"><p style="font-size: 12px;text-align: center;"> Tablica informacyjna rezerwatu</p></p>
+						<p class="style2" align="justify"><strong>- użytki ekologiczne:</strong></p>
+						<p class="style2" align="justify">&nbsp; "G&oacute;ra Kopystanka" o powierzchni 42,24 ha we władaniu Agencji Własności Rolnej Skarbu Państwa (użytek wchodzi w skład rezerwatu przyrody "Kopystańka"),</p>
+						<p class="style15" align="justify"><span class="style10">&nbsp; "Zesp&oacute;ł użytk&oacute;w ekologicznych 'Kopysno'" o powierzchni 8,76 ha we władaniu Nadleśnictwa Bircza(Oddziały 47 - f, h, j, k, l, p, r, cx; 47A - a, g; 7 - g). Celem ochrony są płaty nieużytkowanej roślinności, murawy kserotermiczne oraz bagno.</span></p>
+						<p class="style2" align="justify"><strong>- pomniki przyrody:</strong></p>
+						<ul>
+						<li>
+						<p class="style9" align="justify">2 dęby szypułkowe o obwodach pni - 380 i 420 cm (wysokość 20 i 21 m), rosnące w lesie należącym do Nadleśnictwa Bircza (Oddział 47A - c),</p>
+						</li>
+						<li>
+						<p class="style9" align="justify">buk pospolity o obwodzie pnia - 435 cm, rosnący w lesie należącym do Nadleśnictwa Bircza (Oddział 47A - c),</p>
+						</li>
+						<li>
+						<p class="style9" align="justify">kasztanowiec pospolity o obwodzie pnia - 260 cm, rosnący w lesie należącym do Nadleśnictwa Bircza (Oddział 47 - p),</span></p>
+						</li>
+						<li>
+						<p class="style9" align="justify">czereśnia ptasia o obwodzie pnia - 245 cm, rosnąca w lesie należącym do Nadleśnictwa Bircza (Oddział 5A - b).</span></p>
+						</li>
+						</ul>
+						<p align="justify"><span class="style18">Dokładną lokalizację i szczeg&oacute;łowe informacje na temat w/w form ochrony przyrody można znaleźć na stronie&nbsp;</span><a href="http://geoserwis.gdos.gov.pl/mapy/"><span class="style18">geoserwis.gdos.gov.pl</span></a><span style="font-size: small;">.</span></p>
+						<p class="style21"><strong>Lasy</strong></p>
+						<p align="justify">Pod względem własności większość stanowią lasy państwowe zarządzane przez Nadleśnictwa: Bircza i Krasiczyn, pozostałe są własnością AWRSP (7,22 ha) a część znajduje się w rękach prywatnych (21,52 ha).</p>
+						<p align="justify"><span class="style18">Szczeg&oacute;łowe informacje na temat las&oacute;w można znaleźć na stronie -&nbsp;</span><a href="https://www.bdl.lasy.gov.pl/portal/mapy?t=0&amp;ll=22.642929,49.680414&amp;scale=36112&amp;map=0,1.0&amp;layers=0,1,2,3,4,5,8,9,10,11,12,14,15,16,17&amp;basemap=2&amp;extwms="><span class="style18">bdl.lasy.gov.pl</span></a>.</p>
+						<p class="style21"><strong>Łowiectwo</strong></p>
+						<p align="justify">Kopysno podzielone jest na dwa obwody łowieckie (zob.&nbsp;<a href="https://www.bdl.lasy.gov.pl/portal/mapy?t=0&amp;ll=22.655289,49.684412&amp;scale=72224&amp;map=5,0.7&amp;layers=0,1,2,3,4,5,6,21,22,23,24,60,61&amp;basemap=2&amp;extwms=">bdl.lasy.gov.pl</a>). Obw&oacute;d nr 169 dzierżawi Koło Łowieckie "Dzik" a obw&oacute;d nr 170 Koło Łowieckie "Ryś", wszystkie zrzeszone w ZO PZŁ Przemyśl.</p>
+						<p class="style22">&nbsp;</p>
+						<hr size="1" width="60%" />
+						<p align="center"></p>
+						<p align="center"><img class="thumbnail img-fluid" src="Images/sosna_czarna_d.jpg" alt="Sosna czarna" width="320" height="426"  /></a></p>
+						<p  align="center"style="font-family: Arial;font-size: 12px;">Sosna czarna<br><em>Pinus nigra&nbsp;<em>J.F. Arnold<br>rosnąca na Horbysku</p>
+						<p align="center"><br><img class="thumbnail img-fluid" src="Images/ostrozen_d.jpg" alt="Ostrożeń siedmiogrodzki" width="320" height="242" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+						<p  align="center"style="font-family: Arial;font-size: 12px;">Ostrożeń siedmiogrodzki<br><em>Cirsium decussatum</em>&nbsp;Janka syn.&nbsp;<em>Cirsium eriophorum</em>&nbsp;&nbsp;(L.)<br />Scop. subsp.&nbsp;<em>decussatum</em>&nbsp;(Janka) Petr.<br />[Copyright &copy; by&nbsp;</span><a href="mailto:tomekzak@interia.pl"><span class="style18">Tomek Żak</span></a>]</span></p>
+						<p align="center"><br><img class="thumbnail img-fluid" src="Images/lulecznica_d.jpg" alt="Lulecznica kraińska" width="320" height="303" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+						<p  align="center" style="font-family: Arial;font-size: 12px;">Lulecznica kraińska<br><em>Scopolia carnicolica<em>&nbsp;Jacq.</span></p>
+						<p align="center"><br><img class="thumbnail img-fluid" src="Images/obrazki_plamiste_d.jpg" alt="Obrazki plamiste" width="320" height="420" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+						<p  align="center" style="font-family: Arial;font-size: 12px;">Obrazki plamiste<br /><em>Arum maculatum</em>&nbsp;L.<br />w tle Marzanka wonna, Bluszcz pospolity<br />[Copyright &copy; by Magda Żak]</span></p>
+						<p align="center"><br><img class="thumbnail img-fluid" src="Images/Zimowit_d.jpg" alt="Zimowit jesienny" width="507" height="336" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+						<p  align="center" style="font-family: Arial;font-size: 12px;">Zimowit jesienny<br /><em>Colchicum autumnale&nbsp;</em>L.</span></p>
+						<p align="center"><br><span style="font-size: small;"><img class="thumbnail img-fluid" src="Images/Modliszka_d.jpg" alt="Modliszka zwyczajna" width="507" height="336" longdesc="https://kopysno.pl/kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></span></a></p>
+						<p  align="center" style="font-family: Arial;font-size: 12px;">Modliszka zwyczajna<br /><em>Mantis religiosa</em></span></p>
+						<p>&nbsp;</p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="font-style: normal;text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>	
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}	
+					
+		</script>	
+    </body>
+</html>

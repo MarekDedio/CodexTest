@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;" href="Dzieje_wsi_poczatek.html">Okres od powstania wsi do 1772 roku</a>
+				<a style="font-size: 17px;"href="Od_rozbioru_do_I_wojny.html">Od I rozbioru Polski do 1914 roku</a>
+				<a style="font-size: 17px;"href="I_wojna_swiatowa.html">I wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_miedzywojenny.html">Okres miedzywojenny</a>
+				<a style="font-size: 17px;"href="II_wojna_swiatowa.html">II wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_powojenny.html">Lata powojenne</a>
+				<p align="center"><a style="font-size: 17px;"href="#">***</a></p>
+				<a style="font-size: 17px;"href="Dokumenty_do_pobrania.html">Dokumenty do pobrania</a>	
+				</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span>
+									<span id="title" style="display: block;">
+										II wojna światowa
+									</span>
+									<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>okres</button>
+								</span>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<p  align="justify">Kilku mieszkańc&oacute;w Kopysna (w tym byłych) brało udział w kampanii wrześniowej tj. Mikołaj i Michał Hałabut, Wasyl Kaczmar oraz J&oacute;zef Sobol i Jan Krupa. Wszyscy zostali wzięci do niewoli (zob. Dokumenty do pobrania&nbsp; <sup><a href="Dokumenty_do_pobrania.html#[7a]">[7a]</a></sup>).</span></p>
+<p  align="justify">W kampanii wrześniowej brał udział także Naftalin Zammer, ur. 3.03.1910 r. w Kopysnie, syn Mojżesza i Machli z domu Salik (Salek), pracownik fabryczny. Mieszkał w Przemyślu przy ul. Czarnieckiego 9 (zob.&nbsp;<a href="https://goo.gl/maps/CmH6SHDGfvjxeAx98">goo.gl/maps</a>). W czasie wojny służył w 5 pułku piechoty 4 kompanii jako strzelec. 28 września 1939 r. w Przemyślu został wzięty do niewoli niemieckiej i przebywał w obozie jenieckim przy ul. Lipowej 7 w Lublinie w Stalagu V A. Posiadał numer obozowy 6567 (więcej &ndash; zob. karta obozowa -&nbsp;<a href="https://cbj.jhi.pl/documents/830198/0/">cbj.jhi.pl</a>). Z karty obozowej wynika, że przebywał też w Stalagu V B oraz Stalagu VIII A (prawd. G&ouml;rlitz). W czasie pobytu w ostatnim obozie miał problemy ze zdrowiem i był w szpitalu (14.12.-19.12.1940 r.). Nieznane są jego dalsze losy.</p>
+<p  align="justify">13 września 1939 r. armia niemiecka wkroczyła do Kopysna.</p>
+<p align="justify"><span >Kopysno, choć nie było polem działań wojennych z tego okresu, zapisało się jako miejsce odwrotu wojsk polskich. Wspomina o tym płk dypl. Ludwik Tadeusz Schweizer - dow&oacute;dca 26 pułku ułan&oacute;w im. Hetmana Wlk. Litewskiego Jana Karola Chodkiewicza wchodzącego w skład Brygady Kawalerii Nowogr&oacute;dzkiej, kt&oacute;ry we wrześniu 1939 r. stanowił część Grupy Kawalerii gen. Andersa. Po rozformowaniu w dniu 27 września 1939 r. pułk ten podjął działania w celu przedostania się na terytorium &oacute;wczesnych Węgier. Dow&oacute;dca pułku w swej książce wspomina:&nbsp;<em>"Marsz ten zaczęliśmy około godziny 15-tej. Wprost z leśnicz&oacute;wki weszliśmy w lesiste g&oacute;ry, kt&oacute;rymi szliśmy już aż do przejścia na Węgry. Po stromych ścieżkach prowadziliśmy konie w rękach. Marsz i dla ludzi i dla koni był bardzo ciężki. Po p&oacute;łtorej godzinie wskazał nam przewodnik ze skraju lasu wieś Kopyśno, gdzie radził wziąć drugiego [przewodnika]. Dalej drogi nie znał. W Kopyśnie ludność patrzyła na nas jak na zjawy, nie chcąc wierzyć, że widzi jeszcze swoje wojsko. Młody chłop poprowadził nas na Łodzinkę. Jak się okazało był to rezerwista 2 p.p.g. Opowiadał o mobilizacji, jak ludzie czekali bez broni i umundurowania - aż przed zbliżaniem się Niemc&oacute;w odesłano ich do domu. Uprzedzał nas, że wszędzie na drodze spotkamy boj&oacute;wki ukraińskie, kt&oacute;re są dobrze zorganizowane i uzbrojone."</em>&nbsp;(L. Schweizer "Wojna bez legendy", Kirkcaldy (Szkocja) 1943).</span></p>
+<p  align="justify">19 września 1939 r. w Przemyślu żołnierze Wehrmachtu dokonali pogromu obywateli polskich pochodzenia żydowskiego. Wśr&oacute;d nich był Mendel Salik (nazwisko i imię wskazuje na osobę prowadzącą karczmę w Kopysnie) - zob.&nbsp;<a href="https://pl.wikipedia.org/wiki/Plik:Nowy_Cmentarz_Zydowski_-_Przemysl11.jpg"><span class="style3">wi</span>kipedia.org</a>.</p>
+<p align="justify"><span >Około 27 września 1939 r. na mocy paktu Ribbentrop - Mołotow do Kopysna wkroczyły wojska sowieckie (radzieckie) i od tej pory do 27 czerwca 1941 r. Kopysno było częścią Z.S.R.R.</span></p>
+<table  cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+	<tbody>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 1. Okupacja sowiecka (radziecka)</span></strong></p>
+	<p align="justify"> Okupacja sowiecka (radziecka) rozpoczęła się od 27 września 1939 r. i trwała do 27 czerwca 1941 r.&nbsp;</span></p>
+	<p align="justify"> W tym okresie, wiosną 1940 r. władze sowieckie (radzieckie) na zdobytych terenach zaczęły tworzyć tzw. kołchozy, co nie ominęło także Kopysna, gdzie pr&oacute;bowano zorganizować rolniczą sp&oacute;łdzielnię produkcyjną. Wybrano nawet przewodniczącego i siedmiu członk&oacute;w, lecz do założenia kołchozu nie doszło z braku czasu spowodowanego napaścią Niemiec na Z.S.R.R. (zob.&nbsp;<a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a><sup><a href="Dokumenty_do_pobrania.html#[15]">[15]</a></sup></span>).
+	<p align="justify">W 1941 r. do Armii Czerwonej został wcielony Jan Nienadowski s. Piotra i Janiny Łoś, ur. 1908 r. Wysłany na front zginął podczas działań wojennych pod Tarnopolem.</span></p></span></p>
+	</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 2. Okupacja niemiecka</span></strong></p>
+	<p align="justify"> Wojska niemieckie do Kopysna wkroczyły (po raz drugi) około 27 czerwca 1941 r., kilka dni po napaści na Z.S.R.R.</span></p>
+	<p align="justify"> W okresie od 3 listopada 1941 r. do lipca 1944 r. wieś należała do Generalnej Guberni, powiatu przemyskiego i gminy Rybotycze.</span></p>
+	<p align="justify"><span class="style6">Podczas II wojny światowej niekt&oacute;rzy mieszkańcy Kopysna, jak i osoby urodzone w tej miejscowości przebywały na terenie Niemiec i Austrii. Według dokument&oacute;w archiwalnych i innych źr&oacute;deł byli to m.in.:<br />
+		- J&oacute;zef Nienadowski, przyrodni brat Mikołaja z żoną Zofią i c&oacute;rką Marią&nbsp;</span> (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>)</span><span class="style6">,<br />
+		- bracia Kopko: Michał, Paweł i Mikołaj; opuścili wieś w 1940 r. We wsi pozostał brat Kopk&oacute;w - Piotr, kt&oacute;ry sprawował w tym czasie funkcję sołtysa&nbsp;</span> (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>),</span><span class="style6"><br />
+		- Katarzyna i Maria Kopko, c&oacute;rki Mikołaja Krupy ("Sadowij")&nbsp;</span> (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>),</span><span class="style6"><br/>- Maria Kazała, c&oacute;rka Michała i Justyny Pasławskich; wyjechała w kwietniu 1942 r. do Austrii&nbsp;</span> (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>)</span><span class="style6">,<br />
+		- Iwan Krupa "Siwak", kt&oacute;ry po powrocie w 1947 r. osiadł z rodziną na terenie ZSRR (obecnie Ukraina),<br />
+		- Roman Krupa, syn Stanisława, kt&oacute;ry zginął podczas wysiedlenia na wsch&oacute;d w 1945 r.&nbsp;</span> (zob.&nbsp;<a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a></span> <sup><a href="Dokumenty_do_pobrania.html#[15]">[15]</a></sup></span>),</span><br />- Anna Gierczak (Gerczak) (ur. 11.11.1921 r.), przebywała od 12.09.1941 r. do 28.04.1942 r. w Frickenhausen (Badenia-Wirtembergia),<br />- Paweł Hajduk (ur. 22.10.1914 r.), przebywał od 4.09.1942 r. do 29.03.1945 r. w&nbsp;Trockenerfuhrt i Kassel (Hesja),<br />- Roman Kaczmar (ur. 2.03.1920 r.), przebywał od 27.09.1942 r. do czerwca 1945 r. przebywał w Hille (Nadrenia P&oacute;łnocna Westfalia),<br />- Jan Kulhawiec (ur. 9.04.1920 r.), przebywał m.in. w miejscowości Stattegg (Austria),<br />- Jan Krupa (ur. 27.02.1898 r.), przebywał od 4.09.1942 r. do kwietnia 1945 r. w Trockenerfuhrt, Kassel i Hebel (Hesja),<br />- Maria Krupa (ur. 15.09.1922 r.), przebywała od 21.10.1942 r. w Helpershain i Alsfeld (Hesja),<br />- Michalina Łoś (Mychajlyna Los) (ur.1.11.1926 r.), przebywała w Tirschenreuth (Bawaria),<br />- Włodzimierz Łoś (Wladimir Los) (ur. 26.09.1920 r.), przebywał od 21.12.1942 r. w Selb (Bawaria),<br />- Zachariasz Łoś (Zacharij Los) (ur. 16.03.1920 r.), przebywał w Walsderhof i Tirschenreuth (Bawaria),<br />- Katarzyna Maksym (Katharina) (ur. 17.07.1918 r.), przebywała od 11.09.1941 r. do 20.10.1942 r. w Schweinfurt, Mellrichstadt, Unsleben, Stockheim, Bad Neustadt (Bawaria),<br />- Katarzyna Maksym (ur. 18.07.1917 r.), przebywała od 20.09.1941 r. w Bad Neustadt (Bawaria),<br />- Paweł Maksym (ur. 11.03.1916 r.), przebywał od 4.09.1942 r. w Trockenerfuhrt i Kassel (Hesja), od 6.01.1943 r. do 7.05.1945 r. przebywał w Dreźnie (Saksonia), gdzie pracował przy ul. Priessnitzstr. 7 III., po czym prowr&oacute;cił do kraju,<br />- Mieczysława, Wiesława (Miezlyra?)? Maksym (ur. 21.11.1904 r.), przebywała od 2.06.1944 r. do czerwca 1945 r. w Niemczech, pracowała w Helmag, Stegmann, Stadtwerke (prawd. nazwy firm),<br />- Maria Marcin&oacute;w (Martyniv) (ur. 1.07.1922 r.); wyszła za mąż w dniu 13.02.1946 r. w Monachium za Michała Kinasza,<br />- Iwan Mrzygłocki (ur. 2.01.1902 r.), przebywał od 13.10.1941 r. do 18.04.1945 r. w miejscowości Dortmund (Nadrenia P&oacute;łnocna Westfalia),<br />- Zofia Okołowicz (ur.19.05.1919 r.), przebywała od 12.09.1941 r. do 28.04.1942 r. w&nbsp;Frickenhausen (Badenia-Wirtembergia),<br />- Maria Kie (Kic) (ur. 1926 r.), przybyła 7.09.1942 r. do Riedlingen (Altheim), pracowała u Lukasa Mauz (Badenia-Wirtenbergia),<br />- Katarzyna Trus (ur. 1927 r.), Petro (Patro) Trus (ur. 1903 r.), Anita (Anida) Trus (ur. 1929 r.), J&oacute;zef (Josef) Trus (ur. 1930 r.) przebywali na terenie Niemiec od 14.03.1942 r., brak daty opuszczenia kraju.</span></p>
+	<p class="style27" align="justify"><span class="style7">Więcej informacji na temat mieszkańc&oacute;w Kopysna, kt&oacute;re przebywały poza Kopysnem w czasie II wojny światowej można znaleźć na stronie&nbsp;<a href="http://www.ancestry.com./">ancestry.com</a>&nbsp (zob. Dokumenty do pobrania</span> <sup><a href="Dokumenty_do_pobrania.html#[7a]">[7a]</a></sup>).</span></p>
+	<p align="justify"> Jeden z mieszkańc&oacute;w Kopysna - Mikołaj Hałabud (ur. 27.02.1900 r. w Kopysnie) został więźniem obozu koncentracyjnego w Buchenwaldzie, gdzie zmarł 30.04.1942 r. Posiadał wytatuowany numer obozowy - 3440 (zob.&nbsp;<a href="http://totenbuch.buchenwald.de/names/details/q/h/page/7/person/6271/ref/names" target="_blank">totenbuch.buchenwald.de</a>; Dokumenty do pobrania&nbsp;</span><sup><span class="style16"><a href="Dokumenty_do_pobrania.html#[7a]">[7a]</a></span></sup><span class="style16">).</span></p>
+	<p class="style9" align="justify">Paweł Bachurski (ur. 14.02.1887 r.) zgłosił się jako ochotnik do armii USA w punkcie poborowym w Chicago.</p>
+	<p class="style21" style="text-align: center;"><img class="thumbnail img-fluid"src="Images/Rc_d.jpg" alt="" width="210" height="152" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+	<p class="style34"style="text-align: center;font-size: 10px">Karta rejestracyjna</p>
+	<p align="justify">Na początku lipca 1942 r. Kopysno nawiedził grad (kule o wadze ok. 0,5 kg), kt&oacute;ry całkowicie zniszczył uprawy polowe i owoce w sadach. Uszkodzone zostały także domy. Jeden z mieszkańc&oacute;w uległ poważnym obrażeniom. Pomoc poszkodowanym zapewniły władze niemieckie, urządzając dla nich darmową kuchnię (zob.&nbsp;</span><a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a><sup><a href="Dokumenty_do_pobrania.html#[15]">[15]</a></sup></span>).</span>
+	<p align="justify">Zofia Hirsch (ur. 1900 r.) i Tola Schmidt (ur. 1898 r.) z domu Instrator pod koniec lipca 1942 r. poniosły śmierć w obozie zagłady w Bełżcu. Ich brat Mendel dostał się do KL Auschwitz-Birkenau, a drugi brat Moses został wywieziony przez Niemców w nieznanym kierunku (więcej o rodzinie Instator - zob. Dokumenty do pobrania</span> <sup><a href="Dokumenty_do_pobrania.html#[7a]">[7a]</a></sup>).</span></p>
+	<p align="justify">Wiosną 1943 r., do utworzonej przez Niemc&oacute;w 14 Dywizji Grenadier&oacute;w Waffen SS (1 ukraińska) wstąpił J&oacute;zef Popek (ur. 1.1.1914 r. w Kopysnie). W lipcu 1944 r. brał udział w bitwie z Armią Czerwoną pod Brodami (zob.&nbsp;<a href="http://galiciadivision.ml/memorial/list.html?page=06">galiciadivision.ml</a>).</span></p>
+	<p class="style6" align="justify">Michał (Michel) Gierczak (s. Jana i Marii Malko, ur. 4.01.1921 r. w Kopysnie; miał starszą siostrę i brata Jana - 8.11.1914-9.03.1993 r.), w czasie wojny mieszkał przy ul. Croix Blanche 33 w La Mure (Is&egrave;re) we Francji (zob.&nbsp;<a href="https://goo.gl/maps/qb7tWxP4ZafaBRvf8">Miejsce zamieszkania</a>). Wstąpił do ruchu oporu (FTPF [Francs-Tireurs et Partisans] - Wolni Strzelcy i Partyzanci, grupa Francuz&oacute;w [F]) a następnie został aresztowany przez Gestapo i uwięziony w koszarach Bonne w Grenoble.<br />Wieczorem 21.07.1944 r. wraz z grupą dziewięciu innych więźni&oacute;w, został wyprowadzony z więzienia do miejsca zwanego &bdquo;Le D&eacute;sert de l'&Eacute;cureuil&rdquo; w mieście Seyssinet-Pariset (Is&egrave;re) i tam stracony. 22 lipca zwłoki przeszyte kulami z pistolet&oacute;w maszynowych zostały znalezione przez burmistrza Seyssinet-Pariset i mieszkańc&oacute;w miasta i pochowane na miejskim cmentarzu. Michał (Michel) Gierczak został odznaczony tytułem "Mort pour la France" (Poległy za Francję) zatwierdzonym przez Francuskie Siły Wewnętrzne i pośmiertnie odznaczony Medalem Ruchu Oporu. Jego nazwisko widnieje na pamiątkowym pomniku dziesięciu patriot&oacute;w zastrzelonych przy Seyssinet-Pariset przy drodze departamentalnej 106b, na esplanadzie z Saint-Nizier-du-Moucherotte (zob.&nbsp;<a href="https://goo.gl/maps/fCfexE7JnSRbdnth9">Miejsce upamiętnienia</a>).</p>
+	<p class="style6" align="justify">Na terenie Francji w czasie wojny przebywała także Katarzyna Mandro (ur. 14.02.1921 r. w Kopysnie). Mieszkała w miejscowości Nilvange, gdzie zmarła 6.08.2018 r.</p>
+	</td>
+	</tr>
+	<tr>
+	
+	</tr>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 3. Uwolnienie spod władzy niemieckiej</span></strong></p>
+	<p align="justify">Armia Czerwona (1 Front Ukraiński) dotarła do Kopysna około 5 sierpnia 1944 r.&nbsp;</span></p>
+	<p align="justify">Według wspomnień mieszkańca wsi, pani Heleny Nienadowskiej, w Kopysnie zatrzymał się wtedy jeden z jej oddział&oacute;w, w większości młodzi żołnierze, kt&oacute;rzy nie mogli doczekać się kiedy znajdą się w Berlinie. Często pytali starszych os&oacute;b, jak daleko do Berlina. Byli przekonani, że znajdują się tuż u jego bram, że jest on za tą czy następną g&oacute;rą.&nbsp;</span></p>
+	<p align="justify">Na dużej łące, w pobliżu centrum wsi, znajdowała się kuchnia polowa, kt&oacute;rą w szczeg&oacute;lności były zainteresowane dzieci i młodzież. Podchodząc do niej oczekiwali, że skorzystają z zawartości kotła. Widząc to obsługujący kuchnię żołnierze, kazali im przynieść jakieś garnki lub wiadra, co ci szybko uczynili. Do pojemnik&oacute;w nalano im gorącą zupę, kt&oacute;rą podzielili się z resztą rodziny. Przy opuszczaniu wsi, pozwolono mieszkańcom wziąć dla siebie brązowy cukier, kt&oacute;ry - dlatego że był w bryłach - musiano dzielić przy pomocy siekiery. Wśr&oacute;d żołnierzy był także lekarz, kt&oacute;ry pom&oacute;gł ojcu pani Heleny, niedomagającemu od jakiegoś czasu na serce. Podał mu jakieś lekarstwo, po zażyciu kt&oacute;rego nigdy już nie miał z nim problem&oacute;w.</span></p>
+	<p align="justify">Tereny Kopysna po zajęciu przez Armię Czerwoną były kontrolowane pod kątem działalności ukraińskich nacjonalist&oacute;w. Według tajnego sprawozdania nr 3.88 sporządzonego przez zastępcę naczelnika Zarządu Politycznego 1 Frontu Ukraińskiego z dnia 15 października 1944 r. w rejonie Kopysna zaobserwowano obecność oddziału liczącego do 150 os&oacute;b, kt&oacute;ry od końca sierpnia realizował terrorystyczne akcje skierowane przeciwko żołnierzom Armii Czerwonej i polskim milicjantom.</span></p>
+	<p align="justify">W latach 1944-46 w rejonie Kopysna działał 218 pograniczny pułk (Gdyński) wojsk NKWD, kt&oacute;rego zadaniem była likwidacja UPA i innych oddział&oacute;w OUN i kt&oacute;ry przeprowadził w jej obrębie znaczące operacje (zob.&nbsp;<a href="http://www.pobeda1945.su/division/3386" target="_blank">pobeda1945.su</a>).&nbsp;</span></p>
+	</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 4. Podpalenie i spalenie części Kopysna</span></strong></p>
+	<p align="justify"> Tereny południowo-wschodniej Polski po wojnie stały się polem działań r&oacute;żnego rodzaju uzbrojonych grup, a w szczeg&oacute;lności UPA, kt&oacute;ra wraz z rozpoczęciem wysiedleń na tym terenie we wrześniu 1945 roku, przystąpiła do bardziej energicznych działań skierowanych przeciwko polskiej władzy. Niestety, podczas tych walk ucierpiała także ludność cywilna. Z opowiadań świadk&oacute;w tamtych lat wynika, iż każdy, bez względu na narodowość czy religię, m&oacute;gł wtedy stracić życie, co też i miało nierzadko miejsce.&nbsp;</span></p>
+	<p align="justify"> Według sprawozdań kurenia (batalion) UPA "Konyka" (Michał Galo (Halo)), 26 października 1945 roku Kopysno zostało spalone przez UPA przez sotnię &ldquo;Burłaki&rdquo; dowodzoną przez Włodzimierza Szczygielskiego; zachowało się jedynie kilka dom&oacute;w, w tym jeden należący do mieszkańca, kt&oacute;ry sprzyjał ich działalności. Podpalenia dokonali członkowie czoty (plutonu) 516 z sotni (kompania) "U-7". Natomiast według opr. "UPA TACTICAL SECTOR 26TH &ldquo;LEMKO&rdquo;: LEMKIVSHCHYNA AND PEREMYSHL REGIONS (Dokuments i Materials)" Litopys UPA, Volume 33, strona 172, spalenia opuszczonej wsi dokonała pierwsza czota&nbsp;</span>sotni "U-7" pod dow&oacute;dztwem Grzegorza Jankowskiego ps. &bdquo;Łastiwka&rdquo;&nbsp;<a href="Dokumenty_do_pobrania.html#[13]"><sup>[13]</sup></a></span><span class="style16">. Fotografie dow&oacute;dc&oacute;w sotni i kurenia - zob.&nbsp;</span><a href="http://graziowa.bloog.pl/id,339504879,title,Materialy-zrodlowe,index.html?smoybbtticaid=619e6c" target="_blank"><span class="style16">graziowa.bloog.pl</span></a><span class="style16">.</span></p>
+	<p align="justify"> Istnieje też wersja, iż podpalenia dokonali wysiedleni mieszkańcy wsi, kt&oacute;rzy stacjonując w pobliskiej miejscowości Wijsko (obecnie Nowe Sady), nocą powr&oacute;cili do Kopysna, aby tego dokonać. Iwan Krupa w swoich wspomnieniach (zob.&nbsp;</span><a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a><sup><a href="Dokumenty_do_pobrania.html#[15]">[15]</a></sup></span>)</span>&nbsp;pisze</span>, że niekt&oacute;rzy z wysiedlonych rzeczywiście powr&oacute;cili do Kopysna, gdy stacjonowali w Niżankowicach, lecz jedynie po to, by zabrać ze sobą paszę dla zwierząt, kt&oacute;ra im się kończyła.</span></p>
+	<p align="justify"> Z relacji jednego z mieszkańc&oacute;w wynika, iż w pożarze zginęła chora na gruźlicę kobieta (Anna Kaczmar z domu Krupa, żona Wasyla), kt&oacute;ra nie była w stanie wydostać się z płonącego domu. Jej teściowa pr&oacute;bując ją ratować, doznała obrażeń i po kilku dniach także zmarła. Zostały pochowane w jednej trumnie (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>).</span></p>
+	<p align="justify"> Bez względu na tożsamość sprawc&oacute;w podpalenia dom&oacute;w i innych obiekt&oacute;w (gospodarczych) we wsi, należy wyjaśnić, iż nie wszystkie zostały spalone we wspomnianym dniu. W p&oacute;źniejszym okresie według źr&oacute;deł ukraińskich&nbsp;<a href="Dokumenty_do_pobrania.html#[13]"><sup>[13]</sup></a>, żołnierze Wojska Polskiego dwukrotnie spalili część dom&oacute;w we wsi, tj. 20 grudnia 1945 r. - 6 dom&oacute;w (w tym 3 opuszczone i 3 zamieszkałe) i 11 listopada 1946 r. - 2 domy.</span></p>
+	</td>
+	</tr>
+	<tr>
+		</tr>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 5. Wysiedlenie ludności na wsch&oacute;d&nbsp;<span style="color: #ff3300;">*</span></span></strong></p>
+	<p align="justify"> W wyniku umowy tymczasowego organu władzy w Polsce (PKWN) z republikami radzieckimi (tzw. układy republikańskie - zob.&nbsp;</span><a href="http://www.interklasa.pl/portal/dokumenty/r_mowa/strony_pol02/dokumenty/dokumenty07.htm">www.interklasa.pl</a></span>) w ramach akcji masowych przesiedleń, przeprowadzonych w oparciu o kryterium etniczne na polsko-ukraińskim pograniczu, wielu mieszkańc&oacute;w Kopysna pod koniec września 1945 r. opuściło wieś i udało się do Z.S.R.R., na teren obecnej Ukrainy. Akcja ta objęła m.in. osoby i rodziny:&nbsp;</span></p>
+	<ul>
+	<li>
+	<p align="justify"> Hałujka (Hałujko?) Aleksandra,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Hamryszczak Zofia (po mężu Krupa),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Hyła Katarzyna,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kaczmar Iwan (ur. 1875 r. syn Iwana, żona Justyna ur. 1893 r., dzieci: Zofia ur. 1927 r., Michalina ur. 1929 r., Julia ur. 1932 r., Mikołaj ur. 1935 r.) oraz jego brat Andrzej,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kaczmar Stefania,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kaczmar Wasyl (ur. 26.01.1910, uczestnik kampanii wrześniowej) z żoną Marią oraz c&oacute;rka Paulina (Michalina?),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kettner,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kopałecki (Michał ur. 1902, Anastazja (z d. Krupa) ur. 1905 r., J&oacute;zef, Iwan (1939-2011 r.), Maria, Maria (z d. Pukałec)),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Kopko (Mykita z żoną Justyną oraz ich syn Piotr) kt&oacute;rzy po opuszczeniu wsi zamieszkali w miejscowości Buczacz (obecnie Ukraina),&nbsp;(zob.&nbsp;</span> <a href="Antoni_Jankowski.html">Historie Mieszkańców</a></span>),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Krupa "Sadowij" (Michał z żoną Katarzyną i ich czworo dzieci: Michalina, Stefania, Wira i Mikołaj), kt&oacute;rzy po opuszczeniu wsi zamieszkali w miejscowości Nag&oacute;rzanka (Nahirjanka) k. Buczacza (dziś będąca częścią Buczacza), (zob.&nbsp;</span> <a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a></span>),&nbsp;</span></p>
+	</li>
+	<li>
+	<p align="justify"> Krupa (rodzice Iwana "Siwak" - Piotr z żoną Zofią oraz dzieci: Maria z dziećmi (Marijka i Włodzimierz), Katarzyna, Olga, Anna, J&oacute;zef),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Krupa (Włodzimierz z rodzicami (?), brat Iwan z żoną Olgą i c&oacute;rkami (bliźniaczkami) Marijka i Anna),&nbsp;&nbsp;</span></p>
+	</li>
+	<li>
+	<p align="justify"> Krupa Iwan (kuzyn Iwana Krupy "Siwak"),</span></p>
+	</li>
+	<li>
+	<p align="justify"> Maksym Olga,</span></p>
+	</li>
+	<li>
+	<p align="justify"> Maksym (Anna wraz z domownikami: Anną, Zofią, Michaliną i Jerzym)&nbsp;</span> (zob.&nbsp;</span> <a href="Dokumenty.html">Dokumenty</a></span> &nbsp;- Dokumenty związane z wysiedleniem na wsch&oacute;d (1945))</span> .&nbsp;</span></p>
+	</li>
+	</ul>
+	<p align="justify"> W wyniku akcji przesiedleńczej wieś opuściło ponad 600 mieszkańc&oacute;w Kopysna, kt&oacute;rych osiedlono w obwodzie tarnopolskim, w rejonie Buczacza (Nowe Petlikowce, Puszkary, Podzameczek, Trybuchowce, Dźwinogr&oacute;d, Podlesie, Mateusz&oacute;wka), Czortkowa (Słob&oacute;dka Dżuryńska) i Monasterzyska (Korościatyn, Słob&oacute;dka). Ochronę wysiedlanych mieszkańc&oacute;w stanowili żołnierze 28 i 30 pułku piechoty 9 Dywizji Piechoty (Drezdeńska) Wojska Polskiego. Wszyscy wysiedlani kierowani byli do punktu granicznego w miejscowości Wijsko (obecnie Nowe Sady). Wysiedlana ludność mogła zabrać ze sobą żywy inwentarz oraz przedmioty gospodarstwa domowego o wadze do 2 ton na rodzinę załadowane na jedną furmankę. Kto nie posiadał furmanki, udostępniali ją mieszkańcy pozostający na miejscu, a jeżeli nie było to możliwe - przydzielano im wozy wojskowe (zob.&nbsp;<a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a></span> <sup><a href="Dokumenty_do_pobrania.html#[15]">[15]&nbsp;</a></sup></span><a href="http://www.interklasa.pl/portal/dokumenty/r_mowa/strony_pol02/dokumenty/dokumenty07.htm">www.interklasa.pl</a>)</span>.&nbsp;</span></p>
+	<p align="justify"> Po&nbsp; wysiedleniu ludności Kopysna, mocą dekretu polskich władz z dnia 5 września 1947 r. o przejściu na własność Państwa mienia pozostałego po osobach przesiedlonych do Z.S.R.R. (Dz.U. z 1947 r. Nr 59, poz. 318 -&nbsp;<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19470590318">isap.sejm.gov.pl</a>), pozostawione przez nich mienie (ruchome i nieruchome) przeszło bez odszkodowania na własność Państwa. Tryb orzekania o przejściu na własność Państwa mienia pozostałego po osobach przesiedlonych, określono w rozporządzeniu Ministr&oacute;w Skarbu oraz Rolnictwa i Reform Rolnych z dnia 15 lipca 1948 r. wydanego w porozumieniu z Ministrem Administracji Publicznej (Dz.U. z 1948 r. Nr 37, poz. 271-&nbsp;<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19480370271">isap.sejm.gov.pl</a>).<br />Ponadto, dekretem z dnia 28 września 1949 r. o zmianie ww. dekretu (Dz.U. z 1949 r. Nr 53 poz. 404 -<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19490530404">isap.sejm.gov.pl</a>) Państwo przejęło na własność także mienie os&oacute;b prawnych, kt&oacute;rych istnienie lub działalność wskutek przesiedlenia do Z.S.R.R. ich członk&oacute;w lub os&oacute;b tą działalnością objętych stała się bezprzedmiotowa. Według Eugeniusza Misiły, autora publikacji "Akcja Wisła. Dokumenty i materiały", zał. 24 (Warszawa 2013) zmiana ta objęła fundacje i korporacje oraz związana była z planowaną delegalizacją Cerkwi Greckokatolickiej w Polsce.</span></p>
+	<p align="justify"> <span style="color: #ff3300;">*</span>&nbsp;<span style="color: #000000; font-size: x-small;">- akcja nie jest tożsama z akcją "Wisła".</span></span></p>
+	</td>
+	</tr>
+	<tr>
+	
+	</tr>
+	<tr>
+	<td valign="top" >
+	<p align="justify"><strong> 6. Działalność UPA i Wojska Polskiego</span></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+	<p align="justify"> Według tabliczki umieszczonej na nagrobku na cmentarzu w Rybotyczach, w dniu 27.04.1944 r. w lesie "Grabnik&rdquo; został zamordowany Jan Korbecki (ur. 12.5.1901 r.). Jak twierdzą okoliczni mieszkańcy, zamordowany gajowy mieszkał w Rybotyczach wraz z żoną i dw&oacute;jką dzieci. Kt&oacute;regoś dnia przyszło do niego dw&oacute;ch ludzi (prawd. członkowie SB OUN), kt&oacute;rzy poprosili go o wycechowanie drewna w lesie "Grabnik", a potem go zamordowali. Ciało odnaleziono i pochowano na cmentarzu w Rybotyczach. Żona zamordowanego z obawy o własne życie i rodziny wyjechała do miejscowości Żurawica.&nbsp;</span></p>
+	<p align="justify"><span style="font-size: x-small;">Istnieją także inne wersje tego zdarzenia. Według pierwszej (zob.&nbsp;<a href="http://www.pieczko.net/resources/MARTYROLOGIUM.pdf">pieczko.net</a>) gajowy będąc pracownikiem Nadleśnictwa Nowe Sady został w 1944 r. uprowadzony i rozstrzelany przez UPA w lesie (Nr oddz. 34) a jego miejsce poch&oacute;wku nie jest znane. Z drugiej wersji (zob.&nbsp;<a href="http://www.krosno.lasy.gov.pl/documents/149008/20623145/lesnicy_poniesli_smierc.pdf">krosno.lasy.gov.pl</a>) natomiast wynika, że gajowy był pracownikiem Nadleśnictwa Błażowa i został w dniu 26.04.1944 r. zamordowany w Posadzie Rybotyckiej, prawdopodobnie przez UPA.&nbsp;</span></p>
+	<p align="center"><a title="Gr&oacute;b Jana Korbeckiego - Rybotycze, cmentarz katolicki" href="Images/jan_korbecki_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/jan_korbecki_d.jpg" alt="Gr&oacute;b Jana Korbeckiego - Rybotycze, cmentarz katolicki" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+	<p class="style8" align="center"><span style="text-align: center;font-size: 10px">Gr&oacute;b Jana Korbeckiego - Rybotycze, cmentarz kat.</span></p>
+	<p class="style9" align="justify"> Z doniesień archiwalnych UPA wynika, że 3 września 1944 r. polska milicja zaczęła plądrować dobytek mieszkańc&oacute;w Kopysna. Dwa roje (drużyny) UPA wykonały zasadzkę na powracających grabieżc&oacute;w. Raniono jednego z nich, kt&oacute;remu po opatrzeniu rany wyjaśniono, że UPA nie walczy z Polakami jako narodem, lecz z bolszewickim okupantem wspieranym przez polskich i ukraińskich nacjonalist&oacute;w, po czym milicjanta zwolniono (zob. <span lang="PL"><a href="http://www.ukrcenter.com/%D0%9B%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C-%D0%93%D0%B0%D0%BB%D0%B0%D1%81%D0%B0-/26021-3/%D0%9D%D0%B0%D1%88%D0%B5-%D0%B6%D0%B8%D1%82%D1%82%D1%8F-%D1%96-%D0%B1%D0%BE">ukrcenter.com</a>).</span></span></p>
+	<p class="style9" align="justify">W maju 1945 r. Mikołaj Gierczak z Kopysna został zamordowany przez boj&oacute;wkę SB OUN Rejonu "B II", Nadrejonu "Chołodny Jar" za podejrzenia o wsp&oacute;łpracę z WP (Wojsko Polskie) i NKWD. Za zab&oacute;jstwo był odpowiedzialny referent SB o pseudonimie "Roman".&nbsp;</p>
+	<p align="justify"> Według danych zawartych w archiwach Wojska Polskiego, 17 grudnia 1945 r. na drodze prowadzącej z Rybotycz, w&nbsp;lesie "Grabnik", kompania fizylier&oacute;w z 28 pułku piechoty 9 DP wysłana do Kopysna jako ochrona zbioru kontyngentu została zaatakowana przez sotnię UPA "Burłaki". W zasadzce poległo 2 oficer&oacute;w i 3 szeregowc&oacute;w (ppor. Jan Darmograj, dow&oacute;dca plutonu kompanii rusznic przeciwpancernych - s. Pawła, ur. 8.04.1918r. w ZSRR; zob.
+		<a href="https://zbc.uz.zgora.pl/dlibra/publication/82369/edition/75362">zbc.uz.zgora.pl</a> - s.161 i 162; ppor. Zenon Radulewicz - s. Wincentego; st. szer. Piotr Kiszkis - s. Władysława, ur. 1926r. ZSRR; szer. Bronisław Pożoga - s.&nbsp;Emila, ur. 1922r.; szer. Ryszard Witek - s. J&oacute;zefa, ur. 1923r.), 3 szeregowc&oacute;w zostało rannych. Zginęło kilku członk&oacute;w UPA. O wszystkim zaalarmowano 1 batalion 28 pułku piechoty stacjonującego w Rybotyczach. Na podstawie danych UPA, w zasadzce zginęło 3 żołnierzy, 5 udało się uciec, a 3 rannych dostało się do niewoli. Dw&oacute;ch wziętych do niewoli oficer&oacute;w (ppor. Jan Darmograj i ppor. Zenon Radulewicz) na podstawie wyroku sądu polowego zwołanego przez komendanta oddziału U-4 (kryptonim jednej z czterech sotni, na czele kt&oacute;rych stał por. "Konyk") rozstrzelano. Na wolność wypuszczono jednak szeregowca, kt&oacute;ry dotarł do Rybotycz i powiadomił o&nbsp;wszystkim swoje dow&oacute;dztwo. Zdaniem innych w zasadzce zginęli wszyscy żołnierze, za wyjątkiem jednego, kt&oacute;ry uciekając doliną potoku Kamiennego dotarł do Rybotycz i zawiadomił posterunek milicji. Na milicję dotarł jedynie w bieliźnie i miał pokrwawione stopy (mundur zdjął pośpiesznie). Z zeznań mieszkańc&oacute;w Kopysna wynika, iż napadu na grupę żołnierzy dokonali przebrani w cywilne ubrania członkowie oddziału UPA, przez co uznano, iż stali za tym mieszkańcy Kopysna. Jak twierdzą świadkowie tamtych wydarzeń, w domu jednego z mieszkańc&oacute;w Kopysna&nbsp; przed akcją przebywali członkowie UPA biorący w niej udział.</span></p>
+	<p align="justify"><span class="style6">Zdaniem świadk&oacute;w tamtych wydarzeń, w odwecie za atak UPA na kompanię fizylier&oacute;w Kopysno miało zostać spacyfikowane. Na szczęście nie doszło do tego dzięki rozsądkowi jednego z oficer&oacute;w Wojska Polskiego z 1 batalionu stacjonującego w Rybotyczach, kt&oacute;ry zebrawszy na placu obok cerkwi wszystkich mieszkańc&oacute;w, w ostateczności podjął decyzję o zarekwirowaniu im jedynie bydła i&nbsp;trzody. Każdy kto m&oacute;gł, oddał wojsku to, co posiadał. Opuszczając Kopysno z zarekwirowanym dobytkiem, żołnierze napotkali w&nbsp;pobliżu Rybotycz nadciągający oddział (prawd. 218 pogranicznego pułku wojsk NKWD), kt&oacute;ry miał dokonać pacyfikacji. Poinformowano ich jednak, że problem został już rozwiązany, przez co wieś jej uniknęła. Według wersji ujętej w źr&oacute;dłach UPA</span> &nbsp;</span><a href="Dokumenty_do_pobrania.html#[13]"><sup><span class="style6">[13]</span></sup></a><span class="style6">&nbsp;wydarzenie to miało miejsce 20 grudnia 1945 r. Ich zdaniem Wojsko Polskie, kt&oacute;re przybyło do Kopysna w liczbie około 150 żołnierzy pobiło i okradło chłop&oacute;w. Między innymi wdowę Sus Emilię, kt&oacute;rej zrabowali ostatnie ubrania i 600 zł. Od pozostałych jeszcze w Kopysnie 10 ukraińskich gospodarzy (<em>przypis własny</em>&nbsp;- wśr&oacute;d nich byli także Polacy) zabrali ostatnią trzodę, a mianowicie 13 kr&oacute;w i 7 koni. Aresztowali kilku mężczyzn w r&oacute;żnym wieku, kt&oacute;rych mocno pobili a następnego dnia zwolnili. Zatrzymali także w wiosce 6-letniego chłopca, kt&oacute;rego pytali, strzelając mu nad głową, gdzie znajdują się banderowcy. Zastępcę sołtysa - Kulhawca Mikołaja zabrali ze sobą do Żurawicy koło Przemyśla. Wojsko Polskie spaliło 6 chat z tego 3 opuszczone i 3 zamieszkałe. Między innymi spalono chatę furmana, kt&oacute;ry woził do Huwnik zabitych polskich żołnierzy, gospodarza, kt&oacute;ry pomagał układać zwłoki na w&oacute;z oraz chatę gospodarza, kt&oacute;ry cały czas rozmawiał z Polakami w języku ukraińskim. W chatach spalił się cały majątek, bo Wojsko Polskie nie pozwoliło niczego ratować.</span></p>
+	<p class="style9" align="justify">W dniu 15 lutego 1946 r. o godzinie 11, Wojsko Polskie w liczbie 12 żołnierzy na koniach przejechało przez Kopysno do Rybotycz, gdzie mieszkał sołtys z Kopysna, kt&oacute;rego aresztowano i zawieziono do Przemyśla (zob.&nbsp;<a href="http://referat.znate.ru/text/index-51315.html?page=270">referat.znate.ru</a>).</p>
+	<p align="justify"> W połowie czerwca 1946 r. według zeznań Ochoty - "Ostapa" - dow&oacute;dcy 3 czoty "Burłaka", podczas sianokos&oacute;w w Kopysnie, pododdział (24 podchorążych) z Oficerskiej Szkoły Saper&oacute;w 9 DP pomimo ubezpieczenia ze strony karabin&oacute;w maszynowych został pojmany przez 1 i 3 czotę - sotni "Burłaka". Żołnierzy rozbrojono, zdjęto z nich mundury, a po wręczeniu ulotek propagandowych wszystkich zwolniono.&nbsp;</span><span class="style16">Według wersji ujętej w źr&oacute;dłach UPA</span> &nbsp;</span><a href="Dokumenty_do_pobrania.html#[13]"><sup><span class="style16">[13]</span></sup></a> &nbsp;miało to miejsce 14 czerwca 1946 r., kiedy czota złapała i rozbroiła 23 żołnierzy Wojska Polskiego (w tym &ndash; 1 podporucznik, 5 podoficer&oacute;w i 17 szeregowych), kt&oacute;rzy przybyli do wsi Koniusza ze wsi Kopysno, gdzie przyjechali z grupą kosić trawę. Dow&oacute;dca sotni dał rozkaz czotom 510 i 511 rozbrojenia całej grupy 23 podchorążych. W tym celu dwie czoty, wykorzystując dogodne położenie, okrążyły całą grupę na polanie pomiędzy wsiami Kopysno i Koniusza, niespodziewanie uderzając na nią tak, że wszyscy żołnierze bez jednego wystrzału poddali się. Wszystkich żołnierzy rozbrojono i &bdquo;rozmundurowano&rdquo;, a po odpowiednio przeprowadzonej z nimi rozmowie, w porozumieniu ze Służbą Bezpieczeństwa, wypuszczono. Wątpliwości budzi liczba pojmanych żołnierzy (23 czy 24?) oraz miejsce akcji (z mapy wg źr&oacute;deł UPA wynika, że pojmania dokonano w Kopysnie a nie w Koniuszy lub pomiędzy tymi wsiami).</span></p>
+	<p align="justify"> Jak doniosło ECHO POŁUDNIA z 30 września 1946 r. "Silna grupa banderowców w liczbie około 100 ludzi, ubranych w mundury polskie, uzbrojonych w broń automatyczną i maszynową wtargnęła do gromady Rybotycze, zabierając 1500 kg zboża tytułem kontyngentu wsi na wyżywienie oddziałów banderowskich. Zboże zostało załadowane na 4 furmanki i wywiezione w kierunku wsi Kopysno. (zob.&nbsp;<a href="http://mbc.malopolska.pl/dlibra/docmetadata?id=94945&from=&dirids=1&ver_id=&lp=1&QI=">mbc.malopolska.pl</a>).</p>
+	<p align="justify"> 2 maja 1947 r. w wyniku ran odniesionych w Kopysnie podczas walk z UPA, zmarł w szpitalu ppor. Stanisław Włodarczyk - s. Piotra (28 pp). 1 października 1947 r. zginął w Kopysnie z rąk UPA st. szer. Jan Łoboda - s. Stanisława, ur. 1925 r. pow. Żywiec. Jego gr&oacute;b znajduje się w Przemyślu, na cmentarzu Zasanie, pole 14.</span></p>
+	<p align="center"><a title="Gr&oacute;b Jana Łobody - Przemyśl, cmentarz Zasanie" href="Images/jan_loboda_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/jan_loboda_d.jpg" alt="Gr&oacute;b Jana Łobody - Przemyśl, cmentarz Zasanie" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+	<p class="style8" style="text-align: center;font-size: 10px"> Gr&oacute;b Jana Łobody - Przemyśl, cmentarz Zasanie</span></p>
+	<p class="style5" align="justify">Według danych dostępnych w IPN (<a href="https://ipn.gov.pl/pl/form/r444096390,Akta-sledcze-Kaczmar-Paulina-c-Potra-ur-21011925-r-w-m-Kopystno-pow-Przemysl.html"><span class="style3">ipn</span>.gov.pl</a>) jedna z os&oacute;b, mieszkańc&oacute;w Kopysna została oskarżona&nbsp;o wsp&oacute;łpracę z UPA i osadzona w więzieniu w Fordonie, dzielnicy miasta Bydgoszcz.</p>
+	<p class="style5" align="justify"><span class="style28">Więcej i bardziej szczeg&oacute;łowych informacji o działaniach UPA i Wojska Polskiego w Kopysnie w latach 1945-46 zawiera załącznik</span><span class="style7">&nbsp;</span><span class="style28">-&nbsp;</span> <span class="style28">"Działalność UPA i WP w latach 1945-46 wg źr&oacute;deł ukraińskich"&nbsp;</span><a href="Dokumenty_do_pobrania.html#[13]"><sup>[13]</sup></a>.</span></p>
+	</td>
+	</tr>
+	<tr>
+	
+	</tr>
+	<tr>
+	<td valign="top" >
+
+</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			var header = document.getElementById("myHeader");
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				scrollFunction();
+				myFunction();
+			};
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+				{
+					var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+					var header = document.getElementById("myHeader");
+					if (window.pageYOffset > BannerHeight)
+					{
+						header.classList.add("sticky");
+						document.getElementById("texto").style.paddingTop="42px";
+					} 
+					else 
+					{
+						header.classList.remove("sticky");
+						document.getElementById("texto").style.paddingTop="0px";
+					}
+				}
+			function BothIntervals()
+			{
+				checkWidth();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);			
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>	
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}		
+		</script>
+		<script>
+			function checkWidth()
+			{
+				title = document.getElementById("title")
+				button = document.getElementById("buttonSidenav")
+
+				titleWidth = title.offsetWidth;
+				buttonWidth = button.offsetWidth;
+
+				ButtonTitleRatio = titleWidth/buttonWidth;
+
+				if(ButtonTitleRatio<=5.2)
+				{
+					title.innerHTML = " ";
+				}
+				else
+				{
+					title.innerHTML = "II wojna światowa";
+				}
+				//console.log({titleWidth,buttonWidth,ButtonTitleRatio});
+			}	
+		</script>		
+    </body>
+</html>

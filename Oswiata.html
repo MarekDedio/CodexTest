@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;"href="Zabytkowe_obiekty.html">Zabytkowe obiekty</a>
+				<a style="font-size: 17px;"href="Zabytki_i_spolecznosc.html">Ludność</a>
+				<a style="font-size: 17px;"href="Oswiata.html">Oświata</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span id="title">
+									Oświata
+								</span>
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>tematykę</button>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<p align="justify">W Kopysnie w XIX wieku istniała szkoła powszechna, jednoklasowa. Rozpoczęła swą działalność po wejściu w życie postanowień noweli do ustawy szkolnej&nbsp;<em>o zakładaniu i utrzymywaniu publicznych szk&oacute;ł&nbsp; ludowych i obowiązku posyłania dzieci do szk&oacute;ł</em> z 1883 r.
+									Na jej podstawie Rada szkolna krajowa na posiedzeniu w dniu 9.12.1886 r. podjęła uchwałę o zorganizowaniu szkoły filialnej w Kopysnie z dniem 1.09.1888 r. 
+									(zob. <a href="https://archive.org/details/jbc.bj.uj.edu.pl.NDIGCZAS066260_1886_051/page/402/mode/2up?q=Kopysnie">archive.org</a>).
+									Warto podkreślić, iż na wzniesienie budynku szkoły zapomogi udzielił sam cesarz Franciszek J&oacute;zef, o czym doniosła Gazeta Lwowska (</span>Nr 177, z dnia 5 sierpnia 1887 r.)</span>, w kt&oacute;rej czytamy:</span></p>
+<p align="justify"><em><strong>"Najjaśniejszy Pan raczył najmiłościwiej udzielić z prywatnej Swej szkatuły gminie Kopyśno, w powiecie dobromilskim, na budowę szkoły, zapomogi w kwocie 100 zł.&rdquo;</span>&nbsp;</strong></em></p>
+<p align="justify">Według Szematyzmu Szkół Podstawowych Ogólnokształcących (<a href="https://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ144197808&query=%22Kopysno%22&ref=astor.public&order=645 ">digital.onb.ac.at</a>) w kwietniu 1890 r., w zastępstwie naukę w szkole prowadziła Aniela Faliszewska.
+	Do szkoły uczęszczało w tym czasie 57 osób (22 mężczyzn, 35 kobiet - 55 osób wyznania greckokatolickiego i 2 osoby wyznania mojżeszowego).
+	Prawdopodobnie później, lecz w tym samym roku 1890, naukę w szkole (w zastępstwie) prowadziła Aniela Bar&oacute;wna.&nbsp;</span><span>J&oacute;zef Fastnacht (potomek Simona Fastnachta - kolonisty z miejscowości Melchingen, le</span>żącej w Badenii-Wirtembergii, kt&oacute;ry w 1783 r. osiedlił się w m. Falkenberg, obecnie Nowe Sady)&nbsp; przejął nad nią kierownictwo w okresie od 1891 do 1901 roku i w latach 1906-1908. Potwierdza to historia rodziny (zob.&nbsp;<a href="http://www.brodzianie.one.pl/wspfast.php" target="_blank">brodzianie.one.pl</a>). Szkołę w latach 1902-1903 (w zastępstwie) prowadziła Emilia Figol. W roku 1909 szkołą zarządzał Zygmunt Jastrzębski a następnie w latach 1910-1913&nbsp;</span>Piotr Siemaszek. 
+	Od 1 marca 1920 roku do 1924 (?) szkołę prowadził Eugeniusz Biliński. 
+	Dostępne dokumenty potwierdzają, iż urodził się on w 1893 r., był wyznania rzymsko-katolickiego, narodowości polskiej, żonaty, posiadał egzamin kwalifikacyjny i był tymczasowym kierownikiem szkoły. Podczas jego pracy, budynek szkolny był drewniany, jednoizbowy i wynajmowany, a językiem nauczania był "ruski". 
+	Przed 1932 r. nauczycielką w szkole była Maria Rzucidłówna (przeniesiona w 1932 r. do m. Rosenburg p. Dobromil - 
+	<a href="https://archive.org/details/jbc.bj.uj.edu.pl.NDIGCZAS007933_1932_002/page/84/mode/2up?q=Kopysnie">archive.org</a>).
+	W późniejszych latach według zeznań mieszkańc&oacute;w w szkole uczyła Lidia Hnatyszak, siostra Romana, kt&oacute;rego gr&oacute;b znajduje się na cmentarzu w Kopysnie. Według Iwana Krupy (zob.&nbsp;</span>"<a href="files/Iwan%20Krupa%20-%20Kopysno.pdf">Iwan Krupa - Kopysno</a>"</span>)&nbsp;</span>od roku 1935 nauczycielką w szkole była Halina Bak ze Lwowa, narodowości ukraińskiej. W tym okresie były cztery klasy. 
+	Nauczano języka polskiego, arytmetyki, historii (po polsku i ukraińsku) i religii (po ukraińsku). Zdaniem innych w szkole nauczano także języka niemieckiego.</span></p>
+<p align="justify">Przez II wojną światową (prawd. od 1936 r.), powyżej cerkwi powstał "Dom Narodowy" w kt&oacute;rym była czytelnia prowadzona przez Towarzystwo "Proswita", zajmujące się szerzeniem oświaty wśr&oacute;d ukraińskiej ludności wiejskiej i małomiasteczkowej. Dom ten znajdował się na terenie nieruchomości będącej własnością Parafii Greckokatolickiej (wg numeracji z 1852 r. - działki nr 654 i 655, działka budowlana nr 27), jak na załączonej mapce.</p>
+<p align="center"><img class="thumbnail img-fluid"src="Images/Cgk_dom_n.jpg" alt="" width="132" height="170" border="1" /></p>
+<p align="justify">Kopysno miało także przed II wojną światową sw&oacute;j ch&oacute;r cerkiewny prowadzony przez ks. Aleksandra Hajdukiewicza (zob.&nbsp;<a href="Osoby.html">Osoby</a></span>&nbsp;- Og&oacute;lne - Członkowie ch&oacute;ru cerkiewnego). Sołtysem wsi był w&oacute;wczas Bazyli Krupa.&nbsp;&nbsp;</span></p>
+<p class="style16" align="justify">W czasie II wojny światowej w Kopysnie funkcjonowała publiczna szkoła podstawowa z ukraińskim językiem nauczania, w kt&oacute;rej nauczycielem był&nbsp; niejaki Kuśnierz. Jego nazwisko widnieje na świadectwie nauczania wydanym w 1943 r. dla Mikołaja Kaczmara.</p>
+<p class="style43" style="text-align: center;"><img class="thumbnail img-fluid"src="Images/Sw_szkolne.jpg" alt="" width="607" height="526" /></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}	
+					
+		</script>			
+    </body>
+</html>

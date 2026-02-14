@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: #EEEEEE !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_rchiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div id="xxx" onclick="dissapear();" class="container-fluid"style="background-color: #EEEEEE">
+			<div id="texto"class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Kopystanka</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">
+						<div class="col" style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<p style="text-align: center;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/01d.jpg">
+							</p>
+							<span >
+								Kopystanka widziana z Horbyska
+							</span>
+						</div>		
+						<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/02d.jpg">
+								<br><br>
+								Widok z Kopystanki w kierunku południowo-wschodnim
+						</div>
+						<div class="col-lg"style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/03d.jpg">
+							<br><br>
+							<span>
+								Widok z Kopystanki na Horbysko
+							</span>
+						</div>
+						<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<p style="text-align: center;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/04d.jpg"title="abc">
+								<br><br>
+								Widok z Kopystanki na Pikulec
+							</p>						
+						</div>					
+			</div>
+			<div class="row">
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/05d.jpg"title="abc">
+						<br><br>
+						Widok z Kopystanki na Szybenicę
+					</p>						
+				</div>
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/06d.jpg"title="abc">
+						<Br><Br>
+							Widok z Kopystanki na Kalwarię Pacławską i okolice
+					</p>						
+				</div>
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/07d.jpg"title="abc">
+						<br><br>
+						Widok z Kopystanki na wieś Kopysno
+					</p>						
+				</div>
+			</div>
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Horbysko</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">
+						<div class="col" style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<p style="text-align: center;">
+								<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/08d.jpg">
+							</p>
+						</div>		
+						<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+								<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/09d.jpg">
+						</div>								
+			</div>
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Grodzisko
+					</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">
+				<div class="col" style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/12d.jpg">
+					</p>
+					<span >
+						W tym miejscu był gród
+					</span>
+				</div>		
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/14d.jpg">
+						<br><br>
+						Zachodnie zbocze, w dole potok Grabnik
+				</div>
+				<div class="col-lg"style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/11d.jpg">
+					<br><br>
+					<span>
+						Widok na wzgórze, na którym usytuowany był
+						gród średniowieczny
+					</span>
+				</div>
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/15d.jpg"title="abc">
+						<br><br>
+						Potok Grabnik wypływający ze wschodniej części zbocza,
+						poniżej grodu
+					</p>						
+				</div>
+			</div>
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Cmentarz dla zmarłych na cholerę
+					</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">		
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/16d.jpg">
+					<br><br>
+					Krzyż przy cmentarzu
+				</div>
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/17d.jpg">
+					<br><br>
+					Poniżej krzyża znajdował się cmentarz
+				</div>								
+			</div>	
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Dwór					</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">
+						<div class="col" style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<p style="text-align: center;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/18d.jpg">
+							</p>
+							<span >
+								Niewielki pagórek, na którym stał dwór
+							</span>
+						</div>		
+						<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/22d.jpg">
+								<br><br>
+								Źródełko zasilające staw
+						</div>
+						<div class="col-lg"style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/20d.jpg">
+							<br><br>
+							<span>
+								Pozostałość po stawie, widoczne wały ziemne
+							</span>
+						</div>
+						<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+							<p style="text-align: center;">
+								<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/21d.jpg"title="abc">
+								<br><br>
+								Rozlewisko ze źródełka zasilającego staw
+							</p>						
+						</div>					
+			</div>
+			<div class="row">
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/19d.jpg"title="abc">
+						<br><br>
+						Fragmenty fundamentów, które pozostały po dworze
+					</p>						
+				</div>
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/23d.jpg"title="abc">
+						<Br><Br>
+							Najstarsze drzewa rosnące nad stawem
+					</p>						
+				</div>
+				<div class="col-xl"style="padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<p style="text-align: center;">
+						<img style="width: auto; height: 300px;"class="thumbnail img-fluid"src="Images/galeria01/24d.jpg"title="abc">
+						<br><br>
+						Wiekowy dąb z wypróchniałym i podpalonym pniem,
+						świadek dawnych czasów
+					</p>						
+				</div>
+			</div>	
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Cerkiew
+					</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">		
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/25d.jpg">
+					<br><br>
+					Cerkiew
+				</div>
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/26d.jpg">
+					<br><br>
+					Dzwonnica
+				</div>								
+			</div>
+			<div class="row"style="background-color:#EEEEEE;">
+				<div class="col"style="text-align: center;">
+					<p style="padding:20px;text-align: center;font-family: Arial;margin:20px;background-color: white;border-radius: 15px;font-size: 20px"><strong>Kapliczka św. Jana
+					</strong></p>
+				</div>
+			</div>
+			<div class="row" style="background-color:#EEEEEE;text-align: center;">		
+				<div class="col-md" style=" padding: 40px;text-align: center;background-color: white;border-radius: 15px;margin: 20px;">
+					<img style="width: auto; height: 400px;"class="thumbnail img-fluid"src="Images/galeria01/27d.jpg">
+					<br><br>
+					Kapliczka po renowacji (2009)
+				</div>
+			</div>		
+			<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+				© Copyrights Dedio & Dedio & Dedio 2003-2026
+			</div>
+				<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+			</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				myFunction();
+			}
+			setInterval(BothIntervals,25);
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>		
+    </body>
+</html>

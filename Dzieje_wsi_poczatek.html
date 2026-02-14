@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 5px !important;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;" href="Dzieje_wsi_poczatek.html">Okres od powstania wsi do 1772 roku</a>
+				<a style="font-size: 17px;"href="Od_rozbioru_do_I_wojny.html">Od I rozbioru Polski do 1914 roku</a>
+				<a style="font-size: 17px;"href="I_wojna_swiatowa.html">I wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_miedzywojenny.html">Okres miedzywojenny</a>
+				<a style="font-size: 17px;"href="II_wojna_swiatowa.html">II wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_powojenny.html">Lata powojenne</a>
+				<p align="center"><a style="font-size: 17px;"href="#">***</a></p>
+				<a style="font-size: 17px;"href="Dokumenty_do_pobrania.html">Dokumenty do pobrania</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;height:65px;">
+								<span>
+									<span id="title" style="display:block">
+										Okres od powstania wsi do 1772 roku
+									</span>
+							<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>okres</button>
+								</span>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify"> <strong><span style="color: #000080;">Kopysno</span></strong>&nbsp;<sup><a href="Dokumenty_do_pobrania.html#[1]">[1]</a></sup>&nbsp;musiało istnieć już w XIV&nbsp;<span class="style7"><strong>*</strong></span>&nbsp;wieku, gdyż jak wynika z dokumentu z 12 marca 1408 r. [pisany po rusku], kiedy kr&oacute;l Władysław Jagiełło nadał J&oacute;zefowi Bieduniowi, swemu rycerzowi za jego wierną służbę miejscowość Kopysno, były już tam obiekty, kt&oacute;re nie mogły powstać w kr&oacute;tkim okresie. W akcie czytamy o nadaniu "<em>horodyszcza Kopystno, cerkwi pw. Pokrowy Matki Bożej, dworzyszcza pustego zwanego Bodnarskie pod horodyszczem, lasu Struczyna, łąk Mochowisko Małe i Duże, żeby służyły dworzyszczu.</em>" ("Акты Южной и Западной Руси". Т.1, С.-Петербург,1863,&nbsp; С.6 -&nbsp;<a href="http://www.sedmitza.ru/data/303/023/1235/5_9.pdf">sedmitza.ru</a>, plik pdf, s.6;&nbsp;</span><span class="style16">"Kopiariusz przywilej&oacute;w, dekret&oacute;w i r&oacute;żnych akt odnoszących się do d&oacute;br rodziny Kmit&oacute;w z lat 1397-1601 -&nbsp;</span><span class="style16"><a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a>&nbsp;<sup> <a href="Dokumenty_do_pobrania.html#[1a]">[1a]</a></span></sup>,&nbsp;<sup> <a href="Dokumenty_do_pobrania.html#[1b]">[1b]</a></span></sup>&nbsp;. W zamian za to J&oacute;zef Biedun i jego potomkowie m.in. mieli być gotowi oddać na służbę w wojsku dw&oacute;ch łucznik&oacute;w. Prawdopodobnie, kierując się nazwą wsi, przyjął on p&oacute;źniej nazwisko Kopystyński, z kt&oacute;rym utożsamiali się wszyscy jego potomkowie. Jak twierdzi Pamwo Berynda, Biedun był człowiekiem silnym i wojowniczym (zob.&nbsp;<a href="http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&amp;I21DBN=UJRN&amp;P21DBN=UJRN&amp;Z21ID=&amp;IMAGE_FILE_DOWNLOAD=1&amp;Image_file_name=PDF%2Fubi_2014_11.pdf">irbis-nbuv.gov.ua</a>&nbsp;- plik pdf, s.68;&nbsp;<a href="http://litopys.org.ua/suspil/sus50.htm">litopys.org.ua</a>).</span></span></p>
+									<p align="justify">Z aktu nadania wsi dowiadujemy się, że były w niej stawy, a mieszkańcy trudnili się pszczelarstwem - w leśnych dąbrowach funkcjonowały pasieki&nbsp;<span class="style7">**</span>.</p>
+									<p class="style35" style="text-align: center;"><img class="thumbnail img-fluid" src="Images/Akt_nadania.jpg" alt="" width="358" height="632" /></p>
+									<p class="style36" style="text-align: center;"><span class="style37" style="font-size: 10px;text-align: center;">Fragment dokumentu nadania wsi - <a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a></span>&nbsp;<sup> <a href="Dokumenty_do_pobrania.html#[1b]">
+									<span class="style8">[1b]</span></a></span></p>
+									<p align="justify"> Kopysno pierwotnie było lokowane na prawie ruskim (wg&nbsp;</span><a href="files/akta.pdf">Akta...&nbsp;</a> co najmniej do 1473 r.). W p&oacute;źniejszym okresie miejscowość podlegała prawu wołoskiemu.&nbsp;</span></p>
+									<p align="justify"> 13 marca 1415 r. starosta ruski Iwan Śremski (Iwan z Obichowa - <a href="https://pl.wikipedia.org/wiki/Iwan_z_Obichowa">wikipedia.org</a>) w obecności świadk&oacute;w dokonał rozgraniczenia grunt&oacute;w kr&oacute;lewskich miejscowości Brylińce od Kopysna, będącego we władaniu rodziny Kopystyńskich (Zachary, Lewkow, Malew). Potwierdza to tekst pisany w języku staroruskim (starocerkiewnym):</span></p>
+									<p class="style21" style="text-align: center;"> <img class="thumbnail img-fluid"src="Images/Akt%20-%20rozgraniczenie.jpg" alt="" width="649" height="364" /></span></p>
+									<p class="style24" style="text-align: center;font-size: 10px">Źr&oacute;dło: Олег Купчинський - "Забуті та невідомі староукраїнські грамоти XIV &mdash; першої половини XV ст." - zob.&nbsp;<a href="http://chtyvo.org.ua/authors/Kupchynskyi_Oleh/Zabuti_ta_nevidomi_staroukrainski_hramoty_XIV__pershoi_polovyny_XV_st/">chtyvo.org.ua</a>;&nbsp;<a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a>&nbsp;(strony 191-192)</p>
+									<p align="justify">W roku 1490 właścicielem Kopysna był Kuźma Kopysteński (<a href="https://sanockabibliotekacyfrowa.pl/dlibra/publication/314/edition/289/content">sanockabibliotekacyfrowa.pl</a> - s. 103, skan 111). Przez kilka wiek&oacute;w wieś stanowiła gniazdo rodu Kopystyńskich&nbsp;<sup><a href="Dokumenty_do_pobrania.html#[2]">[2]</a>&nbsp;</sup><span class="style7"><strong>***</strong></span>, kt&oacute;rego najwybitniejszym przedstawicielem był Michał Kopystyński (zm. 1609 r. - Stanisław Kryciński &ldquo;Słownik Krajoznawczo-Historyczny&rdquo;, Warszawa 1992; zob.&nbsp;<a href="http://www.genealogia.okiem.pl/kopystynski.htm" target="_blank">genealogia.okiem.pl</a>,&nbsp;<a href="http://vysochanskiy-sas.com/rid-kopistinskikh/323-kopistinski-u-peremishlskij-zemli-v-xvi-xviii-st-genealogichne-doslidzhennya">vysochanskiy-sas.com</a>,&nbsp;<a href="http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&amp;I21DBN=UJRN&amp;P21DBN=UJRN&amp;Z21ID=&amp;IMAGE_FILE_DOWNLOAD=1&amp;Image_file_name=PDF%2Fubi_2014_11.pdf">irbis-nbuv.gov.ua</a>&nbsp;- plik pdf, ss. 67-81), 
+										ostatni prawosławny biskup (władyka) przemyski, zagorzały przeciwnik Unii brzeskiej </a>
+									(Więcej <a href= "https://books.google.pl/books?id=L2vpAAAAMAAJ&pg=PA547&dq=Kopysty%C5%84ski+by%C5%82+siostrze%C5%84cem&hl=pl&sa=X&ved=2ahUKEwiTy43U19T2AhXmk4sKHTQ-DjoQ6AF6BAgIEAI#v=onepage&q=Kopysty%C5%84ski%20by%C5%82%20siostrze%C5%84cem&f=false-">books.google.pl</a> - Kwartalnik Historyczny - str. 547 i nast.).&nbsp;
+									Zachował się dokument kr&oacute;la Zygmunta III Wazy z 20 maja 1591 r., polecający Michała Kopystyńskiego na biskupa przemyskiego (<a href="http://www.skany.przemysl.ap.gov.pl/show.php?zesp=142&amp;cd=0&amp;ser=0&amp;syg=65D" target="_blank">skany.przemysl.ap.gov.pl</a>).</span></p>
+									<p align="justify">Miejsce pochówku biskupa Michała Kopystyńskiego nie jest znane, choć niektórzy sądzą, że może być nim niewielkie wzgórze Horbysko lub cerkiew p.w. Bogurodzicy Pokrow w Kopysnie. Inni twierdzą, że jest nim cerkiew św. Onufrego w Posadzie Rybotyckiej. 
+									W 1827 r. mieszkańcy Kopysna i okolic uważali, że biskup został pochowany w Kopysnie, a świadczą o tym słowa Wincentego Tyszkowskiego (1783-4.04.1846) skierowane w liście do Franciszka Siarczyńskiego (zob. <a href="https://pl.wikipedia.org/wiki/Franciszek_Siarczy%C5%84ski">pl.wikipedia.pl</a>):<br> 
+									<em>„Wioskach należących do Rybotycz dowiaduję się że zwłoki Biskupa ruskiego Kopystyńskiego mają spoczywać wiosce Kopysnie, któren Unię pierwszy przyjoł czego jaśniej dochodzić będę, a że w Posadzie Rybotyckiej Bazylianie były otym wątpienia niema."</em><br>
+									<p class="style21" style="text-align: center;"> <img class="thumbnail img-fluid"src="Images/MK_pochowek.jpg" alt="" width="649" height="364" /></span></p>
+									<p class="style36" style="text-align: center;"><span class="style37" style="font-size: 10px;text-align: center;">Fragment listu Wincentego Tyszkowskiego - <a href="http://bazy.oss.wroc.pl/kzc/pobpdf.php?fond_5_d_2/rl_f5_d_2_rkps_1825.pdf">bazy.oss.wroc.pl</a></span>
+									<p align="justify"><span style="font-size: x-small;">Należy wyjaśnić, iż Michał Kopystyński, zanim stał się przeciwnikiem Unii brzeskiej, podpisał dokument unijny z dnia 1 czerwca 1595 r. i deklarację łucką z 27 sierpnia 1595 r., stąd też słowa Wincentego Tyszkowskiego są zgodne z prawdą
+									(<a href="https://bazhum.muzhp.pl/media/files/Przeglad_Historyczny/Przeglad_Historyczny-r1985-t76-n1/Przeglad_Historyczny-r1985-t76-n1-s139-150/Przeglad_Historyczny-r1985-t76-n1-s139-150.pdf">bazhum.muzhp.pl</a>- skan 10, str. 147).</a>  
+									</p>
+									<p align="justify"> W roku 1573 Łazarz i Iwan Kopystyńscy podzielili pomiędzy siebie dobra Kopysna. W 1599 r. jak podają źr&oacute;dła, Jacko Iwanowicz Kopystyński sprzedał swą część Kopysna Janowi Tomaszowi (nazwisko nieczytelne), referendarzowi koronnemu.</span></p>
+									<p align="justify"> W 1600 roku Michał Kopystyński wraz z Tomaszem i synem Teodorem sprzedali swe części w Kopysnie Drohojowskiemu. W 1606 r. kolejna część Kopysna należała już do Łukasza i Klemensa Krzeczkowskich. Pod koniec lat 20-tych XVII w. cała wieś stała się własnością kasztelana sanockiego - Andrzeja Boguskiego&nbsp;<sup><a href="Dokumenty_do_pobrania.html#[3]">[3]</a></sup>. W 1651 r. po jego śmierci przeszła w ręce żony Marianny, a następnie jej c&oacute;rki o tym samym imieniu.&nbsp;</span></p>
+									<p align="justify"> W I połowie XVII w. 460 morg&oacute;w (266,8 ha) było we władaniu chłop&oacute;w.</span></p>
+									<p align="justify"> W roku 1696 Hieronim Augustyn Lubomirski nabył miejscowość Rybotycze i stworzył wraz z Kopysnem tzw. klucz rybotycki obejmujący w r&oacute;żnych okresach 4 folwarki i 7 wsi (Posada, Borysławka, Kopysno, Jamna, Tr&oacute;jca, Łomna, Krajna).&nbsp;</span></p>
+									<p align="justify"> W I połowie XVII w. 460 morg&oacute;w (266,8 ha) było we władaniu chłop&oacute;w.</span></p>
+									<p align="justify"> Według publikacji "Stosunki społeczno-gospodarcze w dobrach małopolskich księcia Jerzego Ignacego Lubomirskiego w pierwszej połowie XVIII wieku" (zob.</span>&nbsp;<a href="http://sanockabibliotekacyfrowa.pl/dlibra/docmetadata?id=151&amp;from=&amp;dirids=1&amp;ver_id=&amp;lp=1&amp;QI=">sanockabibliotekacyfrowa.pl</a>) pogłowie bydła w Kopysnie przedstawiało się następująco:</p>
+									<p align="justify">- 1703 r. - 30 kr&oacute;w, 14 jałowic, 1 buhaj, 13 ciołk&oacute;w i jał&oacute;wek, 6 cieląt, 19 woł&oacute;w i wolc&oacute;w (razem 83 szt.);</p>
+									<p align="justify">- 1706 r. - 34 krowy, 33 jałowice, 1 buhaj, 6 ciołk&oacute;w i jał&oacute;wek, 13 cieląt, 40 woł&oacute;w i wolc&oacute;w (razem 127 szt.);</p>
+									<p align="justify">- 1707 r. - 18 kr&oacute;w, 27 jałowic, 1 buhaj, 1 ciołek lub jałowica, 2 cielęta, 40 woł&oacute;w i wolc&oacute;w (razem 89 szt.);</p>
+									<p align="justify">W 1706 r. Kopysno, jak i sąsiednie wsie nawiedziła epidemia tyfusu przywleczona, jak wynika z zachowanych źr&oacute;deł, przez wojsko.</p>
+									<p align="justify">Dobra Kopysna przez jakiś czas były dzierżawione przez Jakuba Zygmunta Rybińskiego, wojewodę chełmińskiego i generała artylerii koronnej, pełniącego funkcję regimentarza pod rozkazami hetmana Adama Sieniawskiego. W dniu 29.08.1715 roku ożenił się bowiem z Elżbietą Lubomirską, której rodzice nie posiadając należnej kwoty posagu 200 tys. złotych polskich dla panny młodej, zaproponowali mu dzierżawę dóbr ziemskich Lubomirskich, w tym tzw. klucza rybotyckiego, w skład którego wchodziło Kopysno i folwark. Nie jest wiadome, jak długo trwała ta dzierżawa. Wiadome jest, że Elżbieta, żona Rybińskiego zmarła niespełna rok po ślubie. 
+										(zob. <a href="https://repozytorium.ur.edu.pl/server/api/core/bitstreams/89cbcdd9-f26e-4b1a-a5de-2a457b91bc2d/content">repozytorium.ur.edu.pl</a>, str.72, skan 73</a>).
+										<p align="justify"><span style="color: #ff0000;"><span class="style8">*</span></span><span class="style8" style="font-size: x-small;"><span class="style6">&nbsp; Antoni Prochaska w artykule "Konferedacya lwowska 1464 roku" zamieszczonym w czasopiśmie "Kwartalnik Historyczny" z 1892 r., powołał się na dokument sporządzony w czasie rząd&oacute;w namiestnika Rusi Halickiej - księcia Władysława Opolczyka (1372-1378 r.), w kt&oacute;rym nałożył on J&oacute;zefowi (Osip) Biedunowi (Biduń) z Kopysna, obowiązek tzw. służby konnej zwanej "pojazdem". Czytamy w nim: "<em>Imajet służyty nam i naszym djetjam i stobo seła dwiema strelcy na kożdoju naszu dorogu, gdie nam potrebizna. A koliby była od nikotorych naszych neprijateli nałoga na naszu zemlju Peremyskoju, togdy imajet sługa nasz Bidun sam swoim żywotom, so wsiema swoimi ljudmi na oboronenia naszej zemli premyskoj"</em>. Autor powołał się na rękopis dostępny w Bibliotece Ossolińskich we Lwowie i skatalogowany pod nr 1251 p. 88(6). W "Kopiariuszu przywilej&oacute;w, dekret&oacute;w i r&oacute;żnych akt odnoszących się do d&oacute;br rodziny Kmit&oacute;w z lat 1397-1601" będącym w posiadaniu Zakładu Narodowego im. Ossolińskich we Wrocławiu i posiadającym ten sam numer katalogowy nie ma jednak tego dokumentu. Prawdopodobnie autor błędnie podał nazwisko lub utożsamił osobę, kt&oacute;ra dokonała nadania i zamiast Jagiełło, podał Opolczyk.<br>
+											<em>"Nadanie to, pisane po rusku, musiało pochodzić prawdopodobnie jeszcze z XIV wieku. Samo dworzyszcze na tym
+											terenie (lecz nie późniejsze równające się powierzchnią mniej więcej łanowi, dworzyszcze wołoskie we wsiach lokowanych na prawie wołoskim) było jednostką
+											gospodarczą nie wymierzoną, na której gospodarzyli nieraz liczni współrodowcy lub też inni współposiadacze. Często ziemie należące do takiego dworzyszcza powierzchniowo
+											zajmowały teren większy niż niejedna późniejsza wieś."</em>(Krzysztof Wolski. „Osadnictwo dorzecza górnego Wiaru w XV wieku”. UMCS, 1956 - <a href="http://dlibra.umcs.lublin.pl/dlibra/publication/14179/edition/13043/content">dlibra.umcs.lublin.pl</a>).
+										</span></span></p>
+										<p align="justify"><span  style="color: #ff0000;">**</span><span class="style8" style="font-size: x-small;"> Według mapy katastralnej Kopysna z 1852 r. część wsi w rejonie p&oacute;łnocno-wschodnim określono jako "Pasieczki" (<a href="https://mapy.geoportal.gov.pl/imap/Imgp_2.html?locale=pl&amp;gui=new&amp;sessionID=5222548">mapy.geoportal.gov.pl</a>), co może nawiązywać do istnienia w tym miejscu pasiek, o kt&oacute;rych mowa w dokumencie. 
+											O stawikach w Kopysnie mowa w aktach sądowych z 1491 r. (A.G.Z., XVIII, 2123 z 2 sierpnia 1491 r. - <a href="files/akta.pdf">Akta...</a>).</span></p>
+										<p align="justify"><span  style="color: #ff0000;">***</span><span class="style8" style="font-size: x-small;"> Zdaniem niektórych Kopystyńscy pochodzą z rodzin służków zamkowych czy też drobnej szlachty osadzonej tutaj przez Jagiełłę. (Krzysztof Wolski. „Osadnictwo dorzecza górnego Wiaru w XV wieku”. UMCS, 1956 - <a href="http://dlibra.umcs.lublin.pl/dlibra/publication/14179/edition/13043/content">dlibra.umcs.lublin.pl</a>).
+										Wołosi osiedlający się na terenach ówczesnej Polski za zasługi dla tego kraju byli nobilitowani i najczęściej przyznawano im herb Sasów.
+										Zdaniem innych Kopystyńscy (wcześniej Kopysteńscy) posługiwali się herbem Leliwa (zob. Zofia Strzetelska Grynbergowa. „Staromiejskie. Ziemia i ludność”. Lwów 1899. - <a href="http://dlibra.umcs.lublin.pl/dlibra/publication/14179/edition/13043/content">dlibra.umcs.lublin.pl</a>).
+									</span></span></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				checkWidth();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++)
+			{
+				img[i].onclick = function()
+				{
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					modalImg.alt = this.alt;
+					captionText.innerHTML = this.alt;
+				}
+				 
+			}
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+			 }       
+		</script>
+		<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}		
+		</script>
+		<script>
+			function checkWidth()
+			{
+				title = document.getElementById("title")
+				button = document.getElementById("buttonSidenav")
+
+				titleWidth = title.offsetWidth;
+				buttonWidth = button.offsetWidth;
+
+				ButtonTitleRatio = titleWidth/buttonWidth;
+
+				if(ButtonTitleRatio<=8.4)
+				{
+					title.innerHTML = " ";
+				}
+				else
+				{
+					title.innerHTML = "Okres od powstania wsi do 1772 roku";
+				}
+				//console.log({titleWidth,buttonWidth,ButtonTitleRatio});
+			}	
+		</script>
+    </body>
+</html>

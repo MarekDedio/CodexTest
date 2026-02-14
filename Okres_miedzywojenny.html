@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;" href="Dzieje_wsi_poczatek.html">Okres od powstania wsi do 1772 roku</a>
+				<a style="font-size: 17px;"href="Od_rozbioru_do_I_wojny.html">Od I rozbioru Polski do 1914 roku</a>
+				<a style="font-size: 17px;"href="I_wojna_swiatowa.html">I wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_miedzywojenny.html">Okres miedzywojenny</a>
+				<a style="font-size: 17px;"href="II_wojna_swiatowa.html">II wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_powojenny.html">Lata powojenne</a>
+				<p align="center"><a style="font-size: 17px;"href="#">***</a></p>
+				<a style="font-size: 17px;"href="Dokumenty_do_pobrania.html">Dokumenty do pobrania</a>	
+				</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span>
+									<span id="title" style="display: block;">
+										Okres międzywojenny
+									</span>
+									<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>okres</button>
+								</span>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">							
+									<p align="justify">W dniu 17.09.1920 r. zmarł Paweł Tyszkowski będący właścicielem Kopysna i został pochowany w kaplicy grobowej na cmentarzu w Kalwarii Pacławskiej. Przez dłuższy czas zmagał się z chorobą nowotworową.</p>
+									<p align="justify">Paweł Tyszkowski był mężem Henryki Fredro, prawnuczki Jacka Fredry (ojca Aleksandra Fredry), lecz nie mieli oni potomstwa. 					
+										Pod namową przyjaciela, niejakiego Ludwika Przysieckiego (był on gł&oacute;wnym zarządcą jego d&oacute;br), by uniemożliwić przejście majątku na rzecz nieślubnych dw&oacute;ch c&oacute;rek Antoniego Tyszkowskiego, testamentem z dnia 19.10.1912 r. cały sw&oacute;j majątek zapisał Akademii Umiejętności w Krakowie. Zastrzegł jednak, że stanowić on będzie oddzielnie administrowaną całość jako fundacja im. Pawła Tyszkowskiego, kt&oacute;rej celem miało być popieranie polskiego piśmiennictwa i wynalazk&oacute;w z zakresu nauk przyrodniczych i lekarskich, ze szczeg&oacute;lnym uwzględnieniem prac, badań i wynalazk&oacute;w dotyczących choroby raka i chor&oacute;b wenerycznych.<br />Inni twierdzą, że Antoni Tyszkowski przekazując majątek Pawłowi Tyszkowskiemu zobowiązał go do przekazania go Akademii Umiejętności w Krakowie w przypadku nie posiadania potomstwa. Akademia Umiejętności dobra Pawła Tyszkowskiego przejęła dopiero w 1929 r. dekretem dziedzictwa po pozytywnym dla niej zakończeniu sprawy sądowej wytoczonej jej przez dalszą rodzinę na podstawie fałszywego testamentu, kt&oacute;ry ostatecznie sąd odrzucił. &nbsp;</p>
+									<p align="justify">Jako doniosła Gazeta Lwowska z 21.09.1920 r. Nr 215 (zob.&nbsp;<a href="https://archive.org/details/jbc.bj.uj.edu.pl.DIGCZAS002001_1920_215/page/n1/mode/2up?q=Tyszkowskich" target="_blank">archive.org</a>), Paweł Tyszkowski przed swą śmiercią przekazał Muzeum Narodowemu w Krakowie pięć pięknych guzów kontuszowych, a wcześniej dwie karabele damasceńskie oraz pięć pasów kontuszowych polskich, w tym dwa ze złotolitu Paschalisa, dwa krakowskie i jeden perski. Natomiast jego żona przekazała muzeum złotą i emaliowaną tabakierę, niegdyś własność królowej Francji Marii Antoniny, którą podarowała nieznanemu posłowi szwajcarskiemu podczas pobytu w więzieniu.
+									<p align="justify"><span style="font-size: x-small;"><span class="style8"><span class="style7">(Więcej informacji o rodzinie Tyszkowskich można znaleźć na stronach:&nbsp;</span><a href="http://www.apokryfruski.org/kultura/nadsanie/jamna-gorna/">www.apokryfruski.org</a>,&nbsp;</span><a href="http://dspace.uni.lodz.pl:8080/xmlui/bitstream/handle/11089/12138/21-281_291-Bili%C4%B9%E2%80%9Eski,%20Skrzy%C4%B9%E2%80%9Eski.pdf?sequence=1&amp;isAllowed=y"><span class="style8">dspace.uni.lodz.pl</span></a><span class="style8">,&nbsp;</span><a class="style8" href="http://www.pbc.rzeszow.pl/dlibra/doccontent?id=10007">www.pbc.rzeszow.pl</a><span class="style8">&nbsp;<span class="style7">oraz w PAU w Krakowie - nr sygn. 2631, Papiery rodzinne i majątkowe Tyszkowskich z lat 1577- 1914, k. 32r.)</span></span></span></p>
+									<p align="justify">Część grunt&oacute;w Pawła Tyszkowskiego (202 ha - zob.&nbsp;<a href="http://data.jewishgen.org/jri-pl/1929/P0672.PDF" target="_blank">data.jewishgen.org</a>), a po jego śmierci grunty przekazane Akademii Umiejętności w Krakowie, dzierżawił Antoni Jankowski, mąż Katarzyny, nieślubnej c&oacute;rki jego stryja - J&oacute;zefa Tyszkowskiego, kt&oacute;ry je użytkował do jesieni roku 1939 (Więcej informacji, w tym o batalii sądowej pomiędzy dzierżawcą a Akademią Umiejętności - zob.&nbsp;<a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>).</p>
+									<p align="justify"> Wiele lat po wojnie władze polskie część grunt&oacute;w chciały oddać jedynej spadkobierczyni Jankowskiego, c&oacute;rce Michalinie, ale z nieznanych przyczyn do tego nie doszło. Przez wiele lat grunty były użytkowane przez PGR, a po roku 1989 zostały przejęte przez państwowe jednostki (Nadleśnictwo, Agencja Własności Rolnej Skarbu Państwa), a część została sprzedana osobom fizycznym.&nbsp;</span></p>
+									</p>	
+									<p class="style6" align="justify">Jeden z mieszkańc&oacute;w Kopysna Jan Krupa (ur. 15.03.1889 r.) 10.07.1922 r. uzyskał obywatelstwo USA (Declaration of Intention).</p>
+<p class="style21" style="text-align: center;"><img class="thumbnail img-fluid"src="Images/Doi_d.jpg" alt="" width="202" height="262" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+<p align="justify">Przed II wojną światową we wsi istniał sklep z wyrobami tytoniowymi prowadzony przez Krupę (prawdopodobnie pod nr domu 59 - dz. bud. 41 lub 43)&nbsp;i wyszynk trunk&oacute;w (karczma, niedaleko cerkwi) prowadzona przez mieszkańca pochodzenia żydowskiego o nazwisku Mendel Salik (żona - Chane z domu Probstein; ich syn Samuel (ur. 1871 r.) ożenił się z Ettel z domu Bachmann (ur. 1877 r.), jego dzieci to Lewi Isak (ur. 1897 r.) i c&oacute;rka Rebeka (ur. 26.01.1899 r.) oraz dwie pozostałe, w tym Machla matka Naftalego Zammera (ur. 3.03.1910 r.);&nbsp;Rebeka Salik wyszła za mąż za Bernarda Rechtwaga w dniu 8.01.1933 r. w Przemyślu - zob.<a href="http://www.skany.przemysl.ap.gov.pl/show.php?zesp=1924&amp;cd=0&amp;ser=0&amp;syg=40"> skany.przemysl.ap.gov.pl</a>&nbsp;- str. 123).</span></p>
+<p align="justify">Inni podają r&oacute;wnież, że w Kopysnie były dwie kuźnie prowadzone przez Hamryszczaka i Hyłę (prawd. dom nr 54 -&nbsp; dz. bud. 10</span></span>) oraz dw&oacute;ch szewc&oacute;w: Karol Hamryszczak i Kaczmar (prawd. dom nr b - dz. bud. 31).&nbsp;</span></p>
+<p align="justify">W budynku "Domu Narodowego" (nr domu 15 - dz. bud. 27 wg mapy katastralnej), w kt&oacute;rym znajdowała się czytelnia Proswity, był także sklep prowadzony przez braci: Pawła i Michała Kaczmar&oacute;w.&nbsp;</span></p>
+<p align="justify">W latach 1925-27… (?) Małopolskie Towarzystwo Rolnicze zorganizowało w Kopysnie Kółko rolnicze (<a href="https://polona.pl/item-view/17bb5874-4192-4b28-81a6-30be1149124d?searchQuery=Huwniki&page=33">polona.pl</a>).
+<p align="justify">Pomiędzy 1 a 15 sierpnia 1926 r., Katarzyna Jankowska, żona Antoniego Jankowskiego przebywała w Truskawcu (ob. Ukraina), jako gość kąpielowy (kuracjuszka). Nie towarzyszył jej nikt z rodziny i bliskich, a na czas kuracji zamieszkała w prywatnym mieszkaniu.</p>
+<p align="justify">W dniu 4.12.1926 r. w Kopysnie, jak doniosła Gazeta Przyjaciel Ludu &ndash; organ Stronnictwa Chłopskiego (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/126017/edition/118385/content?ref=aHR0cHM6Ly9qYmMuYmoudWouZWR1LnBsL2RsaWJyYS9yZXN1bHRzP3E9a29weXNubyZhY3Rpb249U2ltcGxlU2VhcmNoQWN0aW9uJnR5cGU9LTYmcD0x">jbc.bj.uj.edu.pl</a>) odbyło sie poufne zebranie organizacyjne, na kt&oacute;rym przemawiali ob. Krechowicz, Radwański i Kamieński. Zawiązano Związek i wybrano zarząd w następującym składzie: Ryła (prawidłowo Hyła) Mikołaj przew., Teodor Kreczkowski zast., Michał Łoś sekt., J. Hawryszczak (Hamryszczak?) skarbnik oraz pięciu członk&oacute;w zarządu. Wybrano delegat&oacute;w w osobie: Wasyla Łosia, Wasyla Krupę i Michała Łosia.<br />Do Związku przystąpiło 51 członk&oacute;w. Uchwalono rezolucję, w kt&oacute;rej domagano się jak najszybszej parcelacji, pożyczek długoterminowych, obniżenia składek asekuracyjnych i wiele innych. Wystosowano apel do wszystkich gmin w powiecie, żeby się organizowały w związki chłopskie do wsp&oacute;lnej obrony i walki o lepszy byt. Postanowiono zaprenumerować parę numer&oacute;w "Przyjaciela Ludu" i "Sprawy Chłopskiej". Na końcu wyrażono hołd marsz. Piłsudskiemu za jego wiekopomny czyn majowy.</span></p>
+<p align="justify">Z dokumentu z dnia 18 maja 1928 r. wynika, że w Kopysnie istniał "Urząd Gminny", kt&oacute;rego kierownikiem tymczasowego zarządu był Antoni Jankowski (zob.&nbsp;<a href="Mieszkancy\Antoni_Jankowski.html"><span class="style19">Historie Mieszkańców</span></a>).&nbsp;We wcześniejszym dokumencie osoba ta występuje w charakterze Naczelnika gminy.</span></p>
+<p align="center"><a title="Fragment pisma Urzędu Gminnego" href="Images/ug_kopysno_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid"src="Images/ug_kopysno_d.jpg" alt="Fragment pisma Urzędu Gminnego" width="320" height="149" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></span></p>
+<p align="justify">W czasie międzywojennym niekt&oacute;rzy mieszkańcy opuścili Kopysno w poszukiwaniu pracy i lepszego życia poza granicami kraju. Jednym z nich był J&oacute;zef Krupa s. Mikołaja i Antoniny Mandro, ur. 26.02.1898 r. Z posiadanych materiał&oacute;w udostępnionych przez jego rodzinę wynika, że uczył się w Brnie (Czechosłowacja), starał się o wyjazd do Argentyny, przebywał i pracował na terenie Francji i na koniec wyjechał i osiadł w Kanadzie. Ciekawe dokumenty związane z tą osobą i jej działalnością zamieszczono w zakładce&nbsp;<a href="Dokumenty.html">Dokumenty</span></a>&nbsp;i&nbsp;<a href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</span></a>.</span></p>
+<p align="justify">Kilku mieszkańc&oacute;w w owym czasie udało się do Argentyny. Stefan Krupa (lat 24, kawaler) przybył do tego kraju 23 stycznia 1927 r. statkiem "Taormina" z portu w Genua (Włochy). Mikołaj Kaczmar (lat 41, żonaty) oraz Bazyli Kozar (lat 31, żonaty) przybyli w dniu 16 lipca 1928 r. statkiem "Alcantara" z portu Cherbourg (Francja) (zob.<a href="http://cemla.com/buscador/">cemla.com</a>).</p>
+<p align="justify">Prawdopodobnie w tym czasie do Francji przybył Jan Gierczak z żoną Marią z d. Malko oraz c&oacute;rką i synami Michałem (4.01.1924-21.07.1944 r.) i Janem (8.11.1914-9.03.1993 r.). W czasie wojny mieszkali przy ul. Croix Blanche 33 w La Mure (Is&egrave;re).</p>
+<p align="justify">W tygodniu poprzedzających dzień 11 października 1930 r. o czym doniosła Gazeta Przemyska Nr 58, w wyniku pożaru spłonęło we wsi 14 zabudowań gospodarczych. Choć nie ustalono przyczyn, zdaniem Gazety m&oacute;gł to być sabotaż. Zdaniem Ekspresu Zagłębia R.5 Nr 261 (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/550879/edition/524269/content?ref=aHR0cHM6Ly9qYmMuYmoudWouZWR1LnBsL2RsaWJyYS9yZXN1bHRzP3E9a29weXNubyZhY3Rpb249U2ltcGxlU2VhcmNoQWN0aW9uJnR5cGU9LTYmcD0w">jbc.bj.uj.edu.pl</a>) pożar miał miejsce wieczorem 8.10.1930 r., a szkody wyrządzone przez pożar wyniosły koło 60 000 złotych. Za przyczynę pożaru uznano zbrodnicze podpalenie. O pożarze wspomina także mieszkaniec Kopysna - Iwan Krupa (zob. "<a href="files/Iwan%20Krupa%20-%20Kopysno.pdf"><span class="style19">Iwan Krupa - Kopysno</span></a>"<sup><a href="Dokumenty_do_pobrania.html#[15]">[15]</a></sup>).</span></p>
+<p align="justify">W dniu 22.02.1931 r. w Huwnikach, po długiej i ciężkiej chorobie zmarła Henryka Fredro Przysiecka, była żona Pawła Tyszkowskiego, która po jego śmierci ponownie wyszła za mąż za jego przyjaciela
+	- Ludwika Przysieckiego, który sprawował zarząd nad jego dobrami przekazanymi na mocy testamentu Polskiej Akademii Umiejętności. Została pochowana w kaplicy grobowej rodziny Tyszkowskich w Kalwarii Pacławskiej
+	(<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/211608/edition/200291/content">jbc.bj.uj.edu.pl</a>).<br>
+</p><p align="justify">W dniu 30.07.1931 r. Ministerstwo Spraw Wewnętrznych i Skarbu wyznaczyło na obszarze wojew&oacute;dztwa lwowskiego miejsca detalicznej sprzedaży alkoholu, w tym w Kopysnie 1 punkt z wyszynkiem (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/115569/edition/108193/content?ref=aHR0cHM6Ly9qYmMuYmoudWouZWR1LnBsL2RsaWJyYS9yZXN1bHRzP3E9a29weXNubyZhY3Rpb249U2ltcGxlU2VhcmNoQWN0aW9uJnR5cGU9LTYmcD0x">jbc.bj.uj.edu.pl</a>).</p>
+<p align="justify">W dniu 9.01.1934 r. w Huwnikach, po kilkudniowej anginie zmarł Ludwik Przysiecki (ur. 1860 r.) i według ówczesnych mediów miał zostać pochowany w grobowcu rodziny Tyszkowskich w Kalwarii Pacławskiej.
+	(<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/65200/edition/59021/content?format_id=2">jbc.bj.uj.edu.pl</a>). Informacja ta jest błędna. Ludwik Przysiecki został pochowany na cmentarzu na Kalwarii Pacławskiej, lecz w osobnym grobowcu niedaleko kaplicy grobowej rodziny Tyszkowskich o czym świadczy tablica nagrobkowa, która choć uszkodzona, wskazuje na miejsce jego pochówku. Napis na tablicy, który udało się odczytać brzmi „Ludwik Przysiecki Nowina 1860 (znak krzyża) 1934”. 
+	<p align="center"><a title="Płyta nagrobkowa, nieco uszkodzona i porośnięta mchem" href="Images/LP_nagrobek.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid"src="Images/LP_nagrobek.jpg" alt="Płyta nagrobkowa nieco uszkodzona i porośnięta mchem" width="320" height="149" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></span></p>
+	<p align="center"><a title="Widok nagrobka" href="Images/Przysiecki_g24.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid"src="Images/Przysiecki_g24.jpg" alt="Widok nagrobka" width="320" height="149" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></span></p>
+	<p align="justify">Lwowski Dziennik Urzędowy Nr 25 z 1938 r. powiadomił o unieważnieniu zgubionego dowodu tożsamości konia Ser. „C“ Nr 102266 będacego własnością Wasyla Krupy z Kopysna.
+		(<a href="https://archive.org/details/jbc.bj.uj.edu.pl.NDIGCZAS002362_1938_025/page/312/mode/2up?q=Kopysna">archive.org</a>).
+
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				checkWidth();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>	
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}		
+		</script>
+		<script>
+			function checkWidth()
+			{
+				title = document.getElementById("title")
+				button = document.getElementById("buttonSidenav")
+
+				titleWidth = title.offsetWidth;
+				buttonWidth = button.offsetWidth;
+
+				ButtonTitleRatio = titleWidth/buttonWidth;
+
+				if(ButtonTitleRatio<=5.72)
+				{
+					title.innerHTML = " ";
+				}
+				else
+				{
+					title.innerHTML = "Okres międzywojenny";
+				}
+				console.log({titleWidth,buttonWidth,ButtonTitleRatio});
+			}	
+		</script>			
+    </body>
+</html>

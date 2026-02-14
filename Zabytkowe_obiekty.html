@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;"href="Zabytkowe_obiekty.html">Zabytkowe obiekty</a>
+				<a style="font-size: 17px;"href="Zabytki_i_spolecznosc.html">Ludność</a>
+				<a style="font-size: 17px;"href="Oswiata.html">Oświata</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span>
+									<span id="title"style="display:block">
+										Zabytkowe obiekty
+									</span>
+									<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>tematykę</button>
+								</span>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<p align="justify"> <strong>1. Grodzisko&nbsp;</strong>(49&deg;40'33.92" N, 22&deg;37'48.97" E)</span></p>
+									<p align="justify"> Grodzisko pierścieniowate z XI-XIII w. usytuowane jest na południowy zach&oacute;d od wsi, ok. 1 km na południe od Kopystanki, w lesie "Grabnik" (zob.</span> <a href="Ciekawe_miejsca.html">Miejsca</a></span>).&nbsp;Niedaleko od grodu, na wsch&oacute;d znajduje się "cudowne źr&oacute;dełko", z kt&oacute;rego wypływa potok Grabnik wpadający do rzeki Wiar. Podczas badań sondażowych przeprowadzonych w 1955 i 1957 roku na stanowisku znaleziono liczne ułamki naczyń wczesnośredniowiecznych pochodzących z przełomu X i XI w.</span></p>
+									<p align="justify"> Wymiary grodu (118 x 43 m) świadczą o jego znacznej wielkości a tym samym dużej liczbie budowniczych i mieszkańc&oacute;w. Wschodnie i zachodnie stoki wzg&oacute;rza, na kt&oacute;rym usytuowane jest grodzisko, są bardzo strome. Stosunkowo łatwo dostępne zbocza przecięto rowami: południowym - o szerokości ok. 12 m i głębokości 3 m oraz p&oacute;łnocnym - o szerokości 4,7 m i głębokości 0,8 m. Na zewnętrznym łuku rowu od strony p&oacute;łnocnej widoczny jest podłużny nasyp o wysokości 0,8 m, przypuszczalnie pełniący niegdyś rolę wału. Szczyt wzg&oacute;rza tworzy owalny majdan o wymiarach 98 x 56 m. Na majdanie nie zauważono wyraźnych ślad&oacute;w obwałowań, jedynie na jego południowym skraju widoczny jest niewielki garb - prawdopodobnie ślad po silnie rozmytym wale.</span></p>
+									<p align="center"><a title="Grodzisko - rzuty" href="Images/grodzisko_plan_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" class="thumbnail img-fluid"src="Images/grodzisko_plan_d.jpg" alt="" width="240" height="396" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style32"style="text-align: center;font-size: 10px"> Grodzisko - rzuty<br />(źr&oacute;dło: Juliusz Marszałek - Katalog grodzisk i zamczysk w Karpatach,&nbsp;Wyd. Stanisław Kryciński, Warszawa 1993)</span></p>
+									<p align="center"></p>
+									<p style="text-align: center;"><img class="style31 thumbnail img-fluid" src="Images/Grodzisko_hipsometria.jpg" alt="" width="679" height="397" /></p>
+									<p class="style21"style="text-align: center;font-size: 10px"><span class="style37">Grodzisko (w centrum) - numeryczny model terenu (<a href="http://mapy.geoportal.gov.pl/imap/Imgp_2.html?locale=pl&amp;gui=new&amp;sessionID=4784002">mapy.geoportal.gov.pl</a></span><span class="style33">)</span></p>
+									<p align="justify"> Według tradycji na grodzisku w lesie "Grabnik" stał niegdyś zamek (kasztel) i podobno jeszcze dziś można tam znaleźć resztki cegieł. Miejsce to nazywane jest Zamczyskiem. Jak twierdzą niektórzy jest tam bardzo głęboka studnia i podziemne przejście do Rybotycz. Informacje te należy jednak traktować jako lokalną legendę.</span></p>
+									<p align="justify"> <span class="style8"><span class="style7">Więcej informacji:</span>&nbsp;<a href="press\press00.html"><em>Mons Grodzysko</em></a>,&nbsp;</span><a href="press\press01.html"><em><span class="style8">Wczesnośredniowieczna warownia w Kopystnie</span></em></a>, <a href="https://www.youtube.com/watch?v=HJWWMKYObGM">"Kopyśno, st. 1 (Poland)"</a>- film 3D</a>.</span></p>
+									<p align="justify"> <strong>2. Cerkiew, cmentarz, dzwonnica&nbsp;</strong>(49&deg;40'58.94" N, 22&deg;38'19.99" E)</span></p>
+									<p align="justify"> Cerkiew obrządku wschodniego, prawosławnego istniała w Kopysnie przed 1408 r. o czym świadczy akt nadania wsi, w którym mowa o <em>„cerkwi pw. Pokrowy Matki Bożej”</em>. Nie jest wiadome, gdzie pierwotnie była zlokalizowana świątynia,  
+										zwłaszcza że na najstarszej tzw. józefińskiej mapie topograficznej z lat 1779-1783 (zob.&nbsp;<a href="kartografia_archiwalna.html">Kartografia archiwalna</a></span>) oraz w opisie wsi nie ma wzmianki o jej istnieniu. 
+										Gdyby było inaczej, autorzy mapy z pewnością fakt ten zarejestrowaliby, czego przykładem jest sąsiednia miejscowość Rybotycze, gdzie na mapie umieszczono symbole wskazujące na istnienie świątyni katolickiej i greckokatolickiej.
+										Prawdopodobne jest, że wspomniana w akcie nadania wsi cerkiew drewniana popadła w ruinę i w czasie sporządzania mapy józefińskiej jej nie było, a z uwagi na niewielką liczbę wiernych (Wg mapy w Kopysnie było około 30 domów mieszkalnych), nie zdecydowano się w tym czasie na jej odbudowę.<br>
+										Pod koniec XVI w. parafie i świątynie prawosławne w wyniku ustaleń tzw. unii brzeskiej przeszły we władanie nowego kościoła greckokatolickiego, podporządkowanego władzom kościoła katolickiego. Kiedy to nastąpiło i jaki wpływ miał na to biskup Kopystyński, tego nie wiadomo<br> 
+										Obecną, murowaną z kamienia polnego, greckokatolicką cerkiew filialną p.w. Opieki NMP zbudowano w 1821 r. (pierwotnie p.w. Bogurodzicy Pokrow; zaliczona do IV grupy zabytk&oacute;w) (zob.&nbsp;</span><a href="Ciekawe_miejsca.html">Miejsca</a></span>).</span></p>
+									<p align="center"><a title="Cerkiew (1959 r.)" href="Images/cerkiew1959_10_24_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/cerkiew1959_10_24_d.jpg" alt="Cerkiew (1959 r.)" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Cerkiew (1959 r.)</span></p>
+									<p align="center"><a title="Cerkiew (1959 r.)" href="Images/Cerkiew_1963_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/Cerkiew_1963_d.jpg" alt="Cerkiew (1959 r.)" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Cerkiew (1963 r.)</span></p>
+									<p align="justify"> Została wzniesiona na rzucie wydłużonego prostokąta z tr&oacute;jbocznym zamknięciem od wschodu. Od południa, niewielka nowsza zakrystia. Prezbiterium wydzielone arkadą. Sklepienie pozorne kolebkowe o łuku obniżonym. Ch&oacute;r muzyczny drewniany, nadwieszony. Dach siodłowy kryty blachą, na nim wieżyczka na sygnaturkę z latarnią.</span></p>
+									<p align="justify"> Ikonostas z połowy XIX w. Ołtarzyk w prezbiterium o tradycjach barokowych, w nim ołtarz Chrystusa pomiędzy świętymi. Cztery ołtarze boczne o tradycjach barokowych (XIX w.). Dwa krucyfiksy &ndash; malowany oraz rzeźbiony o charakterze ludowym. Benedykcjonał pokryty blachą trybowaną.</span></p>
+									<p align="center"><a title="Chrzcielnica" href="Images/chrzcielnia_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid"src="Images/chrzcielnia_d.jpg" alt="Chrzcielnica" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Chrzcielnica ufundowana w 1893 r. przez Piotra Krupę (ojciec Michała Krupy "Sadowego")</span></p>
+									<p align="justify"> W 1823 r. przedłużono budynek ku zachodowi. Natrafiono wtedy na stary gr&oacute;b jakiegoś duchownego pochowanego pod wcześniej tu istniejącą świątynią. M&oacute;gł nim być władyka Michał. W roku 1929 przeprowadzono remont kaplicy. We wnętrzu cerkwi ikonostas namalowany w 1854 r. przez malarza cerkiewnego J&oacute;zefa Lisikiewicza, kt&oacute;ry osiedlił się w drugiej połowie XIX w. (ur. 1790 r., zm. 2 kwietnia 1874 r.) w Tr&oacute;jcy i mieszkał w domu pod nr 62.&nbsp;</span></p>
+									<p align="justify"> Według danych archiwalnych z 1852 roku&nbsp;</span><sup><a href="historia.html#[4]">[4]</a></sup> , cerkiew (działka budowlana nr 29) była własnością Cerkwi greckokatolickiej, a dzwonnica i cmentarz wok&oacute;ł niej (działka nr 653) były własnością gminy (wsi) Kopysno i taki stan prawny trwał do czasu przejęcia nieruchomości&nbsp; przez Państwo polskie na mocy dekretu z dnia 28 września 1949 r. (Dz.U. z 1949 r. Nr 53, poz. 404 -&nbsp;<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19490530404">isap.sejm.gov.pl</a>).</span></p>
+									<p class="style9" align="justify">Wykaz proboszcz&oacute;w i administrator&oacute;w sprawujących posługę w cerkwi będącej filią parafii w Rybotyczach zawiera załącznik w "Dokumentach do pobrania" - Wykaz księży greckokatolickich&nbsp; z lat 1828-1939&nbsp; <a href="Dokumenty_do_pobrania.html#[12]"><sup>[12]</sup></a></span>.&nbsp;</p>
+									<p align="justify"> Po II wojnie światowej (lata 50.) cerkiew przeznaczona była do rozbi&oacute;rki. Zapisano ją jednak jako kaplica cmentarna i w ten spos&oacute;b ocalała.</span></p>
+									<p align="justify"> Obok cerkwi znajduje się parawanowa murowana dzwonnica z 1821 r. (na tynku widnieje rok 1932, co może oznaczać datę jej remontu) - zob.&nbsp;</span><a href="Ciekawe_miejsca.html">Miejsca</a></span>.</span></p>
+									<p align="justify"> Obecnie działka nr 70, na kt&oacute;rej znajduje się cerkiew, dzwonnica i cmentarz, jest własnością Skarbu Państwa reprezentowanego przez Starostę Powiatu Przemyskiego. Według ewidencji grunt&oacute;w i budynk&oacute;w cerkiew jest w użytkowaniu Kościoła katolickiego w Rybotyczach, natomiast cmentarz jest zarządzany przez Gminę Fredropol.&nbsp;</span></p>
+									<p align="justify"><span style="color: #ff0000;">Cerkiew wraz z dzwonnicą i cmentarzem zostały wpisane do rejestru zabytk&oacute;w nieruchomych wojew&oacute;dztwa podkarpackiego - nr rej. A-463 z dnia&nbsp;1 grudnia 2010 r.&nbsp;&nbsp;</span></span></p>
+									<p align="justify"><span style="color: #ff0000;">W Archiwum Państwowym w Przemyślu znajduje się "Inwentarz cerkiewny filii Kopysno" z 1928 r. (jednostka aktowa 56/142/0/-/6061).</span></span></p>
+									<p class="style9" align="justify"><span class="style25">Fotografie cerkwi i dzwonnicy wykonane w latach 80. XX w. znaleźć można na stronach</span>:&nbsp;<a href="https://www.pslava.info/KopysnoS_CerkPokrovy,108534.html">pslava.info</a>&nbsp;i&nbsp;<a href="https://ia803005.us.archive.org/BookReader/BookReaderImages.php?zip=/23/items/cerkva-v-rujini-iwanusiw-1987/cerkva-v-rujini_jp2.zip&amp;file=cerkva-v-rujini_jp2/cerkva-v-rujini_0182.jp2&amp;id=cerkva-v-rujini-iwanusiw-1987&amp;scale=13&amp;rotate=0">us.archive.org</a>.</p>
+									<p align="center">***</span></p>
+									<p align="center"> Usytuowanie cerkwi i cmentarza według map z XIX i XXI wieku.</span></span></p>
+									<p align="center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="thumbnail img-fluid" src="Images/cgk_19.jpg" alt="" width="243" height="393" border="0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="thumbnail img-fluid" src="Images/cgk_21.jpg" alt="" width="241" height="393" border="0" /></span></p>
+									<p align="center"> <span style="font-size: xx-small;">(Kolorem czerwonym z lewej i zielonym z prawej podano numery działek)</span></span></p>
+									<p align="center"></p>
+									<p align="justify"> <strong>3. Dw&oacute;r</strong>&nbsp;(49&deg;40'46.43" N, 22&deg;38'25.11" E) - współrzędne ostatniej lokalizacji dworu.</span></p>
+									<p class="style9" align="justify">Do dzisiaj nie zachowały sie dokumenty, kt&oacute;re mogłyby poświadczyć lokalizację "dworzyszcza", o kt&oacute;rym mowa w akcie nadania wsi&nbsp; z 12 marca 1408 r. Musiał on&nbsp;</span>być, jak sądzą niekt&oacute;rzy, usytuowany na wybitnie obronnym miejscu, niedaleko "grodziska".</p>
+									<p align="justify">Według inwentarza z 1726 r.<a href="Dokumenty_do_pobrania.html#[14]"><sup>[14]&nbsp;</sup></a></span>do folwarku, na kt&oacute;ry składał się dw&oacute;r i zabudowania gospodarcze, prowadziły dwuskrzydłowe wrota wykonane z heblowanych desek, przykryte daszkiem osadzonym na drewnianych kulach. Dw&oacute;r był kryty gontem i składał się z przedsionka i 5 izb. W jednej z nich znajdował się komin kwadratowy, prosty, wylepiony gliną, a przy nim piec kaflowy i dwie ławy. Jedną z izb stanowiła piekarnia, w niej był gliniany piec piekarski, ława, żł&oacute;b dla bydła, przegroda dla cieląt, drabinka i żłobek. Obok dworu znajdował się spichlerz kryty gontem, obora opleciona chrustem oraz gumno wraz z szopą oplecioną chrustem, na słupach i pokrytą częściowo gontem i słomą. Całość zabudowań była ogrodzona drewnianym płotem.</p>
+									<p align="justify"><span style="font-size: small;">Szczeg&oacute;łowy opis dworu oraz innych obiekt&oacute;w znajduje się w opracowaniu "Akta klucza rybotyckiego" (zesp&oacute;ł 56/2223/0/1 i 2) dostępnym w Archiwum Państwowym w Przemyślu</span>.</p>
+									<p align="justify"> Dw&oacute;r we władaniu rodziny Tyszkowskich zbudowany był z drewna, na fundamencie z kamienia i cegły o wymiarach&nbsp;ok. 9 x 19 m. Wejście do dworu znajdowało się od strony płd.-wsch.&nbsp;&nbsp;Obok dworu był staw, wok&oacute;ł kt&oacute;rego rosły wierzby płaczące (źr&oacute;dełko - 49&deg;40'45.86" N, 22&deg;38'24.45" E), stajnia, stodoła i spichlerz.</span></p>
+									<p align="center"><a title="Dw&oacute;r w Kopysnie" href="Images/mayerhof_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/mayerhof_d.jpg" alt="Dw&oacute;r w Kopysnie" width="320" height="240" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Dw&oacute;r na mapie z 1852 r.</span></p>
+									<p class="style9" align="justify">Podczas I wojny światowej dw&oacute;r został poważnie uszkodzony (zob. <a href="I_wojna_swiatowa.html">I wojna światowa</a></span>). Dzierżawca dworu i innych d&oacute;br Tyszkowskich, Antoni Jankowski, w umowie dzierżawy został zobowiązany do reparacji dworu.</p>
+									<p class="style35"style="text-align: center;"><img class="thumbnail img-fluid" class="thumbnail img-fluid"src="Images/Dwor_umowa.jpg" alt="" width="552" height="401" /></p>
+									<p class="style24"style="text-align: center;font-size: 10px">Fragment kopii umowy dzierżawy</p>
+									<p align="justify"> W 1939 r., po opuszczeniu dworu przez rodzinę Jankowskich, został on rozebrany przez miejscową ludność i spalony. Pozostały fragmenty umocnień ziemnych otaczających nieistniejące już zabudowania dworskie, wały otaczające staw oraz niekt&oacute;re drzewa (zob.&nbsp;</span><a href="Ciekawe_miejsca.html"> Miejsca</a><a/span>).</span></a></p>
+ 								    <p align="justify"> <strong>4. Kapliczka&nbsp;</strong>(49&deg;40'48.26" N, 22&deg;38'38.75" E)</span></p>
+									<p align="justify"> Przydrożna, murowana zwana &ldquo;kapliczką św. Jana&rdquo;, w części otynkowana o przekroju zbliżonym do kwadratu i wysokości 2 m; pokryta daszkiem namiotowym, niegdyś podbitym gontem, obecnie wykonanym z drewna.</span></p>
+									<p align="center"><a title="Kapliczka - rzut" href="Images/kapliczka_rzut_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/kapliczka_rzut_d.jpg" alt="Kapliczka - rzut" width="239" height="234" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Kapliczka - rzut</span></p>
+									<p align="justify"> Została ustawiona na pamiątkę zniesienia pańszczyzny w 1848 r. W kapliczce znajduje się figurka przedstawiająca św. Jana, kt&oacute;ra w latach 70. ubiegłego wieku znikła w nieznanych okolicznościach i po wielu latach powr&oacute;ciła (zob.&nbsp;</span> <a href="Aktualnosci\2004.html">Aktualności</a></span>,</span> <a href="Ciekawe_miejsca.html">Miejsca</a></span>).</span></p>
+									<p align="center"><a title="Figurka św. Jana (1963 r.)" href="Images/swjan1963_08_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/swjan1963_08_d.jpg" alt="Figurka św. Jana (1963 r.)" width="320" height="538" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Figurka św. Jana (1963 r.)</span></p>
+									<p align="center"><a title="Kapliczka - widok z przodu (1963 r.)"href="Images/kapliczka1963_d.jpg" rel="lightbox[roadtrip]"><span class="style8"><img class="thumbnail img-fluid" src="Images/kapliczka1963_d.jpg" alt="Kapliczka - widok z przodu (1963 r.)" width="320" height="478" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></span></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Kapliczka - widok z przodu (1963 r.)</span></p>
+									<p align="center"><a title="Kapliczka - widok z tyłu (1963 r.)"href="Images/kapliczka1963_tyl_d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/kapliczka1963_tyl_d.jpg" alt="Kapliczka - widok z tyłu (1963 r.)" width="320" height="467" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+									<p class="style8" style="text-align: center;font-size: 10px"> Kapliczka - widok z tyłu (1963 r.)</span></p>
+									<p align="justify"> <strong>5. Horbysko</strong>&nbsp;(49&deg;40'48.91" N, 22&deg;38'18.07" E)</span></p>
+									<p align="justify"> Ok. 200 m od miejsca po dworze znajduje się kulminacja zwana Horbysko - fragment ugoru wśr&oacute;d łąk z zaklęśnięciem na szczycie o kształcie ziarna kukurydzy; obecnie zadrzewiony i zakrzewiony (pow. ok. 0,198 ha; zob.&nbsp;</span><a href="_miejsca.html">Miejsca</a></span>). Na pagórku rośnie drzewo iglaste, sosna czarna (Pinus nigra) gatunek obcy, występujący naturalnie na terenach południowej i południowo-zachodniej Europy, co świadczy o tym, że znalazło się tam za sprawą człowieka. Wiek drzewa do ustalenia. <br>
+
+										Horbysko na mapach historycznych pojawia się dopiero w XIX wieku (1869-1887). Czy pagórek ten powstał wcześniej a nabrał znaczenia w dalszych latach, tego nie wiadomo. 
+										Według tradycji tu właśnie był pochowany władyka Michał Kopystyński. Mieszkańcy pamiętają jeszcze metalowy krzyż na kamiennym cokole stojący na Horbysku. Na mapach z czas&oacute;w Austro-Węgier miejsce to zostało oznaczone znakiem krzyża 
+									   (zob.&nbsp;<a href="kartografia_archiwalna.html">Kartografia archiwalna</a>)</span>.<br>
+									Więcej informacji na temat Horbyska oraz innego kopca ziemnego przy granicy wsi zawiera opracowanie własne - <a href="Images/Aktualności/2025/KopiecKopysno.pdf">Kopiec z Kopysna</a></span>.</p>
+ 								    <p align="justify"><strong> 6. Domy</span></strong></p>
+									<p align="justify">We wsi zachowało się kilka starych chałup zrębowych; budowane były r&oacute;wnież chaty typu przysłupowego. Zabudowa zrębowa jak i przysłupowa charakteryzowała się tym, że pod jednym dachem łączono część mieszkalną i inwentarską.</span></p>
+									<p align="center"><span style="color: #ff0000;">************************************************************************</span><p>
+									<p align="center">Więcej informacji na temat zabytków znaleźć można na stronie Narodowego Instytutu Dziedzictwa -<a href="https://zabytek.pl/pl/szukaj?szukaj=kopysno">zabytek.pl</a></span></a></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				checkWidth();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>	
+		<script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+			}		
+	</script>
+	<script>
+		function checkWidth()
+		{
+			title = document.getElementById("title")
+			button = document.getElementById("buttonSidenav")
+
+			titleWidth = title.offsetWidth;
+			buttonWidth = button.offsetWidth;
+
+			ButtonTitleRatio = titleWidth/buttonWidth;
+
+			if(ButtonTitleRatio<=5.6)
+			{
+				title.innerHTML = " ";
+			}
+			else
+			{
+				title.innerHTML = "Zabytkowe obiekty";
+			}
+			//console.log({titleWidth,buttonWidth,ButtonTitleRatio});
+		}	
+	</script>			
+    </body>
+</html>

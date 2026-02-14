@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 17px;" href="Dzieje_wsi_poczatek.html">Okres od powstania wsi do 1772 roku</a>
+				<a style="font-size: 17px;"href="Od_rozbioru_do_I_wojny.html">Od I rozbioru Polski do 1914 roku</a>
+				<a style="font-size: 17px;"href="I_wojna_swiatowa.html">I wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_miedzywojenny.html">Okres miedzywojenny</a>
+				<a style="font-size: 17px;"href="II_wojna_swiatowa.html">II wojna światowa</a>
+				<a style="font-size: 17px;"href="Okres_powojenny.html">Lata powojenne</a>
+				<p align="center"><a style="font-size: 17px;"href="#">***</a></p>
+				<a style="font-size: 17px;"href="Dokumenty_do_pobrania.html">Dokumenty do pobrania</a>	
+				</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span>
+									<span id="title" style="display: block;">
+										Lata powojenne
+									</span>
+									<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px;font-size: 12px;line-height :110%;"class="btn btn-info"onclick="openNav()">Wybierz<br>okres</button>
+								</span>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<p align="justify"><strong><span style="font-family: Arial;">Akcja "Wisła"</span></strong></p>
+									<p align="justify">Nie wdając się w ocenę zasadności przeprowadzenia akcji, kt&oacute;ra budzi kontrowersje zar&oacute;wno u os&oacute;b deportowanych, jak i historyk&oacute;w, fakt ten zasługuje na uwagę, gdyż w jej wyniku dokonano deportacji części mieszkańc&oacute;w Kopysna, kt&oacute;rzy opuszczając swoją rodzinną miejscowość nigdy do niej (poza pojedynczymi przypadkami) nie powr&oacute;cili na stałe.</p>
+<p align="justify">Według autora książki E. Misiło (&quot;Akcja Wisła 1947&quot;, 2012) deportacja mieszkańc&oacute;w Kopysna miała miejsce &nbsp;w dniach 25-31 maja 1947 r. Kopysno opuściło wtedy 64 mieszkańc&oacute;w a zostało w nim 19 os&oacute;b. Stacją załadowczą był Przeworsk, a miastem docelowym miasteczko Sztum&nbsp;(zob.&nbsp;<a href="http://kopysno.pl/Dokumenty.html">Dokumenty</a> - Dokumenty związane z akcją &quot;Wisła&quot;). Według załącznika nr 2 do dokumentu &quot;Zestawienie transport&oacute;w odprawionych przez 7 D.P&quot; zamieszczonego na stronie&nbsp;<a href="http://www.emisilo.pl/2018/10/ksiega-wysiedlonych-1947/">www.emisilo.pl</a> wraz z mieszkańcami Kopysna w sumie wysiedlono 97 rodzin, razem 370 os&oacute;b z ich dobytkiem (34 konie, 105 kr&oacute;w, 46 owiec i k&oacute;z, 4 świnie, 377 sztuk drobiu oraz 36 woz&oacute;w konnych). Komendantem transportu był porucznik Wrzesiński, a cały transport nadzorował 10 pułk piechoty 7 Dywizji Piechoty oraz żołnierze z 9 Dywizji Piechoty.</p>
+<p align="justify">S. Kryciński (&quot;Przemyśl i Pog&oacute;rze przemyskie&quot;, 1997, 2007) podaje, iż Kopysno opuściło w ramach akcji 98 os&oacute;b.</p>
+<p align="justify">Według dokument&oacute;w 35 Komendy Odcinka WOP z lipca 1947 roku (ASG, BB WOP, sygn. 30/17. Sprawozdanie okresowe 35 Komendy Odcinka WOP za rok 1947 r., k. 23)&nbsp;wywieziono z Kopysna 48 os&oacute;b.</p>
+<p align="justify">Według opowiadań Jana Krupy, wysiedlonego z Kopysna, deportacja rozpoczęła się już 15 maja 1947 r. Wszystkich mieszkańc&oacute;w wyznaczonych do wyjazdu zgromadzono w sąsiedniej miejscowości Brylińce, gdzie przebywali około tygodnia oczekując na wyjazd w opuszczonych sadach. Wśr&oacute;d deportowanych rodzin, opr&oacute;cz rodziny Krup&oacute;w były rodziny Kaczmar&oacute;w i Zachorbeńskich. Wieczorem załadowano ich na samochody wojskowe i przewieziono do Przeworska. 31 maja 1947 r. umieszczono ich w pociągu, kt&oacute;ry liczył czterdzieści wagon&oacute;w (transport o numerze R-327). Na miejsce przeznaczenia, do miejscowości Sztum deportowani dotarli 4 czerwca 1947 r. Ze wspomnieniami Jana Krupy po przybyciu na miejsce (zob.&nbsp;<a href="http://kopysno.pl/Dokumenty.html">Dokumenty</a> - Dokumenty związane z wysiedleniem na wsch&oacute;d (1945)), można zapoznać się na stronie -&nbsp;<a href="http://gmina.sztum.pl/historie-mowione.html">gmina.sztum.pl</a>.</p>
+<p align="justify">Ze względu na spalenie niekt&oacute;rych dom&oacute;w w Kopysnie, co miało miejsce &nbsp;w 1945 r., część mieszkańc&oacute;w przeniosła się do swoich bliskich rozsianych w innych miejscowościach (np. Makowa) i stamtąd była deportowana przez inne stacje załadowcze. Jedną z nich była miejscowość Olszanica. Wysiedlenie to było nadzorowane przez 8 Dywizję Piechoty Wojska Polskiego.</p>
+<p align="justify">Wysiedleni zamieszkali m.in. w takich miejscowościach jak: Kiemiany, Malinka (woj. warmińsko-mazurskie), Lipiec, Miastko, Nowa Wieś, Sztumska Wieś, Wałdowo &nbsp;(woj. pomorskie), Osetno (woj. dolnośląskie).</p>
+<p align="center"> ***</span></p>
+									<p align="justify">Dekretem z dnia 27 lipca 1949 r. o przejęciu na własność Państwa nie pozostających w faktycznym władaniu właścicieli nieruchomości ziemskich, położonych w niekt&oacute;rych powiatach wojew&oacute;dztwa białostockiego, lubelskiego, rzeszowskiego i krakowskiego (Dz.U. z 1949 r. Nr 46, poz. 339 -&nbsp;<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19490460339">isap.sejm.gov.pl</a>), nieruchomości os&oacute;b wysiedlonych w ramach Akcji "Wisła" przejęło Państwo. Dekret ten, według Eugeniusza Misiły, autora publikacji "Akcja Wisła. Dokumenty i materiały", zał. 22 (Warszawa 2013), objął r&oacute;wnież właścicieli gospodarstw rolnych, kt&oacute;rzy wraz z rodziną zginęli podczas II wojny światowej i gospodarstw opuszczonych przez "jednostki zbrodnicze, kt&oacute;re brały udział w akacjach sabotażowych i zbiegły".</span></p>
+<p align="justify">Jedynie część os&oacute;b, kt&oacute;re pozostały w Kopysnie nie została objęta dekretem. W latach 70-tych XX wieku, zgodnie z ustawą z dnia 26 października 1971 r. o uregulowaniu własności gospodarstw rolnych (Dz. U. Nr 27, poz. 250 -&nbsp;<a href="http://isap.sejm.gov.pl/DetailsServlet?id=WDU19710270250">isap.sejm.gov.pl</a>) posiadacze gospodarstw rolnych otrzymali akty własności ziemi.&nbsp;</span></p>
+<p align="justify">W wyniku zawieruchy wojennej wiele rodzin utraciło ze sobą kontakt. Po wojnie rozpoczęli oni poszukiwania m.in. przez prasę. Na łamach ukraińskiego dziennika Svoboda (nr 162 z dnia 15 sierpnia 1949 r.) wydawanego w USA (Jersey City i New York) Kozar Jan z Kopysna poszukiwał Michała Wronowskiego, syna Anny Kozar i Pawła Wronowskiego&nbsp;(zob.&nbsp;<a href="http://www.svoboda-news.com/arxiv/pdf/1949/Svoboda-1949-162.pdf">svoboda-news.com</a>).</span></p>
+<p align="justify">Pomimo wysiedleń i wyjazd&oacute;w na roboty za granicę nie wszyscy opuścili Kopysno; pozostały w nim takie rodziny jak: Kettnerowie (w tym Paweł i Edward), Krupowie (w tym Bazyli), Kulhawcowie (w tym J&oacute;zef), Jakubowie (w tym Katarzyna), Wronowscy (w tym Katarzyna, Paweł i Michał), Gierczakowie (Karolina i Weronika), Paulina Rogoża, Anastazja Bomba, Michalina Okołowicz, Nienadowscy (w tym Piotr i Paraskewia), Maria Hamryszczak, Michał Kaczmar.&nbsp;</span></p>
+<p align="justify">Według danych z 1950 r. (zob. "Akta gminy Rybotycze, powiat Przemyśl" 1944-1954 r.- zesp&oacute;ł 56/209/0 - Archiwum Państwowe w Przemyślu) w Kopysnie było 14 gospodarstw rolnych, w tym 12 indywidualnych (osoby fizyczne), a pozostałe we władaniu "PPZ" i "Szkoły w Kopysnie". Powierzchnia gospodarstw wynosiła 614,20 ha grunt&oacute;w, z czego 518,70 ha stanowiły grunty orne, 60,10 ha pastwiska i 35,40 ha nieużytki.</span></p>
+<p align="justify">W 1957 r. do Kopysna powr&oacute;cił Mikołaj Nienadowski, a w kilka lat p&oacute;źniej część Jego rodziny. Przez wiele lat, niemal do końca swego życia sprawował funkcję sołtysa Kopysna (zob.&nbsp;</span><a href="Dokumenty.html">Dokumenty</a></span>&nbsp;- inne).</span></p>
+<p align="justify">Do Kopysna powr&oacute;ciły także rodziny Krup&oacute;w (1957-61 r.) i Marcin&oacute;w (marzec 1959 r.).</span></p>
+<p align="justify">Na podstawie rozporządzenia Ministra Sprawiedliwości z dnia 14 stycznia 1963 r.&nbsp;<sup><a href="Dokumenty_do_pobrania.html#[8]"><sup>[8]</sup></a>&nbsp;</sup>z urzędu zamknięto księgi wieczyste Kopysna. Wszystkie grunty nie pozostające w faktycznym władaniu właścicieli przeszły na własność Państwa.</span></p>
+<p align="justify">Wydział Rolnictwa i Leśnictwa - Prezydium Wojew&oacute;dzkiej Rady Narodowej w Rzeszowie wydał obwieszczenie z dnia 7 września 1965 r. w sprawie założenia ewidencji grunt&oacute;w, w kt&oacute;rym określił miejscowości, dla kt&oacute;rych operat byłego katastru austriackiego został zastąpiony operatem ewidencji grunt&oacute;w. Wśr&oacute;d nich znalazło się też Kopysno (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/715242/edition/677655/content?ref=aHR0cHM6Ly9qYmMuYmoudWouZWR1LnBsL2RsaWJyYS9yZXN1bHRzP3E9a29weXNubyZhY3Rpb249U2ltcGxlU2VhcmNoQWN0aW9uJnR5cGU9LTYmcD0w">jbc.bj.uj.edu.pl<a></a>).</a></span></p>
+<p align="justify">W Dzienniku Urzędowym Wojew&oacute;dzkiej Rady Narodowej z dnia 30.06.1967 r. Nr 7, poz.52 ukazało się ogłoszenie, w kt&oacute;rym podano do publicznej wiadomości wykaz nieruchomości stanowiących uprzednio własność parafii grecko-katolickich, kt&oacute;re na mocy stosownych w/w przepis&oacute;w przeszły na rzecz Państwa (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/715264/edition/677677/content">jbc.bj.uj.edu.pl</a>). Decyzją z dnia&nbsp; 1.02.1967r., sygn. NZ.RG.610/208/67, dz. gr. 70 w Kopysnie przeszła na rzecz Państwa.</span></p>
+<p align="justify">W roku 1977 władze PRL zarządzeniem Ministra Administracji, Gospodarki Terenowej i Ochrony Środowiska z dnia 9 sierpnia 1977 r.<sup>&nbsp;<a href="Dokumenty_do_pobrania.html#[9]"><sup>[9]</sup></a></sup>&nbsp;zmieniły nazwę miejscowości na "Kopystno". Nazwa ta w wyniku protest&oacute;w środowisk naukowych, turystycznych i przewodnickich i innych funkcjonowała jedynie do roku 1981.</span></p>
+<p align="justify">Na początku lat 70. miejscowość została zelektryfikowana. Pod koniec tych lat pojawił się pierwszy telefon, kt&oacute;ry miał nr 6 i był zlokalizowany u sołtysa.&nbsp;Przez pewien czas można było z niego korzystać tylko w godzinach pracy centrali Urzędu Pocztowego w Rybotyczach, kt&oacute;rą p&oacute;źniej włączono do centrali w Birczy obsługującej abonent&oacute;w przez pozostałą część dnia i nocy.</span></p>
+<p align="justify">Gł&oacute;wnym zajęciem mieszkańc&oacute;w Kopysna w latach powojennych było rolnictwo - zar&oacute;wno produkcja roślinna (uprawa zb&oacute;ż), jak i zwierzęca (bydło). Według spisu z dnia 26 stycznia 1962 r. w Kopysnie było 28 szt. bydła (w tym 4 cielęta) oraz 11 szt. koni (zob.&nbsp;</span><a href="Dokumenty.html">Dokumenty</a></span>&nbsp;- inne). W latach 80-tych z powodzeniem rozpoczęto ch&oacute;w owiec, gł&oacute;wnie ze względu na wełnę i sk&oacute;ry.</span></p>
+<p align="justify">Z powodu&nbsp;</span>występowania licznej zwierzyny łownej (jelenie, dziki) Kopysno przez wiele lat stanowiło bazę wypadową dla myśliwych, kt&oacute;rzy bardzo często odwiedzali tę miejscowość. Po roku 1989, z uwagi na zmiany gospodarczo-ekonomiczne i upadek gospodarstw rolnych, teren ten przestał być atrakcyjnym miejscem dla tej grupy społecznej.</span></p>
+<p align="justify">Większość mieszkańc&oacute;w Kopysna już nie żyje, a część przeprowadziła się do innych miejscowości. Obecnie z rdzennych mieszkańc&oacute;w nie mieszka już nikt.</span></p>
+<p align="justify">Kopysno zgodnie z uchwałą nr XVIII/311/12 Sejmiku Wojew&oacute;dztwa Podkarpackiego z dnia 27 lutego 2012 r. w sprawie ustalenia wykazu miejscowości położonych na terenach podg&oacute;rskich i g&oacute;rskich w wojew&oacute;dztwie podkarpackim (Dz. Urz. Woj. Podkarpackiego z 2012 r. poz. 604) zostało uznane za miejscowość podg&oacute;rską.</span></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				checkWidth();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>
+		<script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+			}		
+	</script>
+	<script>
+		function checkWidth()
+		{
+			title = document.getElementById("title")
+			button = document.getElementById("buttonSidenav")
+
+			titleWidth = title.offsetWidth;
+			buttonWidth = button.offsetWidth;
+
+			ButtonTitleRatio = titleWidth/buttonWidth;
+
+			if(ButtonTitleRatio<=4.8)
+			{
+				title.innerHTML = " ";
+			}
+			else
+			{
+				title.innerHTML = "Lata powojenne";
+			}
+			//console.log({titleWidth,buttonWidth,ButtonTitleRatio});
+		}	
+	</script>				
+    </body>
+</html>
