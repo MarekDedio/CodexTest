@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="..\script.js"></script>
+		<script src="..\ekran.js"></script>
+    </head>
+    <body style="background-color: #EEEEEE !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="2026.html">2026</a>
+				<a href="2025.html">2025</a>
+				<a href="2024.html">2024</a>
+                <a href="2023.html">2023</a>
+				<a href="2022.html">2022</a>
+				<a href="2021.html">2021</a>
+				<a href="2020.html">2020</a>
+				<a href="2019.html">2019</a>
+				<a href="2018.html">2018</a>
+				<a href="2017.html">2017</a>
+				<a href="2016.html">2016</a>
+				<a href="2015.html">2015</a>
+				<a href="2014.html">2014</a>
+				<a href="2013.html">2013</a>
+				<a href="2012.html">2012</a>
+				<a href="2011.html">2011</a>
+				<a href="2010.html">2010</a>
+				<a href="2009.html">2009</a>
+				<a href="2008.html">2008</a>
+				<a href="2007.html">2007</a>
+				<a href="2006.html">2006</a>
+				<a href="2005.html">2005</a>
+				<a href="2004.html">2004</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;">
+								<span id="title">
+									2004 
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"class="btn btn-info"onclick="openNav()">Rok</button>
+							</li>
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">Wizytę w Kopysnie złożyli niespotykani goście z Francji - rodzina Michała Kopko z Kopysna.</span></p>
+									<p align="justify">Z wielkim przejęciem miejsce narodzin ojca i dziadka ujrzeli jego syn Patrice z żoną Danielle&nbsp;i c&oacute;rką Aline oraz jego c&oacute;rka Catherine. Ich pobyt poruszył serca wielu. Przeżyliśmy wspaniałe chwile mogąc wspominać wydarzenia, kt&oacute;re miały miejsce przed laty i odsłaniać tajemnice, kt&oacute;re wydawały się nie do odkrycia.&nbsp;&nbsp;Dzięki wielkiej gościnności rodzin Suchorzepk&oacute;w i Fabryk&oacute;w oraz nieocenionej pomocy tłumacza Pana Emrica, kt&oacute;rego nazwaliśmy Mister Leclerc, wizyta ta zapisała się na trwale&nbsp;w pamięci wszystkich uczestnik&oacute;w tak niezwykłego spotkania. Bogactwo wszelkiego rodzaju smakołyk&oacute;w, napoj&oacute;w etc. przygotowanych z wielkim pietyzmem przez gospodarzy spotkania oraz wspaniałe nastroje i tematy rozm&oacute;w wytworzyły tak niespotykaną atmosferę, że trudno jest określić ją jednym zdaniem.</span></p>
+									<p align="justify">Chciałoby się powiedzieć "TAK, TAK", ale z uwagi na inne znaczenie tych sł&oacute;w w języku francuskim, m&oacute;wimy "Si, Si" ;-).</span></p>
+									<p align="justify">Wierzymy, że w przyszłym roku ponownie spotkamy się w tak wspaniałym gronie wraz z tymi, kt&oacute;rzy nie mogli być wśr&oacute;d nas.</span></p>
+																		<p style="text-align: center;">
+										<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/wizyta2004_d.jpg">
+									</p>
+									<span style="font-size:11px;float:right;padding: 10px;">17-18 lipca 2004</span>
+								</li>
+							<li class="list-group-item"style="background-color: #EEEEEE;padding-bottom: 30px;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">Rozmawialiśmy z najstarszym byłym mieszkańcem Kopysna Mikołajem Krupą. Uzyskaliśmy wiele interesujących wiadomości o tej miejscowości. Dzięki jego niespotykanej pamięci udało nam się ustalić, zweryfikować i poszerzyć wiedzę o tej wsi i jej mieszkańcach sprzed wielu lat. Udało się nam również odnaleźć Michała Kopko (mieszkańca Kopysna), który pod koniec II wojny światowej wyjechał do Francji i tam umarł. Jego wnuczka Alina Kopko od wielu lat poszukiwała korzeni swego dziadka. Odnalazła je w internecie. Mamy nadzieję, że cała ta historia będzie się rozwijać i rozłączone rodziny po tylu latach nareszcie będą mogły się spotkać.
+								<br>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/mikolaj_krupa1_d.PNG">
+								</p>
+								<span style="font-size:11px;float:right;padding: 10px;">13 maja 2004</span>
+								</div>
+							</li>
+							<li class="list-group-item"style="background-color: #EEEEEE;padding-bottom: 30px;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">Po kilkudziesięciu latach do Kopysna powróciła zaginiona figurka przedstawiająca postać św. Jana. Do dzisiaj owiane są tajemnicą nieznane losy zniknięcia jak i powrotu tej figurki.
+								<br>
+								<p style="text-align: center;">
+									<img style="width: 544px; height: auto;"class="thumbnail img-fluid"src="../Images/Aktualności/2004/swj1_d.jpg">
+								</p>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/swj2_d.PNG">
+								</p>
+								<span style="font-size:11px;float:right;padding: 10px;">maj 2004</span>
+								</div>
+							</li>
+							<li class="list-group-item"style="background-color: #EEEEEE;padding-bottom: 30px;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;text-align: center;">
+									Do Kopysna zawitały oswojone dziki a może świniodziki... (?)
+
+								<br><br>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/dziki2_d.PNG">
+								</p>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/dziki1_d.PNG">
+								</p>
+								<span style="font-size:11px;float:right;padding: 10px;">kwiecień 2004
+
+								</span>
+								</div>
+							</li>
+							<li class="list-group-item"style="background-color: #EEEEEE;padding-bottom: 30px;margin-bottom: 50px;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;text-align: center;">
+									Czyż nie są to piękne stawy?
+								<br><br>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/staw1_d.PNG">
+								</p>
+								<p style="text-align: center;">
+									<img class="thumbnail img-fluid"src="../Images/Aktualności/2004/staw2_d.PNG">
+								</p>
+								<span style="font-size:11px;float:right;padding: 10px;">kwiecień 2004
+
+								</span>
+								</div>
+							</li>						
+					</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>
+		<script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "5%";
+				}
+				if(a>1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "25%";
+				}
+			}		
+		</script>			
+    </body>
+</html>

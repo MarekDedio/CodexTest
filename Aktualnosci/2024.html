@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="..\script.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="2026.html">2026</a>
+				<a href="2025.html">2025</a>
+				<a href="2024.html">2024</a>
+                <a href="2023.html">2023</a>
+				<a href="2022.html">2022</a>
+				<a href="2021.html">2021</a>
+				<a href="2020.html">2020</a>
+				<a href="2019.html">2019</a>
+				<a href="2018.html">2018</a>
+				<a href="2017.html">2017</a>
+				<a href="2016.html">2016</a>
+				<a href="2015.html">2015</a>
+				<a href="2014.html">2014</a>
+				<a href="2013.html">2013</a>
+				<a href="2012.html">2012</a>
+				<a href="2011.html">2011</a>
+				<a href="2010.html">2010</a>
+				<a href="2009.html">2009</a>
+				<a href="2008.html">2008</a>
+				<a href="2007.html">2007</a>
+				<a href="2006.html">2006</a>
+				<a href="2005.html">2005</a>
+				<a href="2004.html">2004</a>
+</div>
+      <div id="texto" class="row">
+        <div id="xxx" class="col">
+			<ul id="szerokosc" class="list-group lista">
+				<li id="l1" class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;">
+					<span id="title"> 2024 </span> <button id="buttonSidenav" style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"
+														   class="btn btn-info" onclick="openNav()">
+						Rok
+					</button>
+				</li>
+				</li>
+				</div>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align= "center"><strong style="color:red;">"Rozpustnik z rybotyckiego klucza"</a><br></strong>
+                <p align="justify">
+				To tytuł opowiadania o pewnym młodzieńcu z Kopysna, który zawładnął sercami wiejskich urodziwych niewiast z okolicy.<br>
+				Rybotycki podglądacz, birczański alpinista, nauczyciel jazdy wierzchem, miłośnik gołąbków ziemniaczanych z sosem cebulowo... to tylko niektóre jego cechy i określenia. <br>
+				Jego urokowi nie oparła się nawet pewna wdowa dziewica z Pacławia, której swoim szlacheckim kluczem, dzięki mocy ziół, uruchomił nieczynny od dnia ślubu zamek. <br>
+				Innym razem sprawił, że okoliczni chłopi z wielką radością podjęli pewną eksperymentalną naukę, zarówno w sensie teoretycznym, ale bardziej praktycznym, która zaprowadziła ich w końcu do spowiedzi... grupowej.<br>
+				W Birczy wykorzystał swe zdolności alpinistyczne i pod osłoną nocy, przy śpiewie słowików, wspiął się do alkowy, by uwieść pewną szlachetną wiekiem niewiastę, o czym dowiedział się po fakcie, i która nie chciała mu w końcu oddać... śpioszków. <br>
+				Z powodu zamiłowania do rozdawania prezentów o mały włos, a pop Śmykewicz na rynku w Rybotyczach, nie straciłby... próbując rozdzielić wściekłe kobiety. O co poszło i jak wielka byłaby to strata dla popa, o tym 
+				będzie można dowiedzieć się z książki.<br><br>
+				Opowiadanie o rozpustniku ukaże się drukiem wraz z innymi opowieściami z Kopysna, o czym nie omieszkamy poinformować zainteresowanych.<br>
+				</p>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						14 grudnia 2024
+					</span>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">
+							<em>"Wioskach należących do Rybotycz dowiaduję się że zwłoki Biskupa ruskiego Kopystyńskiego mają spoczywać wiosce Kopysnie, któren Unię pierwszy przyjoł czego jaśniej dochodzić będę, a że w Posadzie Rybotyckiej Bazylianie były otym wątpienia niema."</em><br>
+							Powyższe słowa w liście do Franciszka Siarczyńskiego skierował ojciec Antoniego i Józefa Tyszkowskich, Wincenty (pochowany w kaplicy grobowej w Kalwarii Pacławskiej).<br> 
+							Czyżby jednak w Kopysnie znajdował się grób biskupa Michała Kopystyńskiego? Więcej na stronie w zakładce <a href="www.kopysno.pl/Dzieje_wsi_poczatek.html">Dzieje wsi.</a><br>
+							Uzupełniliśmy stronę o link do akt majątkowych i rodzinnych Józefa Tyszkowskiego z lat 1761-1840 - <a href="www.kopysno.pl/Od_rozbioru_do_I_wojny.html"
+							>Dzieje wsi.</a><br>
+							<p align= "center">***</p>
+							<p align= "justify">Nieliczni wiedzą, że w Kopysnie znajdują się dwa ziemne nasypy, jeden z nich jest dobrze znany, to Horbysko. Drugi czeka na odkrycie. 
+								Wczesną wiosną przyszłego roku planujemy zlokalizować miejsce, gdzie się znajduje. Chętnych zobaczyć z nami tajemniczy pagórek serdecznie zapraszamy. 
+								Więcej szczegółów podamy we właściwym czasie.</p>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						30 listopada 2024
+					</span>
+				</div>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">
+							W piątek 15 listopada br. miała miejsce premiera niezwykłego filmu (link poniżej) autorstwa <a href="https://www.youtube.com/strefaczytacza">STREFA CZYTACZA</a>,
+							do obejrzenia którego serdecznie zapraszamy, nie omieszkając oczywiście zachęcić wszystkich, który jeszcze tego nie uczynili, do lektury wszystkich tomów „Sagi rodu Tyszkowskich” Magdy Skubisz.<br>
+							<p align= "center"><a href="https://www.youtube.com/watch?v=AccHyLppN9g"><strong style="color:red;">„Klątwa, więzienie, stara krypta i zapomniana rodzina. Saga Rodu Tyszkowskich.”</strong></a></p>
+							<p align= "justify">Bardzo dziękujemy autorom za reklamę naszej strony i oświadczamy, że zaszczytem było uczestniczyć w realizacji tego filmu, będącego naszym zdaniem pilotem serialu o rodzie Tyszkowskich.<br>
+							<p align= "justify">Ze swej strony, zainteresowanym poszerzeniem wiedzy o rodzinie Tyszkowskich, polecamy nieznaną historię człowieka, który urodził się w ich dworku w Kopysnie i który nieźle namieszał na dworze samego cesarza Franciszka Józefa I (skrót historii: <a href="http://kopysno.pl/Images/Aktualno%C5%9Bci/2023/Streszczenie-Pelka.pdf">Oszust z Kopysna</a>).
+							<p align= "center">***</p>
+							<p align= "justify">Pragniemy poinformować, iż poza wyjątkami (reklama, propozycje pracy itp.) <b>zawsze</b> odpowiadamy na przesłane nam wiadomości e-mail. Jeżeli ktoś nie otrzymał odpowiedzi  z przyczyn niezależnych od nas, prosimy nas o tym poinformować, korzystając z numeru telefonu zamieszczonego w zakładce KONTAKT. Wystarczy wysłać wiadomość SMS.</p>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						17 listopada 2024
+					</span>
+				</div>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">
+							Niewiele wiemy, jak wyglądało życie mieszkańców wsi Kopysno podczas Wielkiej wojny, zwanej później I wojną światową. Z przyjemnością więc przedstawiamy wspomnienia nieznanego z nazwiska mieszkańca sąsiedniej wsi Makowa (zw. Makową kolonią, Makową niemiecką), pochodzenia niemieckiego i wyznania ewangelicko-augsburskiego, który opisał początki wojny. <br>
+<br>
+                <em>„19 września 1914 r. mieliśmy pierwsze kwaterowanie Rosjan. Byli to Kozacy, którzy dosłownie zalali naszą wioskę. Mieszkańcy byli bardzo zdezorientowani, ale wkrótce to ustąpiło, gdy ludzie zdali sobie sprawę, że Kozacy nie wyrządzają im krzywdy. Nie wolno im było jednak przeszkadzać w ich działaniach w stodołach, na polach ziemniaków i wśród drobiu, w przeciwnym razie zostaliby źle przyjęci. Ich pobyt trwał 12 dni, w tym czasie domy i budynki gospodarcze Johanna Actersmanna, Philippa Manlera i stodoła Philippa Helbiga spłonęły, ale nie było to celowe działanie, lecz z powodu nadmiernego ogrzewania podczas gotowania. Odeszli 1 października i znów mogliśmy odetchnąć z ulgą. <br>
+                6 października dotarły tu nasze wojska, po czym odeszli na wschód od Nowego Miasta (ob. Ukraina, niedaleko przy granicy z Polską) trwała 21-dniowa bitwa. <br>Na początku listopada nasze wojska wycofały się, a my z niepokojem oczekiwaliśmy nadchodzących dni. Poza dwiema rodzinami nikt stąd nie zdecydował się na ucieczkę, bo odradzał nam to kwaterujący w naszej szkole podpułkownik, mówiąc, że nie należy wyjeżdżać z małymi dziećmi za granicę, gdy zima tuż, tuż.<br>
+                7 listopada przybyła do nas rosyjska piechota, ale tym razem bardzo się nam dłużyła, bo kwaterowanie trwało do 20 marca 1915 r., oczywiście z przerwami, gdy jeden oddział musiał ratować drugi z okopów pod Przemyślem.<br>
+                To były dla nas gorzkie godziny, ale wciąż mieliśmy schronienie i jedzenie, które w przeciwnym razie zostałyby całkowicie odebrane. Oczywiście żywność była zabierana całkowicie i to za bardzo niską cenę, czasami nawet za darmo. Podobnie było z bydłem. Do jednej krowy wszystko zostało zabrane, niektóre konie zostały nawet skradzione. Pomimo wszystkich szkód poniesionych przez okolicznych mieszkańców, wciąż można było usłyszeć powtarzane: „To i tak wszystko głupota, jeśli tylko nasz cesarz wygra!”. <br>
+                Nasz nauczyciel Jaki (Georg) mógł bez przeszkód odprawiać nabożeństwa w niedziele i święta, a wielu Rosjan nawet brało w nich udział, mimo że nic z nich nie rozumieli. 
+                Lekcje w szkole zostały odwołane, ponieważ klasa, z której wyrzucono ławki, była zawsze wypełniona ponad setką Rosjan. Zajęcia nie mogły się rozpocząć aż do teraz, ponieważ piec został zrujnowany i musi zostać odbudowany; ławki również zostały częściowo uszkodzone i muszą zostać naprawione. <br>
+                29 czerwca 1915 r., nasz drogi pastor Salfeld z Bandrowa (k/Ustrzyk Dolnych) mógł odwiedzić nas po raz pierwszy w czasie wojny i przeprowadzić nabożeństwo i komunię świętą. Teraz jednak nabieramy nowej odwagi w obliczu zwycięskich postępów naszych wojsk i jesteśmy głęboko przekonani, że dobry Bóg pomoże nam również w dalszym zwycięstwie. Tak, niech Bóg trzyma Cesarza z daleka i da mu zwycięstwo!”.</em> <br><br>
+                (Źródło: Evangelisches Gemeindeblatt für Galizien und die Bukowina. 1915 r. Nr 15)</p>
+				<p align= "center">***</p>		
+				<p align= "justify">Jednocześnie informujemy, że pojawiło się II wydanie publikacji "Oszust z Kopysna na dworze cesarza Franciszka Józefa I" (Wydawnictwo Dedio; ISBN 978-83-973242-0-6).<br>
+					Poniżej przedstawiamy opracowanie dotyczące nieznanych "skarbów" rodziny Tyszkowskich i życzymy miłej lektury. 
+					</p>	
+				<p align= "center">"Skarby Tyszkowskich" - opracowanie nie jest już dostępne</a> 
+				<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						10 listopada 2024
+					</span>
+				</div>
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">
+							Podczas przygotowywania opracowania na temat tajemniczego nagrobka, natknęliśmy się na ciekawy materiał  
+							dot. budowy linii kolejowej Przemyśl-Łupków, zwanej „Pierwszą Węgiersko-Galicyjską Koleją Żelazną”. 
+							Jednym z koncesjonariuszy był Józef Tyszkowski, właściciel miejscowości Huwniki, brat Antoniego Tyszkowskiego, właściciela Kopysna
+							i stryj Pawła Tyszkowskiego, który w latach późniejszych chciał budować linię kolejową Niżankowice-Sanok. 
+							Opracowanie polecamy zwłaszcza miłośnikom kolei z czasów panowania cesarza Franciszka Józefa I. 
+							<p align= "center">"Józef Tyszkowski buduje kolej" - opracowanie nie jest już dostępne</a><p align= "justify"> 
+							W przygotowaniu mamy sensacyjną historię zorganizowanej grupy oszustów, którzy zapragnęli zagarnąć wielotysięczne włości Pawła Tyszkowskiego. </p>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						6 października 2024
+					</span>
+				</div>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+				<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align= "justify">
+						Bardzo nam miło zakomunikować, iż udało nam się dotrzeć do informacji na temat jednego z braci Mikołaja, Pawła i Józefa Nienadowskich - Michała, 
+						który zmarł w wieku 18 lat. Informacje o nim dostępne są w zakładce 
+						<a href="../Mieszkancy/Michal_Nienadowski.html">Michał Nienadowski</a>.
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+					</p>
+					<strong>Administrator strony Kopysna</strong>
+				</div>
+				<span style="font-size:11px;float:right;padding: 10px;">
+					21 września 2024
+			    </span>
+			
+		    </div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+				<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align= "justify">
+						W załączeniu przedstawiamy historię planowanej budowy sieci kolejowej przebiegającej przez miejscowość Rybotycze do Sanoka. Zapraszamy do lektury.
+						<p align= "center">"Stacja kolejowa Rybotycze" - opracowanie nie jest już dostępne</a>
+						<br>
+						<p align= "justify">W kolejnej historii postaramy się rozwikłać tajemnicę osoby pochowanej na cmentarzu w Kalwarii Pacławskiej oraz przedstawić historię jego żony, 
+							o której wspomnieliśmy w jednym z opracowań.
+						Tytuł opracowania "Tajemniczy grób w Kalwarii Pacławskiej".</p>
+				<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+					</p>
+					<strong>Administrator strony Kopysna</strong>
+				</div>
+				<span style="font-size:11px;float:right;padding: 10px;">
+					17 września 2024
+			</span>
+			</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+				<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align= "justify">W wiadomościach z 17 lipca 2023 r. informowaliśmy o przyznaniu władzom powiatu przemyskiego dotacji z tzw. Rządowego Programu Odbudowy Zabytków w kwocie 490 tys. złotych na prace remontowo-renowacyjne cerkwi w Kopysnie.<br>
+						Z nieznanych nam powodów Zarząd Powiatu Przemyskiego w dniu 28 maja 2024 r. podjął decyzję o odstąpieniu od realizacji ww. zadania. <br>
+						Bardzo jesteśmy ciekawi powodu odstąpienia od planowanego remontu cerkwi zwłaszcza, że 
+						wykonano już niezbędną dokumentację (projekt, kosztorys itp.) oraz uzyskano stosowne zezwolenia konserwatorskie i budowlane i, co należy podkreślić, wszystko to dzięki staraniom, włożonej pracy i własnym środkom finansowym Stowarzyszenia Miłośników Wsi Kopysno. <br>
+						Zasadne pozostaje też pytanie, co dalej ze środkami z ww. Programu i na jak ważny cel zostaną one przeznaczone.
+						Mamy nadzieję, że władze powiatu przemyskiego odpowiedzą na zadane pytania i wyjaśnią powody swej niezrozumiałej dla nas decyzji.
+						</a>
+						<br>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+					</p>
+					<strong>Administrator strony Kopysna</strong>
+				</div>
+				<span style="font-size:11px;float:right;padding: 10px;">
+					9 września 2024
+			</span>
+				</div>
+
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">Z przyjemnością informujemy, iż udało się nam wydać drukiem  
+							publikację pt.<strong style="color:red;">"Oszust z Kopysna na dworze cesarza Franciszka Józefa I"</strong>, o której informowaliśmy już na naszej stronie.<br>
+							Publikacja została wydana z własnych środków autora w ograniczonym nakładzie przez zagraniczne wydawnictwo.
+							Autor nie przewiduje rozpowszechniania jej w celach komercyjnych.			
+							<br>
+							<p style="text-align:center">
+							<img class="thumbnail img-fluid"src="../Images/Aktualności/2024/Pub_Pelka.jpg">
+							</p>
+							</a>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+					19 sierpnia 2024
+				</span>
+					</div>
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">W oczekiwaniu na zapowiadaną historię planowanej budowy sieci kolejowej przebiegającej przez miejscowość Rybotycze do Sanoka, przedstawiamy poniżej dwa krótkie opracowania związane z Kopysnem.
+							W pierwszym postaramy się ustalić kim jest tajemniczy autor ogłoszenia prasowego, niejaki Antoni Tyszka, a w drugim zechcemy poznać związek Antoniego Jankowskiego, władającego dobrami Tyszkowskich w Kopysnie, z przedwojennym lwowskim kinem „Palace”.
+							Zapraszamy do lektury.
+							<br>
+							<p align= "center">"Poszukiwany Antoni Tyszka" - opracowanie nie jest już dostępne</a>
+							<br>
+							<p align= "center">"Jankowski wybiera się do kina" - opracowanie nie jest już dostępne</a>
+								<br>
+						</a>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						5 sierpnia 2024
+				</span>
+					</div>
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">Zgodnie z obietnicą w załączeniu przedstawiamy krótką historię tabakierki Marii Antoniny, królowej Francji.<br>
+							<p align= "center">"Tabakierka królowej Francji" - opracowanie nie jest już dostępne</a>
+							<br>
+						<p align= "justify">Tematem następnego opracowania będzie linia kolejowa biegnąca przez takie miejscowości jak Huwniki, Rybotycze... Sanok.<br>
+							To nie jest żart! Więcej informacji o tym interesującym planie Pawła Tyszkowskiego i wspólników, zatwierdzonym przez władze austriackie, podamy wkrótce w kolejnym opracowaniu pt. "Stacja kolejowa Rybotycze".
+							</a>
+							<br>
+								<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						12 czerwca 2024
+				</span>
+					</div>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">Historia rodziny Tyszkowskich, władającej przez wiele lat m.in. miejscowością Kopysno, wchodzącą w skład tzw. klucza Rybotyckiego jest słabo udokumentowana.
+							Zdajemy sobie sprawę, że po upływie kilku wieków nie jest możliwe przedstawienie kompletnej historii, stąd też 
+						    proponujemy Państwu zapoznanie się z kilkoma ciekawymi naszym zdaniem, faktami z życia członków tej rodziny.<br>
+							Pierwsze opracowanie nosi tytuł:
+							<br>
+							<p align= "center">"Orkiestra hrabiego" - opracowanie nie jest już dostępne</a>
+							<br>
+						<p align= "justify">Tematem następnego opracowania będzie „tabakierka” Marii Antoniny, austriackiej arcyksiężnej i żony francuskiego króla Ludwika XVI. Podążając śladem królowej Francji, spróbujemy rozwiązać zagadkę wspomnianego pudełeczka na tabakę, które w niejasnych okolicznościach znalazło się w posiadaniu żony Pawła Tyszkowskiego, ostatniego właściciela Kopysna. Co stało się z nią później? O tym już wkrótce.
+							</a>
+							<br>
+								<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						29 maja 2024
+				</span>
+					</div>
+				</li>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify"> <strong>4 maja </strong>udaliśmy się do Rybotycz i zawitaliśmy do prywatnego muzeum Pani Stanisławy, która bardzo nas zaskoczyła szeroką wiedzą, umiejętnościami oratorskimi oraz zgromadzonymi licznymi dokumentami i przedmiotami 
+							oraz wielkim zaangażowaniem w kultywowanie historii tej miejscowości i okolic. 
+                            Co nieco można dowiedzieć się o tym na stronie <a href="https://www.jestesmyslowianami.pl/nie-przeklinaj-nikogo-w-rybotyczach-rybotycze/">www.jestesmyslowianami.pl</a>,
+							lecz my zdecydowanie polecamy wizytę w tym niezwykłym miejscu, który stworzyła Pani Stanisława.<br><br>
+							Będąc w Rybotyczach nie mogliśmy nie wykonać fotografii rzeźby przedstawiającej Mariana Srokę, zwanego Anusiem. Niezwykła osobowość, barwny i niepowtarzalny język… 
+                            szkoda, że tacy ludzie dziś się już nie rodzą.<br>
+							<p style="text-align:center">
+							<img class="thumbnail img-fluid"src="../Images/Aktualności/2024/Anus_24.jpg">
+							</p><br>
+							<p align= "justify">Tego samego dnia po południu, w świetlicy wiejskiej w Brylińcach mieliśmy przyjemność przedstawić Harcerzom z 99 Przemyskiej Drużyny Starszoharcerskiej ZHP 
+							działającej przy Hufcu Ziemi Przemyskiej historię naszej miejscowości.
+							Mamy nadzieję, że to nie nasze ostatnie spotkanie. <br>
+							<p style="text-align:center">
+								<img class="thumbnail img-fluid"src="../Images/Aktualności/2024/Brylince_24.jpg">
+							</p>
+							<p align= "justify">Jednym z tematów spotkania była historia niezwykle przebiegłego oszusta, który urodził się w Kopysnie i który dał się we znaki samemu cesarzowi Franciszkowi Józefowi I. 
+								Dla przypomnienia podajemy link do streszczenia tej historii - 
+								<a href="http://kopysno.pl/Images/Aktualno%C5%9Bci/2023/Streszczenie-Pelka.pdf">Oszust z Kopysna</a>.<br>
+							<p align= "justify">Jeżeli kogoś interesuje historia Kopysna przedstawiana na żywo, prosimy o kontakt.<br></a>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						5 maja 2024
+				</span>
+					</div>
+				</li>
+
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">Bardzo dziękujemy Panu Stanisławowi Krycińskiemu za uznanie dla naszej strony wyrażone na stronie 253 książki "Pogórze Przemyskie. Tajemnice Doliny Wiaru. LIBRA PL. Rzeszów 2019", którą 
+                        polecamy wszystkim, a zwłaszcza zauroczonym rzeką Wiar. <br>
+						Warto przypomnieć, że pierwsze wzmianki o tej rzece znajdują sie w średniowiecznym staroruskim latopisie tzw. Kronice Nestora (zob. „Monumenta Poloniae Historica. Pomniki Dziejowe Polski”. August Bielowski. Tom I. Lwów 1864; s. 803-804; 
+						<a href="https://www.google.pl/books/edition/Monumenta_Poloniae_historica_Pomniki_dzi/JkibaOX3GDYC?hl=pl&gbpv=1&dq=Wiar+rzeka&pg=PA942&printsec=frontcover">google.pl</a>). <br>
+						Autor artykułu (Fr.S. - Franciszek Siarczyński <a href="https://pl.wikipedia.org/wiki/Franciszek_Siarczy%C5%84ski">wikipedia.pl</a>) zamieszczonego w publikacji „Czasopism Naukowy Księgozbioru Publicznego Imienia Ossolińskich. Lwów 1828 r. Rok pierwszy i zeszyt pierwszy. Część IV. 
+						Badanie w dawney siedzibie Radymiczanów i Wiatyczanów, niegdyś nad rzeką Sanem w sąsiedztwie Lachów i Rusinów zamieszkałych; s. 72 i 73.” 
+						(<a href="https://www.google.pl/books/edition/Czasopism_Naukowy_Ksi%C4%99gozbioru_Publiczn/IwBhAAAAcAAJ?hl=pl&gbpv=1&dq=Wiar+rzeka&pg=PA72&printsec=frontcover">google.pl</a>)
+						sugeruje, że rzeka „Wiar” nazywała się kiedyś „Wiat” i wiązała się z nazwą rodu Wiatyczanów.<br>
+						Inni natomiast podają, że nazwa rzeki jest pochodzenia celtyckiego.<br>
+						Bez względu na pochodzenie nazwy, ta kręta i malownicza górska rzeka zapewniała niegdyś pracę młynarzom, których liczne miejsca pracy zlokalizowane były w jej sąsiedztwie, 
+						a wody bogate w ryby, raki i minogi zaopatrywały w żywność okoliczną ludność.<br>
+						Niejednokrotnie rzeka ta pokazywała swoje srogie oblicze, zwłaszcza podczas powodzi na wiosnę, gdy spływały nią roztopione śniegi i lód, jak i w innych porach roku, podczas długotrwałych
+						ulew, i wtedy występowała ze swego koryta i zalewała okoliczne tereny przypominając niejako, by nikt nigdy jej nie lekceważył.
+                        </a>
+							<br>
+								<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony Kopysna</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						6 stycznia 2024
+				</span>
+					</div>
+				</li>
+
+
+				<br>
+				<br>
+				<br>
+			</ul>
+        </div>
+      </div>
+      <div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal"> <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+    <style>
+		.yt
+		{
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		}
+		.responsive-iframe
+		 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+    <script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>
+    <script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "5%";
+				}
+				if(a>1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "25%";
+				}
+			}		
+		</script>
+  </body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="..\script.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}
+			function updateYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('year-display').textContent = currentYear;
+        }
+
+        // Call the function to set the current year when the page loads
+        updateYear();	
+		</script>
+		<style>
+			#year-display {
+				display: inline; /* Ensures the year is displayed inline */
+			}
+		</style>		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="2026.html">2026</a>
+				<a href="2025.html">2025</a>
+				<a href="2024.html">2024</a>
+                <a href="2023.html">2023</a>
+				<a href="2022.html">2022</a>
+				<a href="2021.html">2021</a>
+				<a href="2020.html">2020</a>
+				<a href="2019.html">2019</a>
+				<a href="2018.html">2018</a>
+				<a href="2017.html">2017</a>
+				<a href="2016.html">2016</a>
+				<a href="2015.html">2015</a>
+				<a href="2014.html">2014</a>
+				<a href="2013.html">2013</a>
+				<a href="2012.html">2012</a>
+				<a href="2011.html">2011</a>
+				<a href="2010.html">2010</a>
+				<a href="2009.html">2009</a>
+				<a href="2008.html">2008</a>
+				<a href="2007.html">2007</a>
+				<a href="2006.html">2006</a>
+				<a href="2005.html">2005</a>
+				<a href="2004.html">2004</a>
+</div>
+      <div id="texto" class="row">
+        <div id="xxx" class="col">
+			<ul id="szerokosc" class="list-group lista">
+				<li id="l1" class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;">
+					<span id="title"> 2025 </span> <button id="buttonSidenav" style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"
+														   class="btn btn-info" onclick="openNav()">
+						Rok
+					</button>
+				</li>
+				</li>
+				</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+					Co jakiś czas w mediach pojawiają się artykuły na temat naszej miejscowości, co nas bardzo cieszy. Mamy jednak pewną uwagę do autorów, by nie powielali błędnych informacji o historii tej miejscowości, na co jesteśmy, ze zrozumiałych względów, bardzo wyczuleni. <br>
+					Pierwsza wzmianka o wsi Kopysno pochodzi z początków XV wieku, co zostało udokumentowane w akcie nadania wsi dostępnym na naszej stronie, w zakładce „Informacje/Dzieje wsi”. 
+					Wieś w tym czasie zamieszkiwali Wołosi, grupa etniczna o pochodzeniu romańskim, wywodzącym się z Półwyspu Bałkańskiego. <br>Jak się przypuszcza, w wyniku migracji, już w XIII wieku dotarli na tereny Polski południowej i je zasiedlili. Główna fala migracji Wołochów nastąpiła w latach 70. XIV wieku, stąd też wiele wsi na tym terenie funkcjonowało wówczas na prawie wołoskim, o czym można się przekonać zapoznając się z literaturą z tego zakresu, do której odsyłamy zainteresowanych.<br>
+					O tym, że wieś Kopysno zamieszkiwali Wołosi, świadczy wspomniany akt nadania wsi, w którym wymieniono takie nazwy jak „Mochowisko Duże” i „Mochowisko Małe”, nawiązujące do działalności pasterskiej tej grupy etnicznej. Do dziś zresztą znane są nazwy kilku obszarów wsi, takich jak „Horbisko Kosarzyska”, „Mochowisko Doliny”.<br>
+					Pod względem religijnym Wołosi byli wyznania prawosławnego, lecz w wyniku tzw. Unii brzeskiej, zawartej w 1596 r., kiedy Cerkiew prawosławna na terenie Rzeczypospolitej Obojga Narodów przyjęła dogmaty katolickie i przeszła pod jurysdykcję papieża, sytuacja ta uległa zmianie. Nie odbyło się to jednak bez problemów z powodu protestów biskupów, w tym biskupa przemyskiego Michała Kopystyńskiego (Kopysteński), potomka rodu Kopystyńskich z Kopysna, który wstępnie przyjął warunki unijne, lecz potem od nich odstąpił. <br>
+					Warte podkreślenia jest fakt, iż Sejm Rzeczypospolitej Obojga Narodów zwołany 10 lutego 1597 r. zadecydował, że Michał Kopystyński (Kopysteński) pomimo sprzeciwu wobec ustaleń Unii, zachowa prawo do posługiwania się tytułem biskupa. Widocznie ze względu na zasługi dla kościoła, pozwolono mu pozostać na stanowisku i funkcjonować według zasad kościoła prawosławnego do jego śmierci.
+					Można przypuszczać, iż dopiero z chwilą jego śmierci, a przyjmuje się, że zmarł w 1610 r., parafie, którymi zarządzał do tego czasu działały w obrządku prawosławnym. <br>
+					Inną kwestią wartą wyjaśnienia jest nazewnictwo stosowane w stosunku do kościoła powstałego w wyniku ustaleń Unii brzeskiej. Na początku był to „Kościół unicki”, potem nazwa ta ewoluowała i używano m.in. pojęcie „Kościół wschodni”.
+					Nazwa „Kościół greckokatolicki” została wprowadzona dopiero w 1774 r. przez austriacką cesarzową Marię Teresę (Maria Teresa Walburga Amalia Christina von Habsburg) i od tej pory uzasadnione jest posługiwanie się nią. <br><br>
+					Na przestrzeni wieków zmieniały się granice i państwowość, a także ulegała zmianom struktura etniczna mieszkańców, lecz nie można wyrugować z historii wsi powyższych faktów. <br>
+					Choć poruszone kwestie nie mają znaczenia w oczekiwaniu na lepszy świat, warto jednak już dziś kierować się prawdą, gdyż stanowi ona jego fundament.
+ <br>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				19 października 2025
+			</span>
+			</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Otrzymaliśmy dziś z drukarni zapowiadaną publikację na temat rodziny Tyszkowskich pt. <b><span style="color: red">"Rodzina Tyszkowskich. Zapomniana historia"</span></b>(ISBN 978-83-973242-3-7).<br> 
+						Do końca roku mamy nadzieję wydać dwie kolejne pozycje, o których napiszemy w późniejszym terminie.<br>
+						<p style="text-align:center"><img class="thumbnail img-fluid"src="../Images/Aktualności/2025/RodzinaT.jpg">
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						Publikacja została wydana z własnych środków autora i nie jest przeznaczona na sprzedaż.<br><br>
+						<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				11 września 2025
+			</span>
+			</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Idąc śladem historii rodziny Tyszkowskich, którzy władali m.in. dobrami w miejscowości Kopysno, w przygotowaniu mamy publikację
+						obejmujacą nieznane fakty z życia rodziny Tyszkowskich, w tym zięcia Józefa Tyszkowskiego i jego wnuczki Michaliny Jankowskiej.<br> 
+						Publikacja jest obecnie na etapie przygotowania do wydruku. <br>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				14 sierpnia 2025
+			</span>
+		</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Miło nam poinformować, iż ukazała się już kolejna nasza publikacja, tym razem obejmująca bardzo ważny etap życia Antoniego, Józefa i Pawła Tyszkowskich, związanego z ich wykształceniem.<br> 
+						Bracia Antoni i Józef wyższe wykształcenie zdobywali w stolicy cesarstwa, w Wiedniu, natomiast Paweł studiował we Lwowie. <br>
+                        Publikacja zawiera nieznane fakty z tego okresu i koryguje błędne informacje, jakie można znaleźć w przestrzeni publicznej.<br>
+                        Publikacja została wydana z własnych środków autora i nie jest przeznaczona na sprzedaż. 
+						<br>
+						<p style="text-align:center"><img class="thumbnail img-fluid"src="../Images/Aktualności/2025/Okladka_dr.jpg">
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				8 sierpnia 2025
+			</span>
+		</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Zgodnie z poprzednią wiadomością, w połowie sierpnia ukazać się ma publikacja pt. "Tyszkowscy udają się na studia" w wersji tradycyjnej, książkowej.
+						Nie będzie ona dostępna w wersji elektronicznej. Chętnie udostępnimy ją osobom, które wykażą
+						rzeczywiste zainteresowanie tematem :). <br>
+						<p style="text-align:center"><img class="thumbnail img-fluid"src="../Images/Aktualności/2025/Okladka.jpg">
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				31 lipca 2025
+			</span>
+			</div>
+			<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Stowarzyszenie Miłośników Wsi Kopysno pod nadzorem archeologa kontynuuje prace remontowe Cerkwi w Kopysnie mające na celu wzmocnienie fundamentów zabytkowej budowli.
+						Więcej na ten temat dowiecie się na stronie Stowarzyszenia <a href="https://www.facebook.com/people/Stowarzyszenie-Mi%C5%82o%C5%9Bnik%C3%B3w-Wsi-Kopysno/61552234155744/">facebook.com</a>.<br>
+						Serdecznie pozdrawiamy biorących udział w tym dziele i zachęcamy wszystkich do śledzenia postępu prac remontowych na stronie Stowarzyszenia. 
+						<p align= "center">***</p>
+					<p align= "justify">Niektórzy pytają nas o lokalizację cmentarza cholerycznego w Kopysnie. <br>
+						Epidemia cholery miała miejsce podczas Wielkiej wojny, zwanej później pierwszą wojną światową i objęła wiele miejscowości Galicji. 
+						Z obawy o rozprzestrzenienie się choroby, zmarłych na cholerę chowano w miejscach oddalonych od siedzib ludzkich. <br>
+						Tak też się stało w przypadku mieszkańców Kopysna, których pochowano u stóp Kopystanki, przy lesie Grabnik. <br>
+						Nie zachowały się żadne dokumenty w tej sprawie, a i sam cmentarz nie jest wyraźnie oznakowany. Dzięki 
+						mieszkańcom Kopysna udało się nam go zlokalizować po drewnianym krzyżu, który dotrwał do dziś i stoi oparty o drzewo. Niestety nie znamy datę jego ustawienia. 
+						Dla zainteresowanych podajemy współrzędne geograficzne cmentarza cholerycznego - 49°40'55.15" N 22°37'46.32" E oraz załączamy fotografię tego miejsca wykonaną w maju 2025 r. <br>
+						<p style="text-align:center"><img class="thumbnail img-fluid"src="../Images/Aktualności/2025/Cmentarz_ch.jpg">
+					<p align="center">***</p>
+					<p align="justify">Zainteresowanych historią rodziny Tyszkowskich informujemy, że zaktualizowaliśmy materiał dotyczący wykształcenia Pawła Tyszkowskiego oraz opracowaliśmy artykuł na temat jego adopcji przez Antoniego Tyszkowskiego.
+						Zgodnie z zapowiedzią materiały te nie będą publikowane na naszej stronie. Zamierzamy je wydać w wersji tradycyjnej, książkowej.<br>
+						W opracowaniu znajdują się inne zagadnienia dotyczące rodziny Tyszkowskich, o czym będzimy informować na bieżąco.
+						</p>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				27 czerwca 2025
+			</span>
+		</div>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+					<p align="justify">
+						Zgodnie z zapowiedzią, zamieściliśmy na naszej stronie informacje na temat tajemniczego kopca w Kopysnie.
+						Można się z nimi zapoznać tutaj - 
+						<a href="../Images/Aktualności/2025/KopiecKopysno.pdf">Kopiec</a>.
+						</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				21 czerwca 2025
+			</span>
+		</div>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "center">
+					<b><span style="color: red">Tajemniczy kopiec odnaleziony</span></b>
+					<p align="justify">
+						Tak, udało się nam odnaleźć tajemniczy kopiec, o którym pisaliśmy wcześniej. Więcej o nim wkrótce. <br>
+                    Korzystając z okazji zamieszczamy krótki film ukazujący emocje jakie towarzyszyły realizacji planu poszukiwań. Wystąpił w nim zabłąkany turysta z Przemyśla, podobno jakiś  inspektor, stąd też należy mieć ograniczone zaufanie do treści jego wypowiedzi :)<br>
+					<p align="center"><a href="../Images/Aktualności/2025/Kopiec.mp4">Odkryty kopiec</a>
+				
+
+					<p align="justify"> Nie było to łatwe, ale przy odrobinie trudu mogliśmy zobaczyć kopiec, który spędzał nam sen z powiek od wielu miesięcy. Sprzyjała nam piękna pogoda, którą zamówiliśmy wcześniej w pewnym instytucie i wspaniała atmosfera stworzona przez osoby z którymi moglibyśmy pójść na koniec świata… a na pewno pozostać na Kopysnie, nawet w namiotach jak za czasów Abrahama i czekać na wytęskniony świat, w którym królować będą wartości takie jak prawda i miłość.<br>
+                    Niesamowite uczucie, móc dotknąć dzieło rąk ludzkich prawdopodobnie z czasów rozgraniczenia wsi Kopysno, co miało miejsce w XV wieku. <br>
+  
+                    Szczególne podziękowania winny trafić do naszego serdecznego kuzyna Wieśka, na którego włościach mogliśmy zjeść pieczoną kiełbasę z czosnkiem niedźwiedzim posmarowaną musztardą horcicą i skosztować upieczonych na tę okazję ciast… 
+                    W tym dniu dominował temat kotów, ziół i wielu innych fascynujących opowieści, w tym o beztroskim kocie odpoczywającym w kuchence mikrofalowej.<br>
+                    Mamy nadzieję, że każdy rozwinie myśli podczas następnego spotkania, które z niecierpliwością oczekujemy.
+
+											</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				4 maja 2025
+			</span>
+			</div>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "center">
+					<b><span style="color: red">2 maja 2025 r.<br> Spotkanie w Kopysnie</span></b>
+					<p align="justify">
+						Z przyjemnością informujemy, iż planowane spotkanie w Kopysnie jest aktualne (zob. wiadomość z 20 marca 2025 r.). Prognozy pogody są zadowalające, więc 
+						mamy nadzieję, że wszystko odbędzie się bez zakłóceń.<br>
+						Serdeczenie pozdrawiamy i z niecierpliwością czekamy na wspólną przygodę :)
+											</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				27 kwietnia 2025
+			</span>
+		</div>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "center">
+					<b>Mieszkańcy Kopysna w XIX w. ankiecie dot. żywienia</b>
+					<p align="justify">
+						W 1877 r. przeprowadzono badania ankietowe wśród ludności Galicji dotyczące spraw żywienia. Wyniki tych badań opublikowano w książce „Próba badań nad żywieniem ludu wiejskiego Galicji” Napoleon Cybulski, Kraków 1894, Towarzystwo Opieki Zdrowia.
+						(<a href="https://digital.onb.ac.at/OnbViewer/viewer.faces?doc=ABO_%2BZ317221507">digital.onb.ac.at</a> skan 95).
+						Badania objęły również mieszkańców Kopysna i dotyczyły m.in. spożycia mięsa i wódki. Na tle innych miejscowości, Kopysno jawi się jako uboga wieś, gdzie na jednego mieszkańca roczne i średnie spożycie mięsa wyniosło 1,5 kg (najzamożniejsi) a spożycie wódki 3 litry przez wszystkich bez względu na stan zamożności. Dla porównania, na jednego mieszkańca Przemyśla spożycie mięsa wyniosło 12 kg mięsa (najzamożniejsi) i 15 litrów wódki (najzamożniejsi). <br>
+						Oceniając daną sytuację przez pryzmat współczesnej wiedzy, mieszkańcy Kopysna jawią się jako mądrzy ludzie dbający o swoje zdrowie. Niestety, przyczyną tak niskich wskaźników był raczej ich stan ekonomiczny, a nie świadomość szkodliwości nadmiernego spożywania mięsa i alkoholu.<br><br>
+						Polecamy wspomnianą publikację, która zawiera także alfabetyczny spis potraw ze sposobem ich przyrządzania. Fitka, bigos z… kiszonych buraków, dziadki, czer, hołojuszka itp. Czasem warto wrócić do dawnych czasów.
+											
+					</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				20 kwietnia 2025
+			</span>
+		</div>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "center">
+					<b>Informacja</b>
+					<p align="justify">
+					Informujemy, że nie są już dostępne opracowania dot. m.in. rodziny Tyszkowskich, które zamieszczaliśmy na naszej stronie. Mamy nadzieję, że ukażą się one w publikacji, którą mamy zamiar wydać w wersji tradycyjnej.					
+					</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				9 kwietnia 2025
+			</span>
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "center">
+					<b>Remont Cerkwi w Kopysnie</b>
+					<p align="justify">
+										Stowarzyszenie Miłośników Wsi Kopysno przed kilku laty podjęło cenną inicjatywę mającą na celu przeprowadzenie remontu niszczejącej 
+					Cerkwi w Kopysnie, o czym pisaliśmy na naszej stronie.
+					Więcej o tym na stronie <a href="https://www.facebook.com/photo.php?fbid=122113204730074471&set=pb.61552234155744.-2207520000&type=3">Stowarzyszenia</a>.<br> 
+					Niestety z pewnych niezrozumiałych przyczyn, pomimo wszelkich uzgodnień z właściwymi organami, zapewnieniu otrzymania dotacji na inwestycję, 
+					nagle Stowarzyszenie zostało pozostawione same, bez wsparcia finansowego.<br>
+					Nie patrząc na przeciwności, członkowie Stowarzyszenia podjęli się przeprowadzenia remontu cerkwi na własny koszt. Wykonano już część prac, 
+					o czym można się przekonać na filmach zamieszczonych na ww. stronie Stowarzyszenia, lecz czekają następne prace, których wykonanie przekracza 
+					możliwości finansowe Stowarzyszenia.<br> 
+					Pragniemy więc poinformować, iż w ramach partnerstwa z Fundacją Studencką „Młodzi-Młodym” (ul. Bór 116, 42-202 Częstochowa, NIP: 9492044231, KRS: 0000270261) 
+					istnieje <u>możliwość wsparcia tej jakże istotnej inicjatywy, mającej na celu ochronę lokalnego dziedzictwa kulturowego</u> poprzez dobrowolne wpłaty 
+					określone na stronie Fundacji <a href="https://fsmm.pl/partner/stowarzyszenie-milosnikow-wsi-kopysno/">"Młodzi-Młodym"</a>.
+					</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				27 marca 2025
+			</span>
+		</div>	
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "justify">Zgodnie z obietnicą zaplanowaliśmy w tym roku wycieczkę do Kopysna celem odszukania tajemniczego kopca ziemnego, który naszym zdaniem odegrał ważną rolę w historii naszej miejscowości a jego lokalizacja jest znana nielicznym. <br>
+					<p align="center"><b><span style="color: red">2 maja 2025 r., godz. 10.00</span></b><br>
+					<p align="center"><a href="https://maps.app.goo.gl/UBTB8xiKedpEadCW6">Miejsce zbiórki - link </a></p>
+					<p align="justify">Plan wycieczki obejmuje wizytę na Horbysku i wejście na Kopystankę, z której udamy się w poszukiwaniu kopca. Choć wiemy gdzie on się znajduje, nigdy nie widzieliśmy go na własne oczy. <br>
+					Jeżeli Ty także chciał(a)byś go zobaczyć, czekamy na Twoje zgłoszenie.<br>
+                    Wycieczka uzależniona jest od pogody. W przypadku obfitych opadów deszczu i związanych z tym utrudnień, impreza nie odbędzie się. <br>
+                    Udział w imprezie jest bezpłatny, prowiant we własnym zakresie. Przewidujemy po zakończeniu imprezy wspólne ognisko. <br>
+					Zainteresowani bedą mogli zapoznać się publikacją "Oszust z Kopysna na dworze cesarza Franciszka Józefa I" oraz "Kopysno w opowieści", którą mamy nadzieję wydać do końca kwietnia br.
+					(<a href="../Images/Aktualności/2025/Ksiazki.jpg">Zob. okładki publikacji</a>).<br>
+                    <p align="justify">Impreza ma charakter zamknięty. Zastrzegamy sobie prawo do odwołania imprezy bez uzasadnienia. <br>
+                    Jeżeli ktoś ma pytania, uwagi i propozycje odnośnie imprezy, prosimy o kontakt. <br></p>
+					
+                    <p align="right"><span style="color: blue">Organizatorzy</span>
+					</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				20 marca 2025
+			</span>
+		</div>	
+		
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "justify">Znaleźliśmy w sieci kilka ciekawych krótkich filmów, które polecamy:<br>
+
+					- "<a href="https://www.youtube.com/watch?v=-PmYajQJtC4">Kopystanka 2022</a>", nawiązujący do jednego  wydarzeń I wojny światowej, do wypadu wojsk austriackich 
+					   na Kopystankę, co miało miejsce w grudniu 1914 r. (więcej <a href="www.kopysno.pl/I_wojna_swiatowa.html">kopysno.pl</a>),<br>
+					- "<a href="https://www.youtube.com/watch?v=HJWWMKYObGM">Kopyśno, st. 1 (Poland)</a>" przedstawiający grodzisko i okolice Kopysna w wersji 3D. 
+					</p>
+					<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				9 marca 2025
+			</span>
+		</div>	
+		
+		<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+			<div style="background-color: white;border-radius: 15px;padding: 10px;">
+				<p align= "justify">W ostatnich latach nastąpił prawdziwy rozkwit archiwów dostępnych w sieci, stąd też często zmuszeni jesteśmy aktualizować
+					informacje zgromadzone na naszej stronie. Z tego powodu nie zawsze jest o tym wzmianka w Aktualnościach.<br>
+					Dziś uzupełniliśmy listę osób, mieszkańców Kopysna (w tym byłych, jak rodzina Intrator, żydowskiego pochodzenia), które brały udział 
+					w kampanii wrześniowej, zaginęły lub zostały pomordowane w obozach koncentracyjnych itp. Pełny wykaz dostępny tylko dla osób zalogowanych.<br><br>
+					Jednocześnie informujemy, iż nie uzurpujemy sobie prawa do odkrywania i dokumentowania historii Kopysna. Chętnie natomiast współpracujemy z każdym,
+					kto pragnie dołożyć własną cegiełkę do tego, co już zostało stworzone przez ponad 20 lat naszej działalności. 
+					</a></p>
+					<p align= "center">***</p>
+					<p align= "justify">Przygotowaliśmy opracowanie dotyczące wykształcenia Pawła Tyszkowskiego, ostatniego z rodu Tyszkowskich.
+						Z uwagi na plany wydania drukiem wszystkich opracowań dotyczących rodziny Tyszkowskich, opracowanie to nie będzie ogólnodostępne.<br>
+						<p style="text-align:center"><img class="thumbnail img-fluid"src="../Images/Aktualności/2025/PT.jpg">
+							<p align= "center"><strong style="color:red;">mgr farmacji Paweł Tyszkowski</strong><br></p>
+					<p align="justify">W opracowaniu mamy kolejny materiał pt. "Tyszkowscy na studiach w Wiedniu" zawierający m.in. skany dokumentów nigdzie dotąd nie publikowanych.
+						Taniec, podkuwanie koni, chemia ogólna... tego uczyli się Antoni i Józef Tyszkowscy... a gdzie Antoni poznał m.in. budowniczego Twierdzy Przemyśl, 
+						gen. Daniela Salis Soglio? O tym i o wielu innych ciekawych zdarzeniach z życia Tyszkowskich w Wiedniu, dowiemy się wkrótce.
+						</p>
+						<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">		
+				</p>
+				<strong>Administrator strony</strong>
+			</div>
+			<span style="font-size:11px;float:right;padding: 10px;">
+				9 lutego 2025
+			</span>
+				</li>
+				</div>
+				<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+					<div style="background-color: white;border-radius: 15px;padding: 10px;">
+						<p align= "justify">Przez ostatnie dni strona Kopysna z powodu prac nad jej aktualizacją była niedostępna, za co przepraszamy.
+			                </a></p>
+							<p align= "center">***</p>
+							<p align= "justify">Uprzejmie informujemy, że przypadku wykorzystania fragmentów opracowanych przez nas materiałów zamieszczonych 
+								na naszej stronie, zarówno w ramach tzw. prawa cytatu, jak i przy ich publikacji za naszą zgodą, należy podać ich źródło.
+								</p>
+							<div style="text-align:justify; background-color: white;border-radius: 15px;padding: 5px;">
+						</p>
+						<strong>Administrator strony</strong>
+					</div>
+					<span style="font-size:11px;float:right;padding: 10px;">
+						11 stycznia 2025
+					</span>
+				</div>	
+				<br>
+				<br>
+				<br>
+			</ul>
+        </div>
+      </div>
+      <div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal"> <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+    <style>
+		.yt
+		{
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+		}
+		.responsive-iframe
+		 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+    <script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>
+    <script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "5%";
+				}
+				if(a>1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "25%";
+				}
+			}		
+		</script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="..\script.js"></script>
+		<script src="..\ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="2026.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="2023.html">2023</a>
+				<a href="2022.html">2022</a>
+				<a href="2021.html">2021</a>
+				<a href="2020.html">2020</a>
+				<a href="2019.html">2019</a>
+				<a href="2018.html">2018</a>
+				<a href="2017.html">2017</a>
+				<a href="2016.html">2016</a>
+				<a href="2015.html">2015</a>
+				<a href="2014.html">2014</a>
+				<a href="2013.html">2013</a>
+				<a href="2012.html">2012</a>
+				<a href="2011.html">2011</a>
+				<a href="2010.html">2010</a>
+				<a href="2009.html">2009</a>
+				<a href="2008.html">2008</a>
+				<a href="2007.html">2007</a>
+				<a href="2006.html">2006</a>
+				<a href="2005.html">2005</a>
+				<a href="2004.html">2004</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;">
+								<span id="title">
+									2017 
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"class="btn btn-info"onclick="openNav()">Rok</button>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p class="style5" style="text-indent: 0px; margin: 12px; text-align: center; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><strong>UWAGA !</strong></p>
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>Uprzejmie informujemy, iż z dniem dzisiejszym przenieśliśmy stronę internetową Kopysna (wymaga ona jeszcze aktualizacji i zmiany wyglądu) na inny, niestety płatny serwer. Nowa domena to:&nbsp;<a href="http://kopysno.pl/" style="text-decoration: none; color: rgb(72, 140, 191);">www.kopysno.pl</a>. Zmienił się także adres mailowy&nbsp; kopysno@data.pl. Poprzednie adresy będą aktualne do końca lutego 2018 r.</p>
+									<p align="justify" class="style2" style="text-indent: 0px;  margin: 12px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Z poważaniem,</p>
+									<p align="justify" class="style2" style="text-indent: 0px;  margin: 12px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><em>Administrator</em></p>
+									<span style="font-size:11px;float:right;padding: 10px;"> 29 grudnia 2017</span>
+								</div>
+							</li>
+							<li id="l3"class="list-group-item" style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+							<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>W oparciu o nowe dokumenty w dziale&nbsp;<strong>Informacje&nbsp;</strong>skorygowaliśmy i uzupełniliśmy &nbsp;zakładkę &quot;Dzieje wsi/Dokumenty do pobrania -<a href="..\files\Dzia%C5%82ania%20UPA%20i%20WP%20w%20latach%201945-46.pdf" style="text-decoration: none; color: rgb(72, 140, 191);"> Działania UPA i WP w latach 1945-46 wg źródeł ukraińskich</a>.</p>
+							<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>Bardzo dziękujemy Mariuszowi Jesionowskiemu za pomoc w tłumaczeniu tekst&oacute;w.</p>
+							<span style="font-size:11px;float:right;padding: 10px;">21 września 2017</span>
+								</div>
+							</li>
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>W maju na cmentarzu złamał się drewniany krzyż z 1938 r. Dzięki staraniom i ofiarności os&oacute;b z Tczewa, Słupska, Rybotycz oraz innym, w dniu 15 sierpnia 2017 r. postawiono i odnowiono krzyż, widoczny na poniższym zdjęciu. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>W dniu&nbsp;<strong>29 października 2017 r.</strong> w Kopysnie odbędzie się msza i ponowne poświęcenie krzyża na cmentarzu.</p>
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>Informacje przekazał nam Mariusz Jesionowski, za kt&oacute;re dziękujemy.</p>
+									<p class="style3" style='text-indent: 0px; text-align: center; color: rgb(0, 0, 0);; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; ; margin: 12px;'><img class="thumbnail img-fluid"src="../Images/Aktualności/2017/krzyz.PNG" class="style4" width="567" height="461" style="border-style: solid; border-width: 1px;"></p>
+								<span style="font-size:11px;float:right;padding: 10px;">4 września 2017</span>
+								</div>
+							</li>
+							<li id="l5"class="list-group-item" style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>Na początku maja Kopysno odwiedziła rodzina Nienadowskich z Olsztyna i Pudłowca. Pozdrawiamy wszystkich serdecznie i oczekujemy kolejnej wizyty w naszych stronach.</p>
+									<p class="style3" style='text-indent: 0px; text-align: center; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'><img class="thumbnail img-fluid" src="../Images/Aktualności/2017/kop.png" class="style4" width="633" height="450" style="border-style: solid; border-width: 1px;"></p>
+								<span style="font-size:11px;float:right;padding: 10px;">7 maja 2017</span>
+								</div>
+							</li>
+							<li style="padding-bottom: 30px;background-color: #EEEEEE"class="list-group-item">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>
+									<p align="justify" class="style2" style="text-indent: 0px;   margin: 12px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Polecamy wspomnienia byłego mieszkańca Kopysna - Jana Krupy na stronie gminy Sztum -&nbsp;<a href="http://gmina.sztum.pl/historie-mowione.html" style="text-decoration: none; color: rgb(72, 140, 191);">gmina.sztum.pl</a>.</p>
+								<span style="font-size:11px;float:right;padding: 10px;">21 marca 2017</span>
+								</div>
+							</li>
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>Wracając z podr&oacute;ży zatrzymaliśmy się w miejscowości Łodzinka G&oacute;rna, skąd ujrzeliśmy w oddali niezalesiony szczyt Kopystanki.</p>
+<p align="center" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'><img border="1" class="thumbnail img-fluid" src="../Images/Aktualności/2017/kop2.PNG" width="564" height="322"></p>
+								<span style="font-size:11px;float:right;padding: 10px;">  17 marca 2017</span>
+								</div>
+							</li>
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Pragniemy poinformować, iż internetowa strona Kopysna została dostrzeżona przez autor&oacute;w publikacji &quot;</span><em style="color: rgb(0, 0, 0);  font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Digitalizacja, udostępnianie i&nbsp;upowszechnianie zasob&oacute;w kultury w&nbsp;doświadczeniu tw&oacute;rc&oacute;w wybranych portali internetowych w Polsce</em><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&quot;, wyd. Małopolski Instytut Kultury (</span><a href="http://nck.pl/media/attachments/318568/bwk_digitalizacja_udostepnianie.pdf" style="text-decoration: none; color: rgb(72, 140, 191); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">nck.pl</a><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">, str.71). Autorzy zwr&oacute;cili uwagę na nasz &quot;Cmentarz&quot;, a dokładnie &quot;fotografie grob&oacute;w przodk&oacute;w&quot;.</span> </p>
+									<span style="font-size:11px;float:right;padding: 10px;"> 8 marca 2017</span>
+								</div>
+							</li >
+							<li class="list-group-item"style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'><span style="color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Według informacji przekazanych nam przez Archiwum Państwowe w Przemyślu, nie wszystkie akta notariuszy w Dobromilu dot. m.in. mieszkańc&oacute;w Kopysna zostały udostępnione w wersji on-line i trudno przewidzieć, kiedy będzie można mieć do nich dostęp w sieci. Dotyczą one lat 1870-1877, 1884-1889 i 1919-1939.</span> </p>
+									<span style="font-size:11px;float:right;padding: 10px;"> 2 marca 2017</span>
+								</div>
+							</li>
+							<li class="list-group-item" style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>Zajrzeliśmy do bazy danych o emigrantach przybywających do USA w latach 1879-1960 drogą morską, dostępnej na stronie fundacji&nbsp;<strong>The Statue of Liberty - Ellis Island</strong>. Znaleźliśmy w niej kilkunastu mieszkańc&oacute;w Kopysna i sporządziliśmy ich wykaz, kt&oacute;ry zamieściliśmy w zakładce&nbsp;&quot;Informacje/Dzieje wsi - Dokumenty do pobrania&quot; -&nbsp;<a href="../files/Emigranci_USA.pdf" style="text-decoration: none; color: rgb(72, 140, 191);">Wykaz emigrant&oacute;w do USA</a>.</p>
+<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin: 12px;'>Zachęcamy wszystkich do poszukiwania swoich bliskich korzystając z wyszukiwarki na stronie fundacji -&nbsp;<a href="http://libertyellisfoundation.org/" style="text-decoration: none; color: rgb(72, 140, 191);">libertyellisfoundation.org</a>. Chcemy jednocześnie dodać, iż baza danych nie jest doskonała. Brakuje w niej polskich znak&oacute;w diakrytycznych i można spotkać błędy w pisowni imion, nazwisk oraz nazw miejscowości. Z bazy danych natomiast można dowiedzieć się kiedy i jakim statkiem emigranci przybyli do USA a niekiedy poznać bliższe szczeg&oacute;ły o nich samych, np. stan zdrowia, wzrost, kolor włos&oacute;w i oczu itp.&nbsp;</p>
+<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0);  font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>Jeżeli znajdziecie kogoś ze swoich bliskich wśr&oacute;d emigrant&oacute;w z Kopysna, prosimy o kontakt.</p>
+<p></p>
+								<span style="font-size:11px;float:right;padding: 10px;">2 marca 2017</span>
+								</div>
+							</li>
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify" style='text-indent: 0px; color: rgb(0, 0, 0); ; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'>Otrzymaliśmy dziś kolejną smutną wiadomość. 5 lutego 2017 r. w Lubinie (woj. dolnośląskie) zmarła dawna mieszkanka Kopysna &ndash; Zofia Balul z domu Gierczak, c&oacute;rka Michała i Anny, ur. 12.07.1928 r. w Kopysnie.<br>O śmierci poinformowała nas wnuczka, pani Natalia.&nbsp;</p>
+<p align="center" style='text-indent: 0px; color: rgb(0, 0, 0); ; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;  margin: 12px;'><img border="1" class="thumbnail img-fluid" src="../Images/Aktualności/2017/zofia.PNG" width="138" height="178"></p>
+<p></p>								<span style="font-size:11px;float:right;padding: 10px;">10 lutego 2017</span>
+								</div>
+							</li >
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">Ze smutkiem przyj&#281;li&#347;my wiadomo&#347;&#263; o &#347;mierci Dariusza Hopa, prezesa Zarz&#261;du Oddzia&#322;u PTTK im. dr Or&#322;owicza w Przemy&#347;lu, za&#322;o&#380;yciela Klubu G&oacute;rskiego &quot;Karpaty&quot;. W jednym z wpis&oacute;w na naszej stronie Darek (Harna&#347;) stwierdzi&#322;, &#380;e Kopystanka jest jego ulubion&#261; g&oacute;r&#261;, na kt&oacute;rej by&#322; kilkadziesi&#261;t razy. &#379;&oacute;&#322;ty szlak turystyczny od wzniesienia Suchy Obycz do Kopystanki zapewne te&#380; by&#322; jego pomys&#322;em.</p>
+
+									<p align="justify">C&oacute;&#380; mo&#380;na w tej sytuacji powiedzie&#263; ... musimy spotka&#263; si&#281; na Kopystance kiedy przyjdzie na to czas, czas dla wszystkich, kt&oacute;rym nie by&#322;o dane dotrwa&#263; do ko&#324;ca tego systemu rzeczy.</p>
+								<span style="font-size:11px;float:right;padding: 10px;">30 stycznia 2017</span>
+								</div>
+							</li >
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">W zwi&#261;zku z interwencj&#261; os&oacute;b zaniepokojonych stanem technicznym obiektu cerkwi i jej otoczenia (w tym cmentarza) w Kopysnie pragniemy wyja&#347;ni&#263;, i&#380; zgodnie z nasz&#261; wiedz&#261;:</p>
+
+									<p align="justify">- w&#322;adaj&#261;cym dzia&#322;k&#261; Nr 70, na kt&oacute;rej znajduj&#261; si&#281; obiekty takie jak: cmentarz, cerkiew i dzwonnica, b&#281;d&#261;ce obiektami wpisanymi do rejestru zabytk&oacute;w, wed&#322;ug ewidencji grunt&oacute;w i budynk&oacute;w jest Skarb Pa&#324;stwa reprezentowany przez Starost&#281; Powiatu Przemyskiego,</p>
+									
+									<p align="justify">- u&#380;ytkownikiem cerkwi wed&#322;ug ww. ewidencji jest Parafia Rzymsko-katolicka w Rybotyczach,</p>
+									
+									<p align="justify">- zarz&#261;dc&#261; cmentarza komunalnego jest Gmina Fredropol, co wynika z odr&#281;bnych przepis&oacute;w prawa.</p>
+									
+									<p align="justify">Je&#380;eli powy&#380;sze informacje nie s&#261; zgodne z prawd&#261; lub uleg&#322;y zmianie po dacie podanej na stronie, prosimy o kontakt.</p>
+								<span style="font-size:11px;float:right;padding: 10px;">21 stycznia 2017</span>
+								</div>
+							</li >
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify">Na naszej stronie, w zak&#322;adce Informacje zamie&#347;cili&#347;my uzupe&#322;niaj&#261;ce informacje dotycz&#261;ce dw&oacute;ch wa&#380;nych wydarze&#324; zwi&#261;zanych z deportacj&#261; mieszka&#324;c&oacute;w Kopysna, kt&oacute;re mia&#322;y miejsce w 1945 i 1947r., i kt&oacute;re dotycz&#261; akt&oacute;w prawnych b&#281;d&#261;cych podstaw&#261; dzia&#322;ania &oacute;wczesnych w&#322;adz.</p>
+								<span style="font-size:11px;float:right;padding: 10px;">21 stycznia 2017</span>
+								</div>
+							</li >
+							<li id="l4"class="list-group-item"style="background-color: #EEEEEE;">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<p align="justify">Przegl&#261;daj&#261;c akta (tysi&#261;ce stron) pozosta&#322;ych c.k. notariuszy w Dobromilu, dost&#281;pne na stronie Archiwum Pa&#324;stwowego w Przemy&#347;lu, natkn&#281;li&#347;my si&#281; na kolejne dokumenty dotycz&#261;ce mieszka&#324;c&oacute;w Kopysna. Zebrali&#347;my je wszystkie i dla u&#322;atwienia ich wyszukiwania w Archiwum wkr&oacute;tce zamie&#347;cimy ich pe&#322;ny wykaz w zak&#322;adce &quot;Informacje/Dzieje wsi - Dokumenty do pobrania&quot; <a href="../files/Akta notarialne.pdf" style="text-decoration: none; color: rgb(72, 140, 191);">Akta notarialne c.k. notariuszy w Dobromilu</a>.</p>
+									<p align="justify">Ponadto, dla u&#322;atwienia przegl&#261;dania ksi&#261;g metrykalnych Greckokatolickiego Biskupstwa w Przemy&#347;lu - parafii Rybotycze z fili&#261; Kopysno (dekanat Dobromil) obejmuj&#261;cych lata 1784-1869. Dane dot. mieszka&#324;c&oacute;w Kopysna znajduj&#261; si&#281; w cz&#281;&#347;ci obj&#281;tej skanami od 146 do 164 i od 179 do 186 - 
+										<a href="http://www.skany.przemysl.ap.gov.pl/show.php?zesp=142&cd=0&ser=0&syg=6791" style="text-decoration: none; color: rgb(72, 140, 191);">skany.przemysl.ap.gov.pl</a>.</p>
+									<span style="font-size:11px;float:right;padding: 10px;">8 stycznia 2017</span>
+								</div>
+							</li >
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>	
+		<script>
+			setInterval(tutol,25)
+			function tutol()
+			{
+				b = document.getElementById("title");
+				a = window.innerWidth;
+				if(a<1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "5%";
+				}
+				if(a>1150)
+				{
+					document.getElementById("buttonSidenav").style.left = "25%";
+				}
+			}		
+		</script>		
+    </body>
+</html>
