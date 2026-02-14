@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="..\script.js"></script>
+		<script src="..\ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="..\Aktualnosci/2024.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a444" style="display:none" class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="../Aktualnosci/2024.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="Antoni_Jankowski.html">Antoni Jankowski</a>
+				<a href="Maria_Kazala.html">Maria Kazała</a>
+				<a href="Bracia_Kopko.html">Bracia Kopko</a>
+				<a href="Jozef_Krupa.html">Józef Krupa</a>
+				<a href="Michal_Krupa.html">Michał Krupa</a>
+				<a href="Mikolaj_Krupa.html">Mikołaj Krupa</a>
+				<a href="Mikolaj_Kulhawiec.html">Mikołaj Kulhawiec</a>
+				<a href="Mikolaj_Nienadowski.html">Mikołaj Nienadowski</a>
+				<a href="Michal_Nienadowski.html">Michał Nienadowski</a>
+				<a href="Pawel_Nienadowski.html">Paweł Nienadowski</a>
+				<a href="Jozef_Nienadowski.html">Józef Nienadowski</a>
+				
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul class="list-group lista;position:relative">
+							<li id="l1"class="list-group-item" style="text-align:center;position:relative;font-size:25px;background-color:#e6f2ff;height: 63,5px; ">
+								<span id="title" >
+									Antoni Jankowski
+								</span>
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"class="btn btn-info OpenSideMenu"onclick="openNav()">Osoby</button>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;margin-bottom: 50px;">
+									<table >
+										<tbody>
+										<tr>
+										<td >
+										<p ><p align="justify"><strong>Antoni Jankowski</strong>&nbsp;- syn Kazimierza i Anny (ur. 18.01.1868 r. w miejscowości Busk nad Bugiem [obecnie Ukraina]). Według danych z "Księgi metrykalnej urodzeń dla miasta Busk z przedmieściami"(<a href="http://agadd.home.net.pl/metrykalia/301/sygn.%20163/pages/PL_1_301_163_0074.htm">agadd.home.net.pl</a>) był synem rolnik&oacute;w zamieszkałych w dzielnicy "Niemiecki Bok" pod numerem domu 170 
+											(zob.&nbsp;<a href="http://www.busk.pl/mapy/niemieckibok2500.jpg">www.busk.pl</a>&nbsp;- na szkicu zaznaczono miejsce zamieszkania kilku os&oacute;b o nazwisku Jankowski, lecz nie wiadomo w kt&oacute;rym domu rzeczywiście zamieszkiwał Antoni).</span></p>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="img-fluid thumbnail" src="../Images/Rejestr_Jankowski.jpg"  border="0" />
+													</td>
+												</tr>
+												<tr>
+													<td  style="text-align: center;font-size: 10px">
+														Skan fragmentu księgi metrykalnej dot. urodzenia Antoniego Jankowskiego&nbsp;<br><br>
+													</td>
+												</tr>	
+											</table>
+										<p ><p align="justify">Przez lata Antoni Jankowski był wachmistrzem żandarmerii austriackiej (Landesgendarmeriekommando Nr 5, Abteilung Przemyśl Nr 4, Posten zu Dobromil Nr 15), za co został odznaczony srebrnym medalem z koroną (zob.&nbsp;</span><span ><a href="..\Dokumenty.html">Dokumenty</a></span><span >).</span></p>
+										<p ><p align="justify">Antoni Jankowski w 1898 roku, w miejscowości Makowa, zakochawszy się w nieślubnej 16-letniej c&oacute;rce J&oacute;zefa Tyszkowskiego i Katarzyny Hamryszczak &ndash; Katarzynie (ur. 25.06.1882r.), uprowadził ją z domu jej babci, kt&oacute;rą wcześniej uraczył alkoholem i wyjechał z ukochaną do swojej rodzinnej miejscowości Busk (obecnie Ukraina).<br> 
+											Według relacji rodziny Jankowskiego, córka Jankowskiego i Katarzyny z domu Fedyszyn – Michalina, urodziła się w Busku. Niestety nie udało się tego potwierdzić podczas przeszukiwania danych archiwalnych. <br>
+											Po ok. 3 latach mama z córką wyjechała z Buska i prawdopodobnie zamieszkała u swej rodziny w miejscowości Makowa lub u swoich rodziców w miejscowości Trójca, gdzie administratorem dóbr Pawła Tyszkowskiego był jej przybrany ojciec Paweł Fedyszyn, na co wskazywałby akt ślubu Jankowskich.<br>
+											Mało prawdopodobne jest, by Antoni Jankowski po zawiezieniu swojej ukochanej do Buska, pozostał z nią do czasu urodzenia dziecka i osiągnięcia przez nią pełnoletniości. Pełnił funkcję żandarma, a w owym czasie nie można było sobie pozwolić na tak długi urlop. Nie było też możliwe, by w owym czasie zawarł on związek małżeński ze swą ukochaną, gdyż jako urzędnik państwowy, musiał uzyskać stosowne pozwolenie na ślub. Wymagało to udowodnienia zabezpieczenia i pewności dochodu i utrzymania, co wiązało się z wpłatą tzw. kaucji małżeńskiej. Warto odnotować, co stwierdził Antoni Jankowski podczas jednej z rozpraw sądowych, Paweł Tyszkowski miał mu proponować zapłatę kaucji małżeńskiej, lecz ten jej nie przyjął. Uznał, iż w ten spos&oacute;b chciał się uwolnić od obowiązk&oacute;w wobec jego żony, a on liczył od niego na coś więcej.<br>
+											Antoni Jankowski i Katarzyna Fedyszyn zawarli ślub w Cerkwi Greckokatolickiej w Trójcy w dniu 11 listopada 1900 roku (niedziela) posiadając stosowne zezwolenie. Aktu ślubu udzielił im ksiądz greckokatolicki (paroch) Jan Franciszek Golian (Holijan), który pełnił tę posługę w latach 1898-1901. Świadkami tej uroczystości byli: Jan Zakałużny – dowódca c.k. posterunku żandarmerii w Rybotyczach oraz Paweł Mahunik – zarządca dóbr w Jamnej Dolnej. <br> 
+											Z akt ślubu dowiadujemy się, że Antoni Jankowski w tym czasie był dowódcą c.k. posterunku żandarmerii w miejscowości Pikulice koło Nehrybki. Ponadto jego teść, Paweł Fedyszyn pełnił w tym czasie rolę administratora dóbr A.R.D. (Wielce czcigodnego Pana) Pawła Tyszkowskiego, spadkobiercy Trójcy
+                                            (<a href="https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/25368940?_Jednostka_delta=20&_Jednostka_resetCur=false&_Jednostka_cur=1&_Jednostka_id_jednostki=25368940"
+                                             >www.szukajwarchiwach.gov.pl</a>; skan 9).</span></p>
+
+											 <p ><p align="justify">Po zawarciu małżeństwa, Jankowscy przenieśli się do miejscowości Krościenko. Nie wiadomo kiedy tam się udali, ale pewne jest, że mieszkali tam od 1908 roku do conajmniej 1912 roku.
+											<br /><br />Historia związku żony Jankowskiego - Katarzyny z domu Fedyszyn, z rodziną Tyszkowskich przez wiele lat była owiana tajemnicą i opierała się jedynie na szczątkowych informacjach przekazywanych ustnie przez rodzinę Jankowskiego. Dzięki dotarciu do publicznych zbior&oacute;w archiwalnych, udało się znacznie poszerzyć wiedzę i odkryć nieznane dowody na pochodzenie żony Jankowskiego. Ustalono, iż matka Katarzyny Jankowskiej - Katarzyna Hamryszczak, będąc stanu wolnego, wdała się w romans z J&oacute;zefem Tyszkowskim (<a href="https://pl.wikipedia.org/wiki/J%C3%B3zef_Tyszkowski">pl.wikipedia.org</a>), bezdzietnym właścicielem Kopysna i ok. października 1881 r. zaszła z nim w ciążę. W owych czasach, zar&oacute;wno dla jednej, jak i drugiej strony, taka sytuacja musiała sprawiać wielki kłopot. Chcąc ukryć sw&oacute;j romans, Katarzyna Hamryszczak nawiązała bliższą więź z Pawłem Fedyszynem i wyszła za niego za mąż, zanim urodziła dziecko z nieformalnego związku z J&oacute;zefem Tyszkowskim. J&oacute;zef Tyszkowski przed swą śmiercią, wiedząc o ciąży swej kochanki i chcąc zapewnić godziwą przyszłość swemu jedynemu, mającemu się narodzić dziecku, w rozmowie z Pawłem Tyszkowskim (ur. 1856 r.- zm. 17.09.1920 r.), synem swego brata Antoniego, miał wyrazić aprobatę dla związku małżeńskiego Katarzyny Hamryszczak z Pawłem Fedyszynem jeszcze przed ich ślubem i chciał, by Paweł Tyszkowski podarował im jakąś nieruchomość. J&oacute;zef Tyszkowski zmarł 2.02. 1882 r., przed narodzeniem swej c&oacute;rki Katarzyny, co miało miejsce w dniu 25.06.1882 r. i jak niektórzy podają na nieuleczalną chorobę nerek.<br>
+											<br />
+											Z zachowanych dokument&oacute;w wynika, iż w czasie I wojny światowej Antoni Jankowski dostarczał produkty spożywcze Pawłowi Tyszkowskiemu. W 1918 r. na prośbę teściowej Jankowskiego, Paweł Tyszkowski wydzierżawił mu grunty Kopysna. Z odpisu umowy dzierżawy wynika, iż Antoni Jankowski wydzierżawił je na okres 3 lat (od 1 stycznia 1919 r. do 31 grudnia 1921 r.), do kt&oacute;rych należały wybrane przez niego najlepsze grunty (w tym grunty orne, pastwiska, łąki i stawy, za wyjątkiem las&oacute;w). Czynsz dzierżawny ustalono na 12&nbsp;000 koron rocznie. Opr&oacute;cz tego Paweł Tyszkowski ustanowił Antoniego Jankowskiego leśniczym (pniowy), kt&oacute;remu przysługiwało 10% zysk&oacute;w ze sprzedaży drewna.<br />Po śmierci Pawła Tyszkowskiego (17.09.1920 r.) kolejna dzierżawa odbywała się za zgodą pełnomocnika zmarłego - Ludwika Przysieckiego, jak i następcy prawnego tj. Polskiej Akademii Umiejętności w Krakowie. Od 11 grudnia 1926 r. do 31 grudnia 1929 r. zawarty został nowy kontrakt dzierżawy, za co Antoni Jankowski regularnie płacił czynsz dzierżawny. Uważając, iż wszystkie grunty zmarłego Pawła Tyszkowskiego w Kopysnie należą do niego i rodziny, użytkował także inne grunty, nie będące przedmiotem kontraktu, za co nie płacił podatk&oacute;w, ani czynszu Akademii. Część z nich wydzierżawił włościanom z Kopysna pod pastwisko oraz pod uprawę owsa.<br /><br />Należy wyjaśnić, iż Paweł Tyszkowski (Szylak), nieślubny syn Antoniego Tyszkowskiego został przez niego usynowiony w 1865 roku i przejmując dobra swego ojca, w przypadku bezdzietności, jak sądzą niekt&oacute;rzy, był zobowiązany po swej śmierci przekazać je Polskiej Akademii Umiejętności w Krakowie, co też i uczynił w testamencie sporządzonym w dniu 19 października 1912 r. Kiedy 17 września 1920r. zmarł, pojawił się problem z dzierżawą grunt&oacute;w przez Antoniego Jankowskiego i dalszą jego obecnością w Kopysnie. Testator zgodnie z wolą swego ojca wszystkie grunty przekazał Polskiej Akademii Umiejętności w Krakowie, z czym nie wszyscy się zgadzali. Niekt&oacute;rzy pr&oacute;bowali podważyć testament Pawła Tyszkowskiego, o czym głośno pisała &oacute;wczesna prasa, natomiast Antoni Jankowski uznał, iż warto walczyć o swoje prawa w sądzie.<br />Nie zgadzał się on z przejęciem przez Akademię d&oacute;br w Kopysnie, tłumacząc iż jeszcze w 1918 r. otrzymał od Pawła Tyszkowskiego dożywotnią ich dzierżawę. Uważał ponadto, iż przysługuje mu stanowisko leśniczego i 10% zysk&oacute;w od sprzedaży drewna z las&oacute;w na terenie miejscowości: Huwniki, Rybotycze, Posada Rybotycka i Cisowa. Pisał r&oacute;żne listy do miejscowych os&oacute;b i rozpowiadał, iż otrzymał dożywotnią dzierżawę d&oacute;br w Kopysnie, co nie pomogło mu w batalii sądowej. Wytoczył Akademii trzy sprawy sądowe, prowadzone przez Sąd Grodzki w Dobromilu, lecz wszystkie je przegrał.<br />Antoni Jankowski uważał, iż zmarły Paweł Tyszkowski pokazał mu sporządzony przed niego dokument, kt&oacute;ry zapewniał jemu i jego rodzinie dożywotnią dzierżawę grunt&oacute;w Kopysna. Niestety, nie zachował się on w żadnym archiwum, co żona Jankowskiego tłumaczyła, iż został celowo zniszczony przez nieprzychylnych im ludzi. Nie zniechęcało to Jankowskiego, i przez wiele lat pr&oacute;bował dochodzić swoich praw w sądach, co miało dla niego r&oacute;żne konsekwencje, w tym finansowe. Wynikały one m.in. z tego, że opr&oacute;cz legalnej umowy na dzierżawę grunt&oacute;w w Kopysnie, użytkował bezumownie inne grunty w Kopysnie. Do tego należy zaliczyć koszty sądowe i zaległe należności związane z bezumowną dzierżawą, kt&oacute;rych nie chciał ponosić, cały czas tłumacząc, iż Kopysno należy do niego, jego żony i c&oacute;rki. Nie potrafił jednak przedstawić niezbitych dowod&oacute;w na swoje twierdzenia o wieczystej dzierżawie. Cały czas powoływał się na zapewnienia ustne Pawła Tyszkowskiego, co nie mogło w żaden spos&oacute;b przekonać sądu do przyznania mu racji w sporze sądowym z Akademią.<br />Najdłuższą batalię sądową Antoni Jankowski prowadził z pow&oacute;dztwa wzajemnego z Akademią w Sądzie Okręgowym w Przemyślu. Stronę Akademii reprezentował adwokat dr Bogusław Hawliczek z Dobromila. Natomiast jego interesy reprezentował emerytowany sędzia sądu okręgowego, Antoni Jankowski z Dobromila (sic!).<br />Podczas jednej z rozpraw, kt&oacute;ra odbyła się 18 kwietnia 1931 r. Antoni Jankowski zeznał, iż dożywotnia dzierżawa grunt&oacute;w w Kopysnie została przyznana nie tylko jemu, lecz także jego żonie oraz c&oacute;rce. W całym sporze pojawił się wątek jego rozmowy z Pawłem Tyszkowskim, kt&oacute;ry miał powiedzieć, iż Kopysno należy dożywotnio do niego. Słowa te potwierdził jedynie lokaj Pawła Tyszkowskiego, kt&oacute;ry zeznał przed sądem, iż jego pan, po rozmowie z Antonim Jankowskim, tak właśnie powiedział.<br />Na kolejnej rozprawie w dniu 4 lipca 1931 r. znowu przesłuchano Antoniego Jankowskiego, co trwało ok. 5 godzin. Wyznał on wtedy, iż jego żona, choć według prawa jest c&oacute;rka Pawła Fedyszyna, w istocie jest nieślubną c&oacute;rką J&oacute;zefa Tyszkowskiego.<br />Adwokat ze strony Akademii nie zaprzeczył twierdzeniom Antoniego Jankowskiego i przyznał, iż Akademia jest skłonna zawrzeć umowę dzierżawy, ale wyłącznie z żoną Antoniego Jankowskiego, Katarzyną i tylko na czas oznaczony. Natomiast poglądy, jakoby wszystkie grunty po Pawle Tyszkowskim w Kopysnie należały się dożywotnio jemu i całej rodzinie, są utopijne i pozbawione podstaw, wręcz maniakalne. W trakcie procesu przesłuchiwani byli m.in.: Kettner z Kopysna, Ludwik Przysiecki (zarządca d&oacute;br Pawła Tyszkowskiego w Huwnikach), Aurelii Wittemberski (Nadleśniczy z Huwnik), dr G&oacute;rski z Rybotycz, dr Hawliczek (adwokat z Dobromila) i Ignacy Dwulit.</span></p>
+										<p class="style2">
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="img-fluid thumbnail" src="..\Images\Pieczec_N_ctwo_Huwniki.jpg" alt=""  />
+													</td>
+												</tr>
+												<tr>
+													<td  style="text-align: center;font-size: 10px">
+														U dołu pieczęci podpis Aurellego Wittemberskiego.<br>
+													</td>
+												</tr>	
+											</table>	
+										<p class="style4">
+										<p ><p align="justify">Jak wspomniano sp&oacute;r sądowy dotyczył także innych grunt&oacute;w użytkowanych przez Antoniego Jankowskiego, lecz nie objętych umową dzierżawy, kt&oacute;re wyrokiem sądu zostały oddane Akademii, od kt&oacute;rego odwołały się żona i c&oacute;rka Jankowskiego, lecz nie przyniosło to pozytywnych rezultat&oacute;w dla rodziny Jankowskich.<br />Polska Akademia Umiejętności, poprzez swego adwokata - Bogusława Hawliczka, podobnie jak i sam Antoni Jankowski, widać znudzeni przewlekającym się sporem, kt&oacute;rego nie potrafił rozwikłać sąd, pr&oacute;bowali załatwić sprawę ugodowo, o czym świadczy liczna korespondencja pomiędzy nimi. Niestety działania te nie rozwiązały sporu. Poza drobnymi sprawami, kt&oacute;re uzgodniono, problem dzierżawy Kopysna przez rodzinę Jankowskich nadal istniał, gdyż w tej zasadniczej sprawie żadna ze stron nie chciała ustąpić. W końcu, po wielu wymianach pism, rozprawach sądowych, 28 lutego 1936 r. przed Sądem Okręgowym w Przemyślu, doszło do ugody. Akademia zgodziła się podpisać nowy kontrakt dzierżawy z Jankowskim, a on miał się zrzec wszelkich innych roszczeń wobec Akademii, i uwzględniwszy jego wkład finansowy w odbudowę domu i budowę obiekt&oacute;w gospodarczych, miał uregulować wszelkie zaległe należności i koszty sądowe. Kontrakt dzierżawy objął 105 morg&oacute;w ziemi, a nie 150, jakie wcześniej użytkował Antoni Jankowski. Czynsz dzierżawy ustalono na 40 kg owsa po cenie giełdowej za 1 morgę gruntu. Do czasu wybuchu drugiej wojny światowej, Jankowski miał niestety problemy z regulowaniem czynszu dzierżawnego.</span></p>
+										<p ><p align="justify">Wzmianki o Antonim Jankowskim jako właścicielu ziemskim znajdujemy w "Księdze Adresowej Polski 1926/27, 1928 i 1929".</p>
+										<tr>
+										<td>
+										<table style="text-align: center;margin:auto">
+										<tbody>
+										<tr>
+										<td>
+										<p>
+											<table >	
+												<tr>
+													<td >
+														<img class="img-fluid thumbnail"src="..\Images\galeria06\01d.jpg" alt="Katarzyna Jankowska, żona Antoniego"  longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" />
+													</td>
+													<td>
+														<img class="img-fluid thumbnail"src="..\Images\galeria06\02d.jpg" alt="Katarzyna Jankowska z matką"  longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" />
+													</td>
+												</tr>
+												<tr>
+													<td  style="text-align: center;font-size: 10px" colspan="2">
+														Fotografie (zeskanowane dagerotypy) wykonane w miejscowości Busk w 1898 r. Jak można przypuszczać,<br/>przedstawiają Katarzynę, żonę Antoniego Jankowskiego (fot. z lewej i postać z lewej na fot. z prawej strony).&nbsp;<br />Na zdjęciu z prawej (postać z prawej) jak sądzimy to matka Antoniego, Anna Jankowska.<br><br>
+													</td>
+												</tr>	
+											</table>
+										</p>	
+										</td>
+										<p ><p align="justify">Majątek Jankowskiego obejmował pola i lasy (202 ha), hodowlę kr&oacute;w i koni (posiadał 12 sztuk, trzody chlewnej, drobiu a nawet lis&oacute;w). Do niedawna żyli jeszcze ludzie, kt&oacute;rzy pracowali u niego w majątku. Jak twierdzą, był on dobrym człowiekiem i sprawiedliwym. Jego bogate życie trwało do czasu, gdy na ziemie polskie jesienią 1939 r. wkroczyły na mocy porozumienia Ribbentrop - Mołotow wojska radzieckie. W obawie przed zesłaniem na Syberię Jankowski ukrył się u<span lang="en">&nbsp;</span>swej rodziny w Kopysnie, a następnie przeni&oacute;sł z rodziną do Makowej (ukrywał się w przydomowej kom&oacute;rce u swojej szwagierki, po mężu Kość) zabierając ze sobą tylko te rzeczy, kt&oacute;re zmieściły się na wozie oraz krowę. Cały dobytek w Kopysnie rozkradziono. Dw&oacute;r został rozebrany i spalony (zob.&nbsp;</span><span ><a href="..\Ciekawe_miejsca.html">Miejsca</a></span><span >). Ze stawu (dno wg świadk&oacute;w było pokryte brukiem), kt&oacute;ry znajdował się obok dworu, wyłowiono nawet ryby. Utrata majątku negatywnie odbiła się na zdrowiu Antoniego Jankowskiego, kt&oacute;ry załamał się psychicznie i zmarł 28 marca 1952 r. Jego żona Katarzyna będąc sparaliżowana po wylewie, zmarła wcześniej tj. 8<span lang="en">&nbsp;</span>sierpnia 1946 r. Oboje zostali pochowani na cmentarzu w Makowej, lecz niestety nie jest nam znane miejsce ich poch&oacute;wku. C&oacute;rka Michalina (ur. 6 listopada 1898 r. w miejscowości Busk, zob.&nbsp;</span><span ><a href="..\osoby.html">Osoby</a></span><span >)&nbsp;do śmierci mieszkała w<span lang="en">&nbsp;</span>Makowej razem z siostrą swej matki Zofią Mach.</span></p>
+										</td>
+										</tr>
+										<tr>
+											<td  style="text-align: center;font-size: 10px" colspan="2">
+										<img class="img-fluid thumbnail" src="..\Images\galeria06\Jankowska_wesele_d.jpg"  longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></a></p>
+										<p ><span >Michalina Jankowska siedzi obok panny młodej (prawd. Katarzyna po mężu Kulhawiec). Powyżej, w I rzędzie (pomiędzy Michaliną Jankowską a Panną młodą oraz po prawej stronie od pana młodego, Mikołaja) nieznane z nazwiska członkinie ch&oacute;ru cerkiewnego (zob. Ch&oacute;r cerkiewny II rząd, 6 i 7 osoba). W II rzędzie (powyżej panny młodej) prawd. Maria Krupa z d. Kozar, a na lewo od organisty jej mąż Mikołaj (z wąsikiem) .</span></p>
+										</td>
+										</tr>
+										<tr>
+										<td >
+											<tr>
+												<td>
+													<img class="img-fluid thumbnail" src="..\Images\galeria06\04d.jpg" alt=""  />
+												</td>
+											</tr>
+											<tr>
+												<td  style="text-align: center;font-size: 10px">
+													Michalina Jankowska i Zofia Mach.<br><br>
+												</td>
+											</tr>	
+											<tr>
+											<tr>
+												<td>
+													<img class="img-fluid thumbnail" src="..\Images\galeria06\04a.jpg" alt=""  />
+												</td>
+											</tr>
+											<tr>
+												<td  style="text-align: center;font-size: 10px">
+													Zofia Mach (trzecia od lewej) i jej syn Adolf Mach (drugi od lewej), w tle dom (nie istnieje), w którym mieszkali wraz z Michaliną Jankowską.<br><br>
+												</td>
+											</tr>	
+											<tr>
+												<td>
+													<img class="img-fluid thumbnail" src="..\Images\galeria06\03d.jpg" alt=""  />
+												</td>
+											</tr>
+											<tr>
+												<td  style="text-align: center;font-size: 10px">
+													Michalina Jankowska ze swoi psem; bardzo kochała zwierzęta.<br><br>
+												</td>
+											</tr>	
+											</table>
+											<tr>
+											<td>
+											<img class="img-fluid thumbnail" src="..\Images\galeria06\05d.jpg" alt=""  />
+											</td>
+											</tr>
+											<tr>
+											<td  style="text-align: center;font-size: 10px">
+											Grób Michaliny Jankowskiej na cmentarzu w Rybotyczach.<br><br>
+											</td>
+											</tr>	
+										</tbody>
+										</table>
+										</td>
+										<tr>
+										<td>
+										<p ><p align="justify">Jak doniosła Gazeta Poranna z 25 lutego 1930 r. Michalina Jankowska wzięła udział w jej Konkursie Karnawałowym (zob.&nbsp;<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/189692/edition/178875/content?format_id=2">jbc.bj.uj.edu.pl</a> - skan 7, nr 4249).</p>
+
+										<p ><p align="justify">Michalina Jankowska, niezamężna i bezdzietna wnuczka Józefa Tyszkowskiego zmarła w 5 listopada 1982 r. i została pochowana na cmentarzu w Rybotyczach. Pozostały po niej obrazy, kt&oacute;re malowała za swego życia oraz wiele pamiątek (m.in. fotografie, poczt&oacute;wki...) z lat świetności swej rodziny, kt&oacute;re obecnie znajdują się w prywatnych zbiorach jej przyjaci&oacute;ł (część z nich znajduje się w zakładce&nbsp;</span><span ><a href="..\dokumenty.html">Dokumenty</a></span><span >). Warto dodać, iż Michalina Jankowska studiowała we Lwowie pedagogikę (informacja ta nie jest do końca potwierdzona).&nbsp;<br>
+											Antoni Jankowski miał o kilkanaście lat młodszego brata o imieniu Jan (ur. 8.02.1882 r. w Busku), kt&oacute;ry mieszkał we Lwowie, brak jest jednak dokładniejszysch informacji. 
+											W Księdze adresowej królewskiego miasta Lwowa z 1913 roku  zawierającej alfabetyczny spis mieszkańców Lwowa, ujęto dwie osoby      o nazwisku Jan Jankowski. Pierwszy to woźny zakładu ubezpieczeń i zamieszkały przy ul. Gródeckiej 20, a drugi będący fryzjerem i zamieszkały przy ul. Długosza 33. Natomiast w księdze adresowej miasta Lwowa z 1916 roku  występuje Jan Jankowski będący woźnym w zakładzie ubezpieczeń, lecz tym razem zamieszkały przy ul. Jadwigi 6. 
+											W którym przypadku chodzi o Jana, brata Antoniego Jankowskiego, tego nie wiadomo.
+											Po Janie Jankowskim zachowała się jedynie jego korespondencja i fotografie. Bardzo prawdopodobne jest, iż po zajęciu Lwowa przez armię radziecką dostał się do niewoli i zginął. <br>
+											Jan Jankowski miał syna Tomasza (ur.1903 r.), kt&oacute;ry po ukończeniu w 1931 r. studi&oacute;w medycyny we Lwowie mieszkał i pracował jako lekarz od chorób wewnętrznych w Przemyślu, także w kt&oacute;rymś ze szpitali. 
+											Kamienica, w której mieszkał istnieje do dziś
+											(<a href="https://goo.gl/maps/7Z5HhPVsBDkZ96YU9">goo.gl</a>). W roku 1935 ożenił się z<span lang="en">&nbsp;</span>Wandą Tabisz (ur. 1914 r.), kt&oacute;ra po jego śmierci w roku 1954 wstąpiła do zakonu i prawdopodobnie przebywała do swej śmierci w Krakowie. Według informacji z nagrobka znajdującego się na cmentarzu "Zasanie" w Przemyślu (pole 19, pierwszy grobowiec w rogu) "dr Tomasz Jankowski zmarł 11.03.1958 r.<span lang="en">&nbsp;</span>przeżywszy 55 lat". Śmierć nastąpiła w domu, a przyczyną śmierci był udar lub zator tętnicy.</span></p>
+										</td>
+										</tr>
+										<tr>
+										<td  >
+										<table style="text-align: center;margin:auto">
+										<tbody>
+										<tr>
+										<td>
+											<table>
+												<tbody>
+													<tr>
+														<td>
+															<img class="img-fluid thumbnail"style="padding: 10px;"src="..\Images\galeria06\06d.jpg" alt="Tomasz Jankowski" />
+														</td>
+														<td>
+															<img class="img-fluid thumbnail"style="padding: 10px;"src="..\Images\galeria06\07d.jpg" alt="Tomasz Jankowski"/>
+														</td>
+														<td>
+															<img class="img-fluid thumbnail"style="padding: 10px;"src="..\Images\galeria06\08d.jpg" alt="Nagrobek Tomasza Jankowskiego"/>
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align: center;font-size: 10px">
+															Tomasz Jankowski
+														</td>
+														<td style="text-align: center;font-size: 10px">
+															Tomasz Jankowski
+														</td>
+														<td style="text-align: center;font-size: 10px">
+															Nagrobek Tomasza Jankowskiego
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										</tr>
+										</tbody>
+										</table>
+										</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>	
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+				}	
+					
+		</script>	
+    </body>
+</html>

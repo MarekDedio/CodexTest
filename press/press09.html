@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="..\boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="..\css.css">
+		<link rel="stylesheet" href="..\font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="..\boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="ekran.js"></script>
+		<script src="press.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="..\Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="..\index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="..\..\Aktualnosci\2023.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="..\Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="..\Kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="..\Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="..\Artykuly_prasowe.html">O nas</a>
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="..\index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="../Aktualnosci/2024.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
+									<a class="dropdown-item" href="..\Kartografia_archiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="..\Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
+									<a class="dropdown-item" href="..\Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="..\Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="..\Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="..\Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="..\Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="..\Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="..\Dokumenty.html">Dokumenty</a>
+									
+									<a class="dropdown-item" href="..\Ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="..\Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					<button style="float:right;margin-right:10px;"class="btn btn-success"onclick="ShowHideSearchBar()">
+						<i type="button"class="fas fa-search" >
+						</i>
+					</button>
+					<div id="SearchBar" style="display:none;position:absolute;right:0;z-index: 200;">
+						<div style="background-color: #373433;padding: none !important" class="gcse-search"></div>
+					</div>
+					<script async src="https://cse.google.com/cse.js?cx=0e3dd34dd3824a28c"></script>
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 8px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="press00.html">Helena Zollówna - Mons Grodzysko <br><p style="font-size: x-small;">(Ziemia, luty 1957)</p></a>
+				<a href="press01.html">Wczesnośredniowieczna warownia w Kopystnie <br><p style="font-size: x-small;">(Życie Przemyskie z 1984)</p></a>
+				<a href="press02.html">Maria Watras - Diabła nie zobaczycie <br><p style="font-size: x-small;">(Super Nowości, 5-7 lutego 1999)</p></a>
+				<a href="press03.html">Do Kopysna wraca życie<br><p style="font-size: x-small;"> (Życie Podkarpackie, 14 maja 2003)</p></a>
+				<a href="press04.html">Mieczysław Nyczek - Bezludna osada <br><p style="font-size: x-small;">(Nowiny, 28 sierpnia 2003)</p></a>
+				<a href="press05.html">Olga Hryńkiw - Poznali się po nosie... <br><p style="font-size: x-small;">(Życie Podkarpackie, 4 sierpnia 2004)</p></p></a>
+				<a href="press06.html">Norbert Ziętal - Odnaleźli się po latach <br><p style="font-size: x-small;">(Nowiny, 10 sierpnia 2004)</p></a>
+				<a href="press07.html">Andrzej Klimczak, Katarzyna Drążek - Ratują umierającą wieś <br><p style="font-size: x-small;">(Supernowości, 22 czerwca 2006)</p></a>
+				<a href="press08.html">Piotr Subik - Strażnik Kopysna <br><p style="font-size: x-small;"> (Dziennik Polski, 5 lipca 2006)</p></a>
+				<a href="press09.html">Bożena Korecka-Szczerba - Cerkiew w Kopyśnie <br><p style="font-size: x-small;">(Skarby Podkarpackie, Nr 1 (2) 2007)</p></a>
+				<a href="press10.html">Olga Hryńkiw - Tam były najsłodsze maliny i najbardziej pachniały poziomki <br><p style="font-size: x-small;">(Przemyski Przegląd Kulturalny, Nr 4 (7) 2007)</p></a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul class="list-group lista;position:relative">
+							<li id="l1"class="list-group-item" style="text-align:center;position:relative;font-size:25px;background-color:#e6f2ff;height: 63,5px; ">
+								<strong id="title" style="font-size: medium;">
+									Bożena Korecka-Szczerba - Cerkiew w Kopyśnie (Skarby Podkarpackie, Nr 1 (2) 2007)
+								</strong>
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"class="btn btn-info OpenSideMenu"onclick="openNavPress()">Artykuły</button>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 20px;margin-bottom: 50px;">
+									<p align="center"><img src="..\Images\inni_o1.jpg" alt="" width="407" height="283" border="0" /></p>
+<p align="justify"> Wnętrze ma tr&oacute;jczęściowy podział, a podwyższoną część ołtarzową, tzw. altar, dzieli typowy dla cerkwi karpackiej ikonostas. Z lewej strony carskich wr&oacute;t, znajduje się ikona z najpowszechniejszym typem przedstawienia maryjnego: Matka Boska z Dzieciątkiem - Hodegetria, po prawej zaś widnieje postać Chrystusa Pantokratora. Spośr&oacute;d 22<span lang="en">&nbsp;</span>tworzących następny rząd malowideł, tzw. prazdnik&oacute;w, chronologicznie przedstawiających święta roku kościelnego, brak dw&oacute;ch. Powyżej Ostatnia Wieczerza, nad kt&oacute;rą g&oacute;ruje przedstawienie Deesis - Chrystus Tronujący z Apostołami, zamknięte p&oacute;łkolistym, roślinnym ornamentem. Zar&oacute;wno ołtarzyk w prezbiterium z obrazem Chrystusa pomiędzy świętymi, jak i cztery ołtarzyki boczne - wszystkie z XIX w., o tradycjach barokowych, r&oacute;wnież przetrwały w<span lang="en">&nbsp;</span>pierwotnym stanie.</span></p>
+<p align="center"><img class="thumbnail img-fluid"src="..\Images\inni_o2.jpg" alt="" width="249" height="373" border="0" /></p>
+<p align="justify"> Niewielką, murowaną, greckokatolicką cerkiew Opieki Matki Boskiej zbudowano w Kopyśnie w 1821r. razem z<span lang="en">&nbsp;</span>parawanową dzwonnicą, na miejscu poprzedniej, istniejącej już w XV wieku. Wzniesiona z kamienia na planie wydłużonego prostokąta z tr&oacute;jbocznym zamknięciem od wschodu, otynkowana, była przebudowana na początku lat 20. XX wieku. Szczęśliwie przetrwała jako jedna z niewielu w okolicy i co szczeg&oacute;lnie ważne, pozostał w niej prawie kompletny ikonostas z 1854 roku namalowany przez J&oacute;zefa Lisikiewicza z Tr&oacute;jcy.</span></p>
+<p align="center"><img class="thumbnail img-fluid"src="..\Images\inni_o3.jpg" alt="" width="248" height="271" border="0" /></p>
+<p align="justify"> Godna uwagi jest także sama miejscowość. Niegdyś duża, dziś wyludniona, położona nietypowo na stokach g&oacute;ry (541 m n.p.m.), wysoko nad doliną Wiaru. Istniała już w XIV wieku (Władysław Jagiełło nadał wieś 12 marca 1408 roku J&oacute;zefowi Bieduniowi za jego wierną służbę), stając się z czasem rodowym gniazdem Kopystyńskich herbu Leliwa.</span></p>
+<p align="center"><img class="thumbnail img-fluid"src="..\Images\inni_o4.jpg" alt="" width="248" height="183" border="0" /></p>
+<p align="justify"> Istnieje hipoteza, że Michał Kopystyński, ostatni prawosławny biskup w Przemyślu, może być pochowany właśnie w<span lang="en">&nbsp;</span>podziemiach pierwotnej cerkwi, choć brana jest pod uwagę także cerkiew w Posadzie Rybotyckiej. Przy drodze do pobliskich Rybotycz zachowała się kapliczka św. Jana, upamiętniająca zniesienie pańszczyzny w 1848 r.</span></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2026
+				</div>
+			</div>
+		</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script> 
+			function openNavPress() 
+			{
+				l = window.innerWidth
+				if (l>450)
+				{
+					document.getElementById("mySidenav").style.width = "450px";
+				}
+				if (l<=450)
+				{
+					document.getElementById("mySidenav").style.width = "100%";
+				}
+			}
+		</script>
+
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+			</script>	
+			<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+						b.style.fontSize = "medium";
+						if(a<930)
+						{
+							b.style.fontSize = "small";
+						}
+						if(a<790)
+						{
+							b.style.fontSize = "x-small";
+						}
+						if(a<660)
+						{
+							b.style.fontSize = "xx-small";
+						}
+						if(a<610)
+						{
+							document.getElementById("title").innerHTML=" ";
+						}
+						else
+						{
+							document.getElementById("title").innerHTML="Bożena Korecka-Szczerba - Cerkiew w Kopyśnie (Skarby Podkarpackie, Nr 1 (2) 2007)";
+						}
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "30%";
+						if(a>1750)
+						{
+							b.style.fontSize = "small";
+						}
+						if(a<1750)
+						{
+							b.style.fontSize = "x-small"
+						}
+						if(a<1450)
+						{
+							b.style.fontSize = "xx-small"
+						}
+						if(a<1350)
+						{
+							document.getElementById("title").innerHTML=" ";
+						}
+						else
+						{
+							document.getElementById("title").innerHTML="Bożena Korecka-Szczerba - Cerkiew w Kopyśnie (Skarby Podkarpackie, Nr 1 (2) 2007)";
+						}
+					}
+				}	
+
+		</script>
+    </body>
+</html>
