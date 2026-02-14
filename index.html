@@ -1,288 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-		<meta charSet="utf-8">
-		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Kopysno</title>
-		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
-		<link rel="stylesheet" href="css.css">
-		<link rel="stylesheet" href="font/css/all.css">
-		<script src="https://kit.fontawesome.com/yourcode.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
-		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
-		<script src="script.js"></script>
-	</head>
-	<body style="background-color: #EEEEEE !important;">
-		<script>
-			function dissapear()
-			{
-				var x = document.getElementById("SearchBar");
-				if(x.style.display == "block")
-				{
-					x.style.display = "none"
-				}	
-			}	
-		</script>
-		<div onclick="dissapear();closeNav()"class="banerglowna">
-			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
-		</div>
-		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
-			<div>
-				<nav class="navbar navbar-expand navbar-light" >
-					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
-						<div class="dropdown">
-							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
-							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
-								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
-								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2026.html">Aktualnosci</a>
-								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
-								<a id="a444" style="display:none" class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
-								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie Mieszkańców</a>
-								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
-								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
-								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
-								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
-								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia Archiwalna</a>
-								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa Okolicy</a>
-								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
-								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
-								
-								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
-								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
-							</div>
-						</div>	
-					</div>		
-					<ul class="navbar-nav kolanko" >
-						<li id="Strona" class="nav-item">
-							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
-						</li>
-						<li id="Aktualnosci" class="nav-item">
-							<a class="nav-link" href="Aktualnosci/2026.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
-						</li>
-						<li id="Lokalizacja" class="nav-item" >
-							<div class="dropdown">
-								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
-								<div style="background-color:#373433"class="dropdown-menu">
-									<a class="dropdown-item" href="https://www.google.pl/maps/@49.6845176,22.6406347,2167m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D">Mapa okolicy</a>
-									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
-								</div>
-							</div>	
-						</li>
-						<li id="Informacja"class="nav-item">
-							<div class="dropdown">
-								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
-								<div style="background-color:#373433"class="dropdown-menu">
-									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
-									<a class="dropdown-item" href="Zabytki_i_spolecznosc.html">Zabytki i Społeczność</a>
-									<a class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
-									<a class="dropdown-item" href="Geografia.html">Geografia</a>
-									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
-									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
-									<a class="dropdown-item" href="Osoby.html">Osoby</a>
-								</div>
-							</div>	
-						</li>
-						<li id="Dawni" class="nav-item">
-							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
-						</li>
-						<li id="Archiwum"class="nav-item">
-							<div class="dropdown">
-								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
-								<div style="background-color:#373433"class="dropdown-menu">
-									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
-									
-									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
-								</div>
-							</div>	
-						</li>
-						<li id="Kontakt"class="nav-item">
-							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
-						</li>
-					</ul>
-					
-				</nav>
-			</div>
-		</div>
-		<div id="kontener" class="container-fluid"style="background-color:white;margin-bottom:60px;">
-		    <div id="texto"style="background-color: #EEEEEE;">
-				<div id="GettingTextHeight"class="row" style="padding:20px;border-radius: 15px;background-color: white;margin:15px;font-size: 0.88vw;">
-						<p align="justify"><span style="color: #ff0000;font-size: 25px;"><strong>KOPYSNO</span></strong> - miejscowość znana także jako Kopyśno, Kopystno, 
-							istniała zanim w 1408 r. polski król Władysław Jagiełło nadał ją Józefowi Biedunowi, swemu rycerzowi, a zarazem protoplaście rodu Kopystyńskich, którego potomkowie władali wsią do końca XVI wieku. Jednym z nich był znany prawosławny władyka przemyski Michał Kopystyński, przeciwnik unii brzeskiej z 1596 r.
-<br><br>
-							Historia Kopysna obfituje w wiele intrygujących, ale i tragicznych wydarzeń opisanych na naszej stronie. W dużym skrócie przypominamy poniżej jedynie te, które rozegrały się w wieku XX i w których uczestniczyli mieszkańcy wsi.
-							<br><br>
-							Początek XX wieku.<br>
-							Z powodu biedy i przeludnienia ma miejsce emigracja ludności w poszukiwaniu lepszych warunków życia; USA, Kanada, Argentyna i Australia, to główne miejsca docelowe.
-						<br><br>	
-							Rok 1914, Wielka wojna światowa, zwana później pierwszą.<br>
-							Walki zwaśnionych mocarstw, udział mieszkańców wsi wcielonych do c.k. armii austrowęgierskiej; śmierć, rosyjska niewola.
-							Kopystanka; ostrzał artylerii, straty materialne, które objęły m.in. dwór rodziny Tyszkowskich.
-						<br><br>	
-							Rok 1918, koniec Wielkiej wojny. <br>
-							Zmiana geopolitycznego porządku świata, walki o terytoria narodowe; czasy II Rzeczpospolitej Polski.
-						<br><br>
-							Rok 1939, wybuch II wojny światowej. <br>
-							Śmierć bliskich, m.in. w niemieckich obozach koncentracyjnych. Wyjazdy i wyczerpująca praca na rzecz niemieckiego okupanta; niektórzy po zakończeniu wojny decydują się na emigrację.
-						<br><br>	
-							Rok 1944.  
-						    Początki nowego państwa polskiego zależnego na mocy międzynarodowych porozumień od Związku Socjalistycznych Republik Radzieckich (ZSRR).<br>
-							Ukraińscy nacjonaliści niezadowoleni nowym podziałem świata i ustalonymi granicami państwa polskiego przy pomocy Ukraińskiej Powstańczej Armii (UPA) podejmują walkę zbrojną, w wyniku której ponoszą śmierć zarówno żołnierze, jak i cywile po obu stronach konfliktu. 
-						<br><br>	
-							Rok 1945, koniec II wojny światowej. <br>
-							Ostateczne zatwierdzenie podziału powojennego świata; Kopysno znajduje się na terytorium Rzeczypospolitej Polski, która od 1952 roku przyjmuje nazwę Polska Rzeczpospolita Ludowa (PRL).
-							W wyniku tzw. układów republikańskich następuje wymiana ludności; znaczna część mieszkańców, w tym przeciwni postanowieniom władz, opuszcza Kopysno i udaje się na tereny Ukraińskiej Socjalistycznej Republiki Radzieckiej wchodzącej w skład ZSRR. 
-						<br><br>	
-							Rok 1947, akcja Wisła.<br>
-							Władze PRL chcąc rozwiązać na swym terytorium problemy związane z działalnością UPA, decydują się na masowe deportacje ludności; kolejni mieszkańcy Kopysna opuszczają swoje domy osiedlając się na tzw. Ziemiach Odzyskanych; niektórzy decydują się na wyjazd z obawy o swoje bezpieczeństwo; we wsi pozostaje garstka osób. 
-						<br><br>	 
-							Druga połowa XX wieku.<br>
-							Niektórzy z deportowanych wracają do Kopysna i tam po latach kończą swój życiowy bieg. Obecnie z rodowitych mieszkańców oraz ich potomków nie mieszka nikt. 
-						<br><br>	
-						
-							Celem istnienia strony nie jest propagowanie żadnych ideologii, a zwłaszcza  nacjonalistycznych wykorzystujących resentymenty historyczne.  
-							Wierzymy, że wkrótce nastąpią diametralne zmiany i cały świat będzie jednością w pełnym znaczeniu tego słowa, której nie zakłóci już nikt, kto dziś posługuje się kłamstwem i chorą ideologią,  które przynoszą jedynie pasmo kłopotów i nieszczęść, czego dowodzi historia.
-							Oczekujemy na powrót wielu prawych osób, którzy zasnęli snem śmierci, a zwłaszcza bliskich, którzy mieszkali w tym przepięknym miejscu, na widok których nasze serca zapłoną z radości.
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopysno — historia, pamięć, dokumenty</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="banerglowna">
+    <img id="BannerImage" class="banerwidth" src="Untitled.png" alt="Panorama Kopysna">
+  </header>
 
-											<br> </div>
-				<script>
-					function TextHeightScale()
-					{
-						var GTH = document.getElementById("GettingTextHeight");
-						var vv = window.innerWidth;
-						if(vv<=4800){
-							GTH.style.fontSize = "16px";
-						}
-						else
-						{
-							GTH.style.fontSize = "0.88vw";
-						}
-					}
-				</script>
-				<div id="demo"class="row carousel slide"data-ride="carousel" style="padding:10px;border-radius: 15px;background-color: white;margin:15px;text-align: center;">
-						<ul class="carousel-indicators" style="bottom:1%">
-							<li data-target="#demo" data-slide-to="0" class="active"></li>
-							<li data-target="#demo" data-slide-to="1"></li>
-							<li data-target="#demo" data-slide-to="2"></li>
-						</ul>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="thumbnail img-fluid"style="width:90%;height: auto;"src="Images\Carousel\1.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-								<img class="thumbnail img-fluid"style="width:90%;height: auto;"src="Images\Carousel\2.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-								<img class="thumbnail img-fluid"style="width:90%;height: auto;"src="Images\Carousel\3.jpg" alt="">
-							</div>
-						</div>   
-						<a class="carousel-control-prev" href="#demo" data-slide="prev">
-							<span class="carousel-control-prev-icon" style="color: black !important;"></span>
-						</a>
-						<a class="carousel-control-next" href="#demo" data-slide="next">
-							<span class="carousel-control-next-icon" style="color: black !important;"></span>
-						</a>	
-				</div>
-			</div>	
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-		<div style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
-			© Copyrights Dedio & Dedio & Dedio 2003-2026 
-		</div>
-		<div id="myModal" class="modal">
-			<img class="modal-content" id="img01">
-			<div id="caption"></div>
-		</div>
-		<script>
-			function dost()
-			{
-				t = document.getElementById("texto");
-				g = document.getElementById("GettingTextHeight");
-				a = window.innerWidth;
-				if(a<5000 && a>1050)
-				{
-					t.style.paddingRight = "25%";
-					t.style.paddingLeft = "25%";
-				}
-				if(a>5000 || a<1050)
-				{
-					t.style.paddingRight = "10px";
-					t.style.paddingLeft = "10px";
-				}
-			}
-		</script>
-		<script>
-			mybutton = document.getElementById("myBtn");
-			window.onscroll = function() 
-			{
-				myFunction();
-				scrollFunction();
-			}
-			function scrollFunction() 
-			{
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-				{
-					mybutton.style.display = "block";
-				} 
-				else 
-				{
-					mybutton.style.display = "none";
-				}
-			}
-			function topFunction() 
-			{
-				document.body.scrollTop = 0; 
-				document.documentElement.scrollTop = 0; 
-			}
-			function myFunction()
-			{
-				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
-				var header = document.getElementById("myHeader");
-				if (window.pageYOffset > BannerHeight)
-				{
-					header.classList.add("sticky");
-					document.getElementById("texto").style.paddingTop="42px";
-				} 
-				else 
-				{
-					header.classList.remove("sticky");
-					document.getElementById("texto").style.paddingTop="0px";
-				}
-			}
-			function BothIntervals()
-			{
-				myFunction();
-				TextHeightScale();
-				dost();
-			}
-			setInterval(BothIntervals,25);
-		</script>
-		<script>
-			// Get the modal
-			const modal = document.getElementById('myModal');
-			const modalImg = document.getElementById("img01");
-			const captionText = document.getElementById("caption");
-			
-			var img = document.querySelectorAll('.thumbnail');
-				
-			for (var i=0; i<img.length; i++){
-				
-				img[i].onclick = function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				modalImg.alt = this.alt;
-				captionText.innerHTML = this.alt;
-			}
-			}
-			// When the user clicks on <span> (x), close the modal
-			modal.onclick = function() {
-				img01.className += " out";
-				setTimeout(function() {
-				   modal.style.display = "none";
-				   img01.className = "modal-content";
-				 }, 400);
-			}       
-		</script>	
-    </body>
+  <main class="home-shell">
+    <section class="hero">
+      <h1>Kopysno — nowoczesne archiwum historii miejsca i ludzi</h1>
+      <p>
+        Strona została uporządkowana i uproszczona, aby szybciej docierać do najważniejszych treści: historii,
+        dokumentów, artykułów i aktualności. Wszystko w jednym, przejrzystym układzie.
+      </p>
+
+      <div class="quick-links">
+        <a href="Aktualnosci/2026.html">Aktualności</a>
+        <a href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+        <a href="Zabytki_i_spolecznosc.html">Zabytki i społeczność</a>
+        <a href="Mieszkancy/Antoni_Jankowski.html">Historie mieszkańców</a>
+        <a href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
+        <a href="Geografia.html">Geografia</a>
+        <a href="Srodowisko.html">Środowisko</a>
+        <a href="Cmentarz.html">Cmentarz</a>
+        <a href="Artykuly_prasowe.html">Artykuły prasowe</a>
+        <a href="Dokumenty.html">Dokumenty</a>
+        <a href="Dokumenty_do_pobrania.html">Dokumenty do pobrania</a>
+        <a href="Kontakt.html">Kontakt</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© Dedio & Dedio 2003–2026</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
